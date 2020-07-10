@@ -363,6 +363,41 @@ class gdzPagesForm
                     ),
                     array(
                         'type' => 'select',
+                        'label' => $this->module->l('Thumbs Show', 'PagesForm'),
+                        'name' => 'product_thumbs_show',
+                        'options' => array(
+                            'query' => array(
+                                array(
+                                    'id_option' => '3',
+                                    'name' => $this->module->l('3', 'PagesForm'),
+                                ),
+                                array(
+                                    'id_option' => '4',
+                                    'name' => $this->module->l('4', 'PagesForm'),
+                                ),
+                                array(
+                                    'id_option' => '5',
+                                    'name' => $this->module->l('5', 'PagesForm'),
+                                ),
+                                array(
+                                    'id_option' => '6',
+                                    'name' => $this->module->l('6', 'PagesForm'),
+                                ),
+                                array(
+                                    'id_option' => '7',
+                                    'name' => $this->module->l('7', 'PagesForm'),
+                                ),
+                                array(
+                                    'id_option' => '8',
+                                    'name' => $this->module->l('8', 'PagesForm'),
+                                ),
+                            ),
+                            'id' => 'id_option',
+                            'name' => 'name',
+                        ),
+                    ),
+                    array(
+                        'type' => 'select',
                         'label' => $this->module->l('Image Zoom', 'PagesForm'),
                         'name' => 'product_image_zoom',
                         'options' => array(

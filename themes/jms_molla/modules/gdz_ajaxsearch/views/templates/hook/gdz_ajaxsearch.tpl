@@ -22,22 +22,18 @@
 *  @version  Release: $Revision$
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-
 *}
-
 <div id="search-form" class="search-form">
-    <div class="search-box">
-			<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" class="search-box">
-				<input type="hidden" name="controller" value="search" />
-				<input type="hidden" name="orderby" value="position" />
-				<input type="hidden" name="orderway" value="desc" />
-        <div class="input-group">
-    				<input type="text" name="search_query" placeholder="{l s='Search everything...' mod='gdz_ajaxsearch'}" class="gdz-search-input form-control search-input" />
-    				<button type="submit" name="submit_search" class="button-search">
-    					<i class="ptw-icon {$gdzSetting.search_icon}"></i>
-    				</button>
-        </div>
-			</form>
-			<div class="search-result-area"></div>
-    </div>
+	<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" class="search-box">
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="orderby" value="position" />
+		<input type="hidden" name="orderway" value="desc" />
+		<div class="input-group">
+			<input type="text" name="search_query" placeholder="{l s='Search product ...' mod='gdz_ajaxsearch'}" class="gdz-search-input form-control search-input" />
+			<button type="submit" name="submit_search" class="button-search">
+				<i class="icon-search"></i>
+			</button>
+		</div>
+	</form>
+	<div class="search-result-area"></div>
 </div>

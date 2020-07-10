@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="images-container {$gdzSetting.product_content_layout} horizonal-thumbs">
+<div class="images-container thumbs-left horizonal-thumbs">
     {block name='product_cover'}
         {include file='catalog/_partials/product-cover.tpl'}
     {/block}

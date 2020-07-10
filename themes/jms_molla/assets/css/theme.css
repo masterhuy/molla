@@ -122,10 +122,6 @@ a:hover {
 header p {
   margin: 0px;
 }
-header i {
-  font-size:38px;
-  color:#303030;
-}
 footer .row,
 header .row {
     display: -ms-flexbox;
@@ -205,6 +201,25 @@ header .row .col-auto {
 .header-sticky.sticky .container .row {
   height:100%;
 }
+.header-sticky.sticky.sticky-slide {
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+}
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
 .header-sticky.sticky #hor-menu {
   align-items: center;
   display: flex;

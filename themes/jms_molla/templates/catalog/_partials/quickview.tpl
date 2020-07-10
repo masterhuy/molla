@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 left">
                         {block name='product_cover_thumbnails'}
-                            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+                            {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
                         {/block}
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 right">

@@ -148,7 +148,7 @@ class gdz_themesetting extends Module
             $settings['custom_css'] = file_get_contents(_PS_MODULE_DIR_.'gdz_themesetting/views/customfiles/gdz_custom_css.txt');
         }
 
-        Media::AddJsDef(array('gdzSetting' => array('carousel_lazyload' => $settings['carousel_lazyload'], 'product_content_layout' => $settings['product_content_layout'], 'shop_grid_column' => $settings['shop_grid_column'], 'footer_block_collapse' => $settings['footer_block_collapse'], 'right_icon' => $settings['right_icon'], 'left_icon' => $settings['left_icon'])));
+        Media::AddJsDef(array('gdzSetting' => array('carousel_lazyload' => $settings['carousel_lazyload'], 'product_content_layout' => $settings['product_content_layout'], 'product_thumbs_show' => $settings['product_thumbs_show'], 'shop_grid_column' => $settings['shop_grid_column'], 'footer_block_collapse' => $settings['footer_block_collapse'], 'right_icon' => $settings['right_icon'], 'left_icon' => $settings['left_icon'])));
         $this->context->smarty->assign('gdzSetting', $settings);
 
     }

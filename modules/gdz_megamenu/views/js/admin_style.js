@@ -286,7 +286,7 @@ jQuery(function ($) {
 	$('#page-header-desc-configuration-save_style').click(function (d) {
 		d.preventDefault();
 		d.stopPropagation();
-		alert('aaa');
+		//alert('aaa');
 		var config = {},
 		items = $('.gdz-megamenu').find('ul[class*="level0"] > li[data-id]');
 		items.each (function(){

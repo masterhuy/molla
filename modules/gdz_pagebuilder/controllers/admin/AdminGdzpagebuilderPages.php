@@ -453,11 +453,19 @@ class AdminGdzpagebuilderPagesController extends ModuleAdminControllerCore
         $fields['active'] = Tools::getValue('active', $page->active);
         $languages = Language::getLanguages(false);
         foreach ($languages as $lang) {
-            $fields['title'][$lang['id_lang']]  = Tools::getValue('title_'.(int)$lang['id_lang'], $page->title[$lang['id_lang']]);
-            $fields['alias'][$lang['id_lang']]  = Tools::getValue('alias_'.(int)$lang['id_lang'], $page->alias[$lang['id_lang']]);
-            $fields['meta_desc'][$lang['id_lang']] = Tools::getValue('meta_desc_'.(int)$lang['id_lang'], $page->meta_desc[$lang['id_lang']]);
-            $fields['meta_key'][$lang['id_lang']] = Tools::getValue('meta_key_'.(int)$lang['id_lang'], $page->meta_key[$lang['id_lang']]);
-            $fields['key_ref'][$lang['id_lang']] = Tools::getValue('key_ref_'.(int)$lang['id_lang'], $page->key_ref[$lang['id_lang']]);
+            if (isset($page->title[$lang['id_lang']])) {
+                $fields['title'][$lang['id_lang']]  = Tools::getValue('title_'.(int)$lang['id_lang'], $page->title[$lang['id_lang']]);
+                $fields['alias'][$lang['id_lang']]  = Tools::getValue('alias_'.(int)$lang['id_lang'], $page->alias[$lang['id_lang']]);
+                $fields['meta_desc'][$lang['id_lang']] = Tools::getValue('meta_desc_'.(int)$lang['id_lang'], $page->meta_desc[$lang['id_lang']]);
+                $fields['meta_key'][$lang['id_lang']] = Tools::getValue('meta_key_'.(int)$lang['id_lang'], $page->meta_key[$lang['id_lang']]);
+                $fields['key_ref'][$lang['id_lang']] = Tools::getValue('key_ref_'.(int)$lang['id_lang'], $page->key_ref[$lang['id_lang']]);
+            } else {
+                $fields['title'][$lang['id_lang']]  = Tools::getValue('title_'.(int)$lang['id_lang']);
+                $fields['alias'][$lang['id_lang']]  = Tools::getValue('alias_'.(int)$lang['id_lang']);
+                $fields['meta_desc'][$lang['id_lang']] = Tools::getValue('meta_desc_'.(int)$lang['id_lang']);
+                $fields['meta_key'][$lang['id_lang']] = Tools::getValue('meta_key_'.(int)$lang['id_lang']);
+                $fields['key_ref'][$lang['id_lang']] = Tools::getValue('key_ref_'.(int)$lang['id_lang']);
+            }
         }
         return $fields;
     }

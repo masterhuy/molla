@@ -16,14 +16,14 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     width: 100%;
 }
-#edit_css{
-    overflow: auto !important;
-}
 .bootstrap .switch {
     height: 32px;
 }
 .bootstrap .prestashop-switch label {
     line-height: 35px;
+}
+#edit_css{
+    overflow: auto !important;
 }
 .panel-tabs {
   width: 16.66667%;

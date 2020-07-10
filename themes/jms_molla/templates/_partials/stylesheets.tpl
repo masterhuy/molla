@@ -22,10 +22,8 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/bootstrap.min.css" />
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/bootstrap.min.css" />
+<link rel="stylesheet" href="{$urls.theme_assets}vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css">
 <link href="{$urls.base_url}/modules/gdz_themesetting/views/fonts/font-icon.css" rel="stylesheet">
 {if $gdzSetting.body_font == 'google' && isset($gdzSetting.body_font_google)}
     <link href="https://fonts.googleapis.com/css?family={$gdzSetting.body_font_google}:{$gdzSetting.body_font_google_weightstyle}" rel="stylesheet">

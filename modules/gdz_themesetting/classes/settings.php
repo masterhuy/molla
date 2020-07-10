@@ -300,6 +300,7 @@ class Setting
         'product_page_width' => array('type' => 'default', 'value' => '1'),
         'product_page_layout' => array('type' => 'default', 'value' => 'no-sidebar', 'front' => 1, 'css' => 'no'),
         'product_content_layout' => array('type' => 'default', 'value' => 'thumbs-bottom', 'front' => 1, 'css' => 'no'),
+        'product_thumbs_show' => array('type' => 'default', 'value' => '4', 'front' => 1, 'css' => 'no'),
         'product_image_zoom' => array('type' => 'default', 'value' => '', 'front' => 1, 'css' => 'no'),
         'product_page_title_font' => array('type' => 'fontstyle', 'value' => '', 'css' => 'fontstyle'),
         'product_page_title_color' => array('type' => 'default', 'value' => ''),

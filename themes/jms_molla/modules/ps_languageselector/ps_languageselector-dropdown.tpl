@@ -24,16 +24,15 @@
 *}
 <!-- Block languages module -->
 {if count($languages) > 1}
-	<div class="btn-group languages-info">
-		<a href="#" class="" data-toggle="dropdown">
+	<div class="header-dropdown languages-info">
+		<a href="#">
 			{$current_language.name_simple}
 		</a>
-		<div class="dropdown-menu">
+		<div class="header-menu">
 			<ul>
 				{foreach from=$languages key=k item=language name="languages"}
 					<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
 						<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
-							<img class="flag" alt="{$language.iso_code}" src="{$urls.base_url}img/l/{$language.id_lang}.jpg" width="18" height="11"/>
 							{$language.name_simple}
 						</a>
 					</li>

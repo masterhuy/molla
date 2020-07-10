@@ -335,10 +335,10 @@ class gdzAddonBlog extends gdzAddonBase
     public function returnValue($addon)
     {
         $id_lang = $this->context->language->id;
-        $cols = $addon->fields[15]->value;
+        $cols = $addon->fields[16]->value;
         $cols_arr = array();
         if($cols)
-            $cols_arr = explode("-", $cols);
+            $cols_arr = explode("-", $cols);        
         $posts = $this->getPost($addon->fields);
         if(!isset($posts) || count($posts) == 0) return;
         $this->context->smarty->assign(

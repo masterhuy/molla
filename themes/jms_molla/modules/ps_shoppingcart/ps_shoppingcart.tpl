@@ -1,6 +1,7 @@
 <div class="btn-group blockcart cart-preview dropdown col-auto{if $gdzSetting.addtocart_type !=''} {$gdzSetting.addtocart_type}{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
 	<a href="#" class="cart-icon" data-toggle="dropdown" data-display="static" aria-expanded="false">
-		<i class="ptw-icon {$gdzSetting.cart_icon}"></i>
+		<i class="icon-shopping-cart"></i>
+		<span>{l s='Cart' d='Shop.Theme.Actions'}</span>
 		{if $gdzSetting.addtocart_type == 'circle-filled'}
 			{if $cart.products_count > 0}<span class="circle-notify"></span>{/if}
 		{else}
