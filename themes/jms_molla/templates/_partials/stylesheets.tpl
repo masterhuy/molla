@@ -38,6 +38,7 @@
 {if $gdzSetting.body_icon_font != ''}
     <link href="{$urls.base_url}/modules/gdz_themesetting/views/fonts/{$gdzSetting.body_icon_font}" rel="stylesheet">
 {/if}
+
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
@@ -46,7 +47,7 @@
 {$stylesheet.content}
 </style>
 {/foreach}
-<!-- Main CSS File -->
+
 <link rel="stylesheet" href="{$urls.theme_assets}css/style.css">
 {if $gdzSetting.custom_css}
 <style>

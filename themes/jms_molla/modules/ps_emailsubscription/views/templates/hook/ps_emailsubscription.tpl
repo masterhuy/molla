@@ -22,23 +22,20 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <div class="email_subscription block">
-  <h4 class="block-title">{l s='Email Subscription' d='Modules.Emailsubscription.Shop'}</h4>
 	<div class="block-content">
-	  {if $msg}
-	    <p class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</p>
-	  {/if}
-	  <form action="{$urls.pages.index}" method="post">
-			{if $conditions}
-	      <p class="newsletter-desc">{$conditions}</p>
-	    {/if}
+	  	{if $msg}
+	    	<div class="alert {if $nw_error}alert-error{else}alert-success{/if}">{$msg}</div>
+	  	{/if}
+	  	<form action="{$urls.pages.index}" method="post">
 			<div class="input-group newsletter-input-group">
-	    		<input type="text" name="email" value="{$value}" class="form-control" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
-	    		<button type="submit" class="newsletter-button align-items-center" name="submitNewsletter"><i class="ptw-icon {$gdzSetting.send_icon}"></i></button>
+	    		<input type="text" name="email" value="{$value}" required class="form-control" placeholder="{l s='Your Email Address' d='Modules.Emailsubscription.Shop'}" />
+	    		<button type="submit" class="btn newsletter-button align-items-center" name="submitNewsletter">
+					{l s='Go' d='Modules.Emailsubscription.Shop'}
+				</button>
 			</div>
-	    {hook h='displayGDPRConsent' id_module=$id_module}
-	    <input type="hidden" name="action" value="0" />
-	  </form>
+	    	{hook h='displayGDPRConsent' id_module=$id_module}
+	    	<input type="hidden" name="action" value="0" />
+	  	</form>
 	</div>
 </div>

@@ -2,7 +2,7 @@
 /**
 * 2007-2020 PrestaShop
 *
-Godzilla PageBuilder
+* Godzilla PageBuilder
 *
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla

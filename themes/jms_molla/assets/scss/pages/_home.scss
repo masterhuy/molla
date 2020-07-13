@@ -1,4 +1,50 @@
 /*  Index.html - Home page */
+.gdz-row.no-padding{
+	.container-fluid{
+		padding: 0;
+	}
+}
+
+.h1-slider{
+	.fs-pager-wrapper a{
+		&.active:hover{
+			background-color: #fff;
+			border-color: #fff;
+		}
+		&:hover{
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+	}
+	.intro-slide {
+		display: flex;
+		align-items: center;
+		background-size: cover;
+		background-position: center center;
+
+		.btn-primary {
+		    color: #fff;
+		    background-color: transparent;
+		    border-color: #fff;
+			border: 1px solid;
+			min-width: 170px;
+			padding: 14.5px 20px;
+			line-height: 1;
+		    &:hover,
+		    &:focus {
+		    	background-color: $primary-color;
+		    	border-color: $primary-color;
+		    }
+		    i{
+		    	margin-left: 5px;
+		    }
+		}
+	}
+	.text-2{
+		letter-spacing: -.025em;
+	}
+}
+
 .intro-section {
 	margin-top: -1px;
 }
