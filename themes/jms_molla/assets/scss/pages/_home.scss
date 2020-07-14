@@ -4,12 +4,135 @@
 		padding: 0;
 	}
 }
+.brand-carousel{
+	&.owl-carousel .owl-item img{
+		width: auto;
+	}
+}
+.h1-banner{
+	.text-white{
+		.pb-banner-text{
+			.pb-banner-subtitle,
+			.pb-banner-title,
+			.pb-banner-desc{
+				color: #fff;
+			}
+			.pb-banner-button{
+				border-color: #fff;
+				color: #fff;
+			}
+		}
+	}
+	.banner-1 .pb-banner-text{
+		left: 70px;
+	}
+	.banner-2{
+		&.pb-banner > a::after{
+			background-color: rgba(51,51,51,0.25);
+		}
+		.pb-banner-text{
+			left: 40px;
+			bottom: 40px;
+			top: auto;
+		}
+	}
+	.banner-3{
+		margin-bottom: 20px;
+		&.pb-banner > a::after{
+			background-color: rgba(51,51,51,0.25);
+		}
+		.pb-banner-text{
+			.pb-banner-button{
+				margin-top: 14px;
+			}
+		}
+	}
+	.pb-banner > a{
+		&:hover::after{
+			opacity: 1;
+			visibility: visible;
+		}
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(255,255,255,0.3);
+			z-index: 1;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.4s ease;
+		}
+	}
+	.pb-banner-text{
+		display: block;
+		top: 41px;
+		bottom: auto;
+		left: 40px;
+		right: auto;
+		text-align: left;
+		.pb-banner-subtitle{
+			display: block;
+			color: #666666;
+			font-weight: 300;
+			font-size: 1.4rem;
+			letter-spacing: -.01em;
+			margin-bottom: 5px;
+			line-height: 1.2;
+		}
+		.pb-banner-title{
+			color: #333;
+			font-weight: 600;
+			font-size: 2.4rem;
+			letter-spacing: -.025em;
+			margin-bottom: 0;
+			line-height: 1.3;
+		}
+		.pb-banner-desc{
+			color: #666666;
+			font-weight: 300;
+			font-size: 2.4rem;
+			line-height: 1.25;
+			letter-spacing: -.01em;
+			margin-bottom: 13px;
+		}
+		.pb-banner-button{
+			background: transparent;
+			border: 1px solid #959595;
+			color: #333;
+			min-width: auto;
+			padding: 5px 15px;
+			&:hover{
+				color: #fff;
+				border-color: $primary-color;
+				background-color: $primary-color;
+			}
+		}
+	}
+}
+.h1-brand{
+	.container-fluid{
+		padding: 0;
+	}
+	.brand-item a{
+		display: flex;
+		height: 100px;
+		border: .1rem solid #ebebeb;
+		border-left-width: 0;
+		img{
+			margin: auto;
+		}
+	}
+}
 
 .h1-slider{
 	.fs-pager-wrapper a{
 		&.active:hover{
-			background-color: #fff;
-			border-color: #fff;
+			background-color: #f8f8f8;
+			border-color: #f8f8f8;
 		}
 		&:hover{
 			background-color: $primary-color;
@@ -937,6 +1060,23 @@ button:focus {
 		.row {
 			margin-left: 0;
 			margin-right: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.h1-banner{
+		.col-lg-5{
+			flex: 0 0 41.18%;
+			max-width: 41.18%;
+		}
+		.col-lg-3{
+			flex: 0 0 26.05%;
+			max-width: 26.05%;
+		}
+		.col-lg-4{
+			flex: 0 0 32.77%;
+			max-width: 32.77%;
 		}
 	}
 }

@@ -46,7 +46,7 @@ class AdminGdzmegamenuManagerController extends ModuleAdminController
             $this->type[] = array('value'=>'gdz_blog-tag','text'=>'GdzBlog - Tag');
             $this->type[] = array('value'=>'gdz_blog-archive','text'=>'GdzBlog - Archive');
         }
-        if (Module::isInstalled('g')) {
+        if (Module::isInstalled('gdz_pagebuilder')) {
             $this->type[] = array('value'=>'godzilla-page','text'=>'Godzilla - Page');
         }
         $this->type[] = array('value'=>'theme-logo','text'=>'Theme Logo');
@@ -504,7 +504,7 @@ class AdminGdzmegamenuManagerController extends ModuleAdminController
             $gdz_blog_posts = $jmshelper->getGdzBlogPost();
             $gdz_blog_categories = $jmshelper->getGdzBlogCategory();
         }
-        if (Module::isInstalled('godzilla')) {
+        if (Module::isInstalled('gdz_pagebuilder')) {
             $godzilla_pages = $jmshelper->getGdzPagebuilderPage();
         }
         $input_arr = array();
@@ -640,7 +640,7 @@ class AdminGdzmegamenuManagerController extends ModuleAdminController
                         'form_group_class' => 'gdz-box gdz_blog-archive',
                     );
         }
-        if (Module::isInstalled('godzilla')) {
+        if (Module::isInstalled('gdz_pagebuilder')) {
             $input_arr[] =  array(
                         'type' => 'select',
                         'label' => $this->l('GdzPagebuilder Page'),

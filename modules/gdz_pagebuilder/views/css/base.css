@@ -219,6 +219,9 @@
     margin: 0;
     line-height: 1;
 }
+.pb-video-wrapper {
+    position: relative;
+}
 .pb-video-wrapper > iframe {
     position: absolute;
     top: 0;
@@ -266,6 +269,7 @@
 .addon-tab .nav.nav-tabs {
     display: inline-block;
     width: 100%;
+    margin-bottom: 30px;
 }
 .addon-tab .tab-right {
     text-align: right;
@@ -407,6 +411,9 @@
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+.countdown-has-banner .pb-banner-countdown-time {
+    text-align: center;
 }
 /***** Hot Deal *****/
 .pb-hotdeal .countdown {

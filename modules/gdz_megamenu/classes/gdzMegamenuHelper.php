@@ -271,9 +271,9 @@ class gdzMegamenuHelper
         $id_lang = (int)Context::getContext()->language->id;
         $id_shop = (int)Context::getContext()->shop->id;
         $query = "SELECT pbpl.title, pbp.id_page
-                  FROM "._DB_PREFIX_."jmspagebuilder_pages pbp
-                  INNER JOIN "._DB_PREFIX_."jmspagebuilder_pages_lang pbpl ON pbp.id_page = pbpl.id_page
-                  INNER JOIN "._DB_PREFIX_."jmspagebuilder pb ON pbp.id_page = pb.id_page
+                  FROM "._DB_PREFIX_."gdz_pagebuilder_pages pbp
+                  INNER JOIN "._DB_PREFIX_."gdz_pagebuilder_pages_lang pbpl ON pbp.id_page = pbpl.id_page
+                  INNER JOIN "._DB_PREFIX_."gdz_pagebuilder pb ON pbp.id_page = pb.id_page
                   WHERE pbpl.id_lang = '".$id_lang."' AND pb.id_shop = '".$id_shop."' AND pbp.active = 1
                   ORDER BY pbp.ordering" ;
         return Db::getInstance()->executeS($query);
@@ -319,93 +319,92 @@ class gdzMegamenuHelper
               case 'cms':
                   $id_cms = $item['value'];
                   $cms = CMS::getLinks((int)$id_lang, array($id_cms));
-            if(isset($cms[0]['link']))
-              $item['link'] = $cms[0]['link'];
-            else
-              $item['link'] = '#';
-                      break;
-                  case 'manufacturer':
-                      $manufacturer = new Manufacturer((int)$item['value'], (int)$id_lang);
-                      if (!is_null($manufacturer->id)) {
-                          if ((int)Configuration::get('PS_REWRITING_SETTINGS')) {
-                              $manufacturer->link_rewrite = Tools::link_rewrite($manufacturer->name, false);
-                          } else {
-                              $manufacturer->link_rewrite = 0;
-                          }
-                          $link = new Link;
-                          $item['link'] = $link->getManufacturerLink((int)$item['value'], $manufacturer->link_rewrite);
-                      }
-                      break;
-                  case 'supplier':
-                      $supplier = new Supplier((int)$item['value'], (int)$id_lang);
-                      if (!is_null($supplier->id)) {
-                          $link = new Link;
-                          $item['link'] = $link->getSupplierLink((int)$item['value'], $supplier->link_rewrite);
-                      }
-                      break;
-                  case 'module':
-                      $item['link'] = '';
-                      $_arr = explode('-', $item['value']);
-                      $item['content'] = $this->MNexec($_arr[0], array(), $_arr[1]);
-                      break;
-                  case 'seperator':
-                      $item['link'] = '#';
-                      break;
-                  case 'html':
-                      $item['link'] = '';
-                      $item['content'] = $item['html_content'];
-                      break;
-                  case 'gdz_blog-latest':
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                      $_link = GdzBlog::getPageLink('gdz_blog-latest', array());
-                      $item['link'] = $_link;
-                      break;
-                  case 'gdz_blog-categories':
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                      $_link = GdzBlog::getPageLink('gdz_blog-categories', array());
-                      $item['link'] = $_link;
-                      break;
-                  case 'gdz_blog-singlepost':
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
-                      $_post = GdzBlogHelper::getPostByID($item['value']);
-                      $_category = GdzBlogHelper::getCategory($_post['category_id']);
-                      $_link = GdzBlog::getPageLink('gdz_blog-post', array('post_id' => $item['value'], 'category_slug' => $_category['alias'], 'slug' => $_post['alias']));
-                      $item['link'] = $_link;
-                      break;
-                  case 'gdz_blog-category':
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
-                      $_category = GdzBlogHelper::getCategory($item['value']);
-                      $_link = GdzBlog::getPageLink('gdz_blog-category', array('category_id' => $item['value'], 'slug' => $_category['alias']));
-                      $item['link'] = $_link;
-                      break;
-                  case 'gdz_blog-tag':
-                      include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
-                      $_link = GdzBlog::getPageLink('gdz_blog-tag', array('tag' => $item['value']));
-                      $item['link'] = $_link;
-                      break;
-                  case 'gdz_blog-archive':
-                      $_link = GdzBlog::getPageLink('gdz_blog-archive', array('archive' => $item['value']));
-                      $item['link'] = $_link;
-                      break;
-                  case 'jmspagebuilder-page':
-                      include_once(_PS_MODULE_DIR_.'gdz_pagebuilder/gdz_pagebuilder.php');
-                      $_page = GdzPageBuilderHelper::getPage($item['value']);
-                      $_link = gdz_pagebuilder::getPageLink('gdz_pagebuilder-page', array('id_page' => $_page['id_page'], 'slug' => $_page['alias']));
-                      $item['link'] = $_link;
-                      break;
-                  case 'theme-logo':
-                      $force_ssl = Configuration::get('PS_SSL_ENABLED') && Configuration::get('PS_SSL_ENABLED_EVERYWHERE');
-                      $protocol_link = (Configuration::get('PS_SSL_ENABLED') || Tools::usingSecureMode()) ? 'https://': 'http://';
-
-                      if (isset($force_ssl) && $force_ssl) {
-                          $item['link'] = $protocol_link.Tools::getShopDomainSsl().__PS_BASE_URI__;
+                  if(isset($cms[0]['link']))
+                    $item['link'] = $cms[0]['link'];
+                  else
+                    $item['link'] = '#';
+                  break;
+              case 'manufacturer':
+                  $manufacturer = new Manufacturer((int)$item['value'], (int)$id_lang);
+                  if (!is_null($manufacturer->id)) {
+                      if ((int)Configuration::get('PS_REWRITING_SETTINGS')) {
+                          $manufacturer->link_rewrite = Tools::link_rewrite($manufacturer->name, false);
                       } else {
-                          $item['link'] = _PS_BASE_URL_.__PS_BASE_URI__;
+                          $manufacturer->link_rewrite = 0;
                       }
+                      $link = new Link;
+                      $item['link'] = $link->getManufacturerLink((int)$item['value'], $manufacturer->link_rewrite);
+                  }
+                  break;
+              case 'supplier':
+                  $supplier = new Supplier((int)$item['value'], (int)$id_lang);
+                  if (!is_null($supplier->id)) {
+                      $link = new Link;
+                      $item['link'] = $link->getSupplierLink((int)$item['value'], $supplier->link_rewrite);
+                  }
+                  break;
+              case 'module':
+                  $item['link'] = '';
+                  $_arr = explode('-', $item['value']);
+                  $item['content'] = $this->MNexec($_arr[0], array(), $_arr[1]);
+                  break;
+              case 'seperator':
+                  $item['link'] = '#';
+                  break;
+              case 'html':
+                  $item['link'] = '';
+                  $item['content'] = $item['html_content'];
+                  break;
+              case 'gdz_blog-latest':
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+                  $_link = GdzBlog::getPageLink('gdz_blog-latest', array());
+                  $item['link'] = $_link;
+                  break;
+              case 'gdz_blog-categories':
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+                  $_link = GdzBlog::getPageLink('gdz_blog-categories', array());
+                  $item['link'] = $_link;
+                  break;
+              case 'gdz_blog-singlepost':
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
+                  $_post = GdzBlogHelper::getPostByID($item['value']);
+                  $_category = GdzBlogHelper::getCategory($_post['category_id']);
+                  $_link = GdzBlog::getPageLink('gdz_blog-post', array('post_id' => $item['value'], 'category_slug' => $_category['alias'], 'slug' => $_post['alias']));
+                  $item['link'] = $_link;
+                  break;
+              case 'gdz_blog-category':
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/classes/GdzBlogHelper.php');
+                  $_category = GdzBlogHelper::getCategory($item['value']);
+                  $_link = GdzBlog::getPageLink('gdz_blog-category', array('category_id' => $item['value'], 'slug' => $_category['alias']));
+                  $item['link'] = $_link;
+                  break;
+              case 'gdz_blog-tag':
+                  include_once(_PS_MODULE_DIR_.'gdz_blog/gdz_blog.php');
+                  $_link = GdzBlog::getPageLink('gdz_blog-tag', array('tag' => $item['value']));
+                  $item['link'] = $_link;
+                  break;
+              case 'gdz_blog-archive':
+                  $_link = GdzBlog::getPageLink('gdz_blog-archive', array('archive' => $item['value']));
+                  $item['link'] = $_link;
+                  break;
+              case 'godzilla-page':
+                  include_once(_PS_MODULE_DIR_.'gdz_pagebuilder/gdz_pagebuilder.php');
+                  $_page = GdzPageBuilderHelper::getPage($item['value']);
+                  $_link = gdz_pagebuilder::getPageLink('gdz_pagebuilder-page', array('id_page' => $_page['id_page'], 'slug' => $_page['alias']));
+                  $item['link'] = $_link;
+                  break;
+              case 'theme-logo':
+                  $force_ssl = Configuration::get('PS_SSL_ENABLED') && Configuration::get('PS_SSL_ENABLED_EVERYWHERE');
+                  $protocol_link = (Configuration::get('PS_SSL_ENABLED') || Tools::usingSecureMode()) ? 'https://': 'http://';
 
-                      break;
+                  if (isset($force_ssl) && $force_ssl) {
+                      $item['link'] = $protocol_link.Tools::getShopDomainSsl().__PS_BASE_URI__;
+                  } else {
+                      $item['link'] = _PS_BASE_URL_.__PS_BASE_URI__;
+                  }
+                break;
               }
             $parent = isset($this->children[$item['parent_id']]) ? $this->children[$item['parent_id']] : array();
             $parent[] = $item;

@@ -446,3 +446,30 @@
 .addon-box.active .gdz-popup-overlay {
     display:block!important;
 }
+#pb-right-menu {
+    background: #fff;
+    position: fixed;
+    padding:0px 0px;
+    z-index: 2000;
+    box-shadow: 0px 2px 10px #555;
+}
+#pb-right-menu ul {
+    margin: 0px;
+}
+#pb-right-menu ul li {
+    padding:0px 20px;
+    line-height: 32px;
+}
+#pb-right-menu li.disable a {
+    opacity: 0.3;
+    pointer-events: none;
+}
+#pb-right-menu .seperator {
+    border-bottom: 1px solid #ededed;
+}
+#pb-right-menu li a {
+    font-size: 14px;
+}
+#pb-right-menu li a i {
+    margin-right: 6px;
+}

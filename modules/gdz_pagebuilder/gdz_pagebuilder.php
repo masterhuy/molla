@@ -2,7 +2,7 @@
 /**
 * 2007-2020 PrestaShop
 *
-* Godzilla PageBuilder
+Godzilla PageBuilder
 *
 *  @author    Godzilla <joommasters@gmail.com>
 *  @copyright 2007-2020 Godzilla
@@ -270,7 +270,7 @@ class gdz_pagebuilder extends Module
         } else {
             $jpb_rtl = Configuration::get('JPB_RTL');
         }
-        $homepage = $this->getCurrentPage();
+        $page = $this->getCurrentPage();
         $this->context->controller->addCSS(array(
           _MODULE_DIR_.$this->name.'/lib/owl-carousel/owl.carousel.css',
           _MODULE_DIR_.$this->name.'/views/css/animate.css',
@@ -285,19 +285,19 @@ class gdz_pagebuilder extends Module
         ));
         $this->context->controller->addJqueryPlugin('fancybox');
 
-        if ($homepage['css_file']) {
-            $this->context->controller->registerStylesheet('gdzpb-home-css', '/assets/css/'.$homepage['css_file'], ['media' => 'all', 'priority' => 1000]);
+        if ($page['css_file']) {
+            $this->context->controller->registerStylesheet('gdzpb-home-css', '/assets/css/'.$page['css_file'], ['media' => 'all', 'priority' => 1000]);
         }
-        if ($homepage['js_file']) {
-            $this->context->controller->registerJavascript('gdzpb-home-js', '/assets/js/'.$homepage['js_file'], ['position' => 'bottom', 'priority' => 200]);
+        if ($page['js_file']) {
+            $this->context->controller->registerJavascript('gdzpb-home-js', '/assets/js/'.$page['js_file'], ['position' => 'bottom', 'priority' => 200]);
         }
         if ((int)$jpb_rtl || $this->context->language->is_rtl) {
             $this->context->controller->registerStylesheet('gdzpb-home-rtl', '/assets/css/rtl.css', ['media' => 'all', 'priority' => 1000]);
-			$this->context->controller->registerStylesheet('gdzpb-rtl-page', '/assets/css/rtl-'.$homepage['css_file'], ['media' => 'all', 'priority' => 1000]);
+			      $this->context->controller->registerStylesheet('gdzpb-rtl-page', '/assets/css/rtl-'.$page['css_file'], ['media' => 'all', 'priority' => 1000]);
         }
         $this->context->smarty->assign('themename', _THEME_NAME_);
         $this->context->smarty->assign('jpb_homepage', $jpb_homepage);
-        $this->context->smarty->assign('jpb_pageclass', $homepage['page_class']);
+        $this->context->smarty->assign('jpb_pageclass', $page['page_class']);
         $this->context->smarty->assign('jpb_rtl', $jpb_rtl);
     }
     public function hookdisplayHome()

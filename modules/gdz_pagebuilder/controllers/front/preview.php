@@ -31,6 +31,12 @@ class gdz_pagebuilderPreviewModuleFrontController extends ModuleFrontController
         $page_result = gdzPageBuilderHelper::genRows($params);
         $this->context->controller->registerStylesheet('gdzpb-awesome-icon', 'modules/'.$this->module->name.'/lib/awesome/font-awesome.min.css', ['media' => 'all', 'priority' => 1]);
         $this->context->controller->registerStylesheet('modules-gdz_pagebuilder-editor-preview', 'modules/'.$this->module->name.'/views/css/preview.css', ['media' => 'all', 'priority' => 100]);
+        if ($_page['css_file']) {
+            $this->registerStylesheet('gdzpb-home-css', '/assets/css/'.$_page['css_file'], ['media' => 'all', 'priority' => 1000]);
+        }
+        if ($_page['js_file']) {
+            $this->context->controller->registerJavascript('gdzpb-home-js', '/assets/js/'.$_page['js_file'], ['position' => 'bottom', 'priority' => 200]);
+        }
         $this->root_url = gdzPageBuilderHelper::getRootUrl();
         $addons = gdzPageBuilderHelper::getAddonsList();
         $addonslist = array();

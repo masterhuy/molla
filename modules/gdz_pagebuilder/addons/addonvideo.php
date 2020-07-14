@@ -47,7 +47,7 @@ class gdzAddonVideo extends gdzAddonBase
                 'label' => $this->l('Youtube Link'),
                 'lang' => '0',
                 'desc' => 'Enter youtube video link',
-                'default' => 'https://www.youtube.com/watch?v=9uOETcuFjbE',
+                'default' => 'https://www.youtube.com/watch?v=6t-MjBazs3o',
                 'condition' => array(
                     'video_type' => '==youtube'
                 ),
@@ -193,18 +193,18 @@ class gdzAddonVideo extends gdzAddonBase
         $playertitleactions = $addon->fields[12]->value;
         if($video_type == 'youtube') {
             $video_source = gdzPageBuilderHelper::getVideoSrc($addon->fields[1]->value);
-            $video_setting = $autoplay ? 'autoplay=1' :'autoplay=0';
-            $video_setting .= $loop ? 'loop=1' :'loop=0';
-            $video_setting .= $playercontrol ? 'controls=1' :'controls=0';
-            $video_setting .= $playertitleactions ? 'showinfos=1' :'showinfos=0';
+            $video_setting = $autoplay ? 'autoplay=1&mute=1' :'autoplay=0';
+            $video_setting .= $loop ? '&loop=1' :'&loop=0';
+            $video_setting .= $playercontrol ? '&controls=1' :'&controls=0';
+            $video_setting .= $playertitleactions ? '&showinfos=1' :'&showinfos=0';
         } else {
             $video_source = gdzPageBuilderHelper::getVideoSrc($addon->fields[2]->value);
-            $video_setting = $autoplay ? 'autoplay=1' :'autoplay=0';
-            $video_setting .= $loop ? 'loop=1' :'loop=0';
-            $video_setting .= $introtitle ? 'title=1' :'title=0';
-            $video_setting .= $introportrait ? 'portrait=1' :'portrait=0';
-            $video_setting .= $introbyline ? 'byline=1' :'byline=0';
-            $video_setting .= $controlscolor ? 'color='.$controlscolor : '';
+            $video_setting = $autoplay ? 'autoplay=1&muted=1' :'autoplay=0';
+            $video_setting .= $loop ? '&loop=1' :'&loop=0';
+            $video_setting .= $introtitle ? '&title=1' :'&title=0';
+            $video_setting .= $introportrait ? '&portrait=1' :'&portrait=0';
+            $video_setting .= $introbyline ? '&byline=1' :'&byline=0';
+            $video_setting .= $controlscolor ? '&color='.$controlscolor : '';
         }
         $this->context->smarty->assign(
             array(
