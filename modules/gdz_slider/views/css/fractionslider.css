@@ -12,6 +12,7 @@
 
 .fraction-slider .active-slide {
 	z-index:999;
+	background-size: 100% 100%!important;
 }
 
 .fraction-slider .fs_obj{
@@ -51,7 +52,7 @@
 .fraction-slider .prev{
 	left:20px; top:48%;
 	background:url(../img/fraction/fs.prevnext.png) 0px 0px no-repeat transparent;
-	
+
 }
 .fraction-slider .prev:hover{
 	background:url(../img/fraction/fs.prevnext.png) 0px -45px no-repeat transparent;
@@ -75,7 +76,7 @@
 .fs-pager-wrapper{
 	position:absolute;
 	left:10px; bottom:10px;
-	z-index:9999;	
+	z-index:9999;
 }
 
 .fs-pager-wrapper a,

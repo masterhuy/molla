@@ -1364,7 +1364,7 @@
         }
 
         function resizeFontSize(w) {
-            var value = null, n = null, objs = slider.children('.slide').find('.jms-slide-content');
+            var value = null, n = null, objs = slider.children('.slide').find('.gdz-slide-content');
             unit = options.responsive?'%':'px';
             objs.each(function() {
                 obj = $(this);
