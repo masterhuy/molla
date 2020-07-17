@@ -758,29 +758,7 @@
     max-height: unset;
 }
 .quickview-modal .modal-header {
-		padding:22px 0px;
-}
-.product-flags {
-	position: absolute;
-	top:1rem;
-	left:1rem;
-	list-style: none;
-	padding: 0px;
-
-}
-.product-flags .product-flag {
-	font-size: 0.78571rem;
-	padding:0.2rem 0.5rem;
-	background: #fff;
-	color:#303030;
-}
-.product-flags .discount, .product-flags .on-sale {
-    background: #3debd3;
-    color: #fff;
-}
-.product-flags .online-only, .product-flags .pack {
-    background: #e0e0e0;
-    color: #000;
+	padding:22px 0px;
 }
 .pack-product-container .table td {
 	border-top:none;

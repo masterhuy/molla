@@ -22,15 +22,14 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
 <div class="product-miniature js-product-miniature productbox-1" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="product-preview">
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image{if $gdzSetting.productbox_hover == 'swap-image' && isset($product.images.1) && $product.images.1} swap-image{else} blur-image{/if}">
 				<img class="img-responsive product-img1{if $gdzSetting.carousel_lazyload} owl-lazy{/if}"
-            {if $gdzSetting.carousel_lazyload}data-src="{$product.cover.bySize.home_default.url}"{else}
+            	{if $gdzSetting.carousel_lazyload}data-src="{$product.cover.bySize.home_default.url}"{else}
 				    src = "{$product.cover.bySize.home_default.url}"
-            {/if}
+            	{/if}
 				    alt = "{$product.cover.legend}"
 					title="{$product.name|escape:'html':'UTF-8'}"
 				    data-full-size-image-url = "{$product.cover.large.url}"
@@ -45,63 +44,75 @@
 				{/if}
 		  	</a>
 		{/block}
-    <div class="wrapp-buttons">
-        <div class="product-buttons">
-          {if $gdzSetting.productbox_quickview}
-          <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view"><i class="ptw-icon icon-search-5_medium"></i></a>
-          {/if}
-          {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
-              {if $product.quantity >= 1}
-              <a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                  <i class="ptw-icon {$gdzSetting.cart_icon}"></i>
-              </a>
-              {else}
-              <a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
-                  <i class="ptw-icon {$gdzSetting.cart_icon}"></i>
-              </a>
-              {/if}
-          {/if}
-          {if $gdzSetting.productbox_wishlist}            
-            <a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}"><i class="ptw-icon {$gdzSetting.wishlist_icon}"></i></a>
-          {/if}
-        </div>
-      </div>
+		<div class="wrapp-buttons">
+			<div class="product-buttons">
+				{if $gdzSetting.productbox_wishlist}            
+					<a href="#" class="addToWishlist btn-icon" title="{l s='Add to Whislist' d='Shop.Theme.Actions'}" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
+						<span>{l s='Add to Whislist' d='Shop.Theme.Actions'}</span>
+					</a>
+				{/if}
+				{if $gdzSetting.productbox_quickview}
+					<a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
+						<span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
+					</a>
+				{/if}
+			</div>
+		</div>
+		{block name='product_flags'}
+			<ul class="product-flags">
+				{foreach from=$product.flags item=flag}
+					<li class="product-flag {$flag.type}">{$flag.label}</li>
+				{/foreach}
+			</ul>
+		{/block}
 	</div>
 	<div class="product-info">
         {if $gdzSetting.productbox_category}
 		    <div class="category-name">
 				<a href="{url entity='category' id=$product.id_category_default}">
-				{$product.category|escape:'html':'UTF-8'}</a>
-        </div>
-	       {/if}
-		    {block name='product_name'}
-        <h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
+					{$product.category|escape:'html':'UTF-8'}
+				</a>
+        	</div>
+	    {/if}
+		{block name='product_name'}
+        	<h3 class="product-title" itemprop="name"><a class="product-link" href="{$product.canonical_url}">{$product.name|truncate:30:'...'}</a></h3>
         {/block}
         {if $gdzSetting.productbox_price}
     		{block name='product_price_and_shipping'}
     			{if $product.show_price}
-    			  <div class="content_price">
-    			  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
-    				{if $product.has_discount}
-    				 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
-    				  	<span class="old price">{$product.regular_price}</span>
-    				{/if}
-    				<span class="price new">{$product.price}</span>
-    				{hook h='displayProductPriceBlock' product=$product type='unit_price'}
-    				{hook h='displayProductPriceBlock' product=$product type='weight'}
-    			  </div>
+					<div class="content_price">
+						{hook h='displayProductPriceBlock' product=$product type="before_price"}
+						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
+						{if $product.has_discount}
+							{hook h='displayProductPriceBlock' product=$product type="old_price"}
+							<span class="old price">{l s='Was' d='Shop.Theme.Actions'} {$product.regular_price}</span>
+						{/if}
+						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+						{hook h='displayProductPriceBlock' product=$product type='weight'}
+					</div>
     			{/if}
     		{/block}
         {/if}
         {if $product.main_variants && $gdzSetting.productbox_variant}
             {block name='product_variants'}
-                  {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+                {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
             {/block}
         {/if}
-
-    		<div class="product-short-desc">
-    			{$product.description_short|truncate:300:'...' nofilter}
-    		</div>
-
+    	<div class="product-short-desc">
+    		{$product.description_short|truncate:300:'...' nofilter}
+    	</div>
+	</div>
+	<div class="product-action">
+		{if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
+			{if $product.quantity >= 1}
+				<a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+					<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+				</a>
+			{else}
+				<a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+					<span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
+				</a>
+			{/if}
+		{/if}
 	</div>
 </div>

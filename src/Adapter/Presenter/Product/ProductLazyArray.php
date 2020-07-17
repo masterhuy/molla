@@ -441,7 +441,7 @@ class ProductLazyArray extends AbstractLazyArray
         if ($show_price && $this->product['on_sale'] && !$this->settings->catalog_mode) {
             $flags['on-sale'] = array(
                 'type' => 'on-sale',
-                'label' => $this->translator->trans('On sale!', array(), 'Shop.Theme.Catalog'),
+                'label' => $this->translator->trans('Sale', array(), 'Shop.Theme.Catalog'),
             );
         }
 

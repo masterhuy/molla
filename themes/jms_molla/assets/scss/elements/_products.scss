@@ -184,7 +184,7 @@
 	line-height: 1.25;
 	letter-spacing: -.01em;
 	color: #333333;
-	margin-bottom: .2rem;
+	margin-bottom: 0;
 }
 
 .product-title a {
@@ -384,9 +384,8 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	display: flex;
-	align-items: center;
+	bottom: 2rem;
+	padding: 0 2.8rem;
 	background-color: rgba(255, 255, 255, .95);
 	z-index: 10;
 	transition: all .35s ease;
