@@ -482,9 +482,12 @@
     text-align: right;
 }
 /***** Carousel Navigation Style *****/
-.owl-nav {
-
+.owl-nav button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
+.owl-nav button
 .owl-nav button span {
   font-size:1.5rem;
   border: 2px solid #bdbdbd;
@@ -530,6 +533,11 @@
   border-radius: 30px;
   line-height: 1;
   margin: 5px 6px;
+  transition: all .3s ease;
+}
+.owl-dots button span:hover{
+  border-color: #ccc;
+  background-color: #ccc;
 }
 .owl-dots button.active span {
   background: #ccc;

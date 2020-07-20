@@ -9249,6 +9249,26 @@ small.form-text {
 #index #wrapper > .row {
   margin: 0; }
 
+.banner-overlay-light .pb-banner > a:hover::after {
+  opacity: 1;
+  visibility: visible; }
+
+.banner-overlay-light .pb-banner > a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
 .owl-carousel .owl-nav button {
   width: 42px;
   height: 42px;
@@ -9285,9 +9305,6 @@ small.form-text {
     .owl-carousel .owl-nav button.owl-next::before {
       content: '\f112'; }
 
-.owl-carousel.owl-drag .owl-item .item {
-  height: 100%; }
-
 .owl-carousel.customs .owl-stage-outer {
   margin: 0 -20px;
   padding: 20px; }
@@ -9301,6 +9318,9 @@ small.form-text {
 
 .brand-carousel.owl-carousel .owl-item img {
   width: auto; }
+
+.h1-countdown .container > .row {
+  margin: 0; }
 
 .h1-countdown .pb-countdown {
   margin-bottom: 40px; }
@@ -9365,46 +9385,50 @@ small.form-text {
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
 
-.h1-countdown .deal-content .btn {
-  font-size: 1.4rem !important;
-  padding-top: 1.15rem;
-  padding-bottom: 1.15rem;
-  font-weight: 500;
-  color: #333;
-  background-color: transparent;
-  border: .1rem solid #ebebeb; }
-  .h1-countdown .deal-content .btn:hover {
-    color: #fff;
-    border-color: #a6c76c;
-    background-color: #a6c76c; }
+.h1-countdown .deal-content {
+  padding-top: 5.6rem;
+  padding-left: 5rem; }
+  .h1-countdown .deal-content .btn {
+    font-size: 1.4rem !important;
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+    font-weight: 500;
+    color: #333;
+    background-color: transparent;
+    border: .1rem solid #ebebeb; }
+    .h1-countdown .deal-content .btn:hover {
+      color: #fff;
+      border-color: #a6c76c;
+      background-color: #a6c76c; }
+  .h1-countdown .deal-content h4 {
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -.01em;
+    margin-bottom: .5rem; }
+  .h1-countdown .deal-content h2 {
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -.05em;
+    margin-bottom: 3.6rem; }
+  .h1-countdown .deal-content .product-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    margin-bottom: .7rem; }
+  .h1-countdown .deal-content .product-price {
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem; }
+    .h1-countdown .deal-content .product-price .new-price {
+      font-weight: 600; }
 
-.h1-countdown .deal-content h4 {
-  font-weight: 400;
-  line-height: 1.3;
-  letter-spacing: -.01em;
-  margin-bottom: .5rem; }
-
-.h1-countdown .deal-content h2 {
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -.05em;
-  margin-bottom: 3.6rem; }
-
-.h1-countdown .deal-content .product-title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  letter-spacing: -.01em;
-  margin-bottom: .7rem; }
-
-.h1-countdown .deal-content .product-price {
-  font-weight: 300;
-  font-size: 2.4rem;
-  margin-bottom: 2.4rem; }
-  .h1-countdown .deal-content .product-price .new-price {
-    font-weight: 600; }
+.h1-countdown .deal-image {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 0; }
 
 .h1-countdown .col-banner .pb-banner-text {
-  top: 20px;
+  top: 37px;
   bottom: auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -9417,7 +9441,13 @@ small.form-text {
     min-width: auto;
     background: transparent;
     border: 1px solid #959595;
-    color: #333; }
+    color: #333;
+    white-space: nowrap;
+    line-height: 1; }
+    .h1-countdown .col-banner .pb-banner-text .btn:hover {
+      color: #fff;
+      border-color: #a6c76c;
+      background-color: #a6c76c; }
   .h1-countdown .col-banner .pb-banner-text .pb-banner-subtitle {
     color: #666;
     margin-bottom: .9rem;
@@ -9466,26 +9496,6 @@ small.form-text {
     background-color: rgba(51, 51, 51, 0.25); }
   .h1-banner .banner-3 .pb-banner-text .pb-banner-button {
     margin-top: 14px; }
-
-.h1-banner .pb-banner > a:hover::after {
-  opacity: 1;
-  visibility: visible; }
-
-.h1-banner .pb-banner > a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
 
 .h1-banner .pb-banner-text {
   display: block;
@@ -9574,6 +9584,9 @@ small.form-text {
 .h1-slider .text-2 {
   letter-spacing: -.025em; }
 
+.h1-producttab .owl-drag .owl-item .item {
+  height: 100%; }
+
 .h1-producttab .nav.nav-tabs .nav-item {
   margin: 0 10px; }
 
@@ -9617,6 +9630,62 @@ small.form-text {
     -o-transition: transform .3s ease;
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease; }
+
+.h1-producttab .category-name {
+  display: none; }
+
+.pb-categorytab .product-miniature {
+  margin-bottom: 1.5rem; }
+
+.pb-categorytab .nav.nav-tabs {
+  margin-bottom: 3rem; }
+  .pb-categorytab .nav.nav-tabs .nav-item {
+    margin: 0; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: .45rem 1.2rem;
+      letter-spacing: -.01em;
+      position: relative; }
+      .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: .1rem;
+        background-color: #333;
+        -webkit-transform-origin: right center;
+        -ms-transform-origin: right center;
+        transform-origin: right center;
+        -webkit-transform: scale(0, 1);
+        -ms-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transition: -webkit-transform .3s ease;
+        transition: -webkit-transform .3s ease;
+        -o-transition: transform .3s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease; }
+      .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
+        color: #333; }
+        .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active::before {
+          -webkit-transform-origin: left center;
+          -ms-transform-origin: left center;
+          transform-origin: left center;
+          -webkit-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          transform: scale(1, 1); }
+
+.pb-blog {
+  text-align: center; }
+  .pb-blog .post-title {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: -.01em;
+    margin-bottom: .5rem; }
 
 .intro-section {
   margin-top: -1px; }
@@ -10347,6 +10416,24 @@ button:focus {
     margin-right: 0; } }
 
 @media (min-width: 1200px) {
+  .h1-countdown .deal-content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35.61%;
+    flex: 0 0 35.61%;
+    max-width: 35.61%; }
+  .h1-countdown .deal-image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 38.78%;
+    flex: 0 0 38.78%;
+    max-width: 38.78%; }
+  .h1-countdown .col-banner {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25.61%;
+    flex: 0 0 25.61%;
+    max-width: 25.61%;
+    padding: 0;
+    max-width: 277px;
+    margin-left: auto; }
   .h1-banner .col-lg-5 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 41.18%;

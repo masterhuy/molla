@@ -26,7 +26,11 @@
 <div class="pb-categorytab addon-tab">
 	<ul class="nav nav-tabs tab-{$tab_align nofilter}">
 		{foreach from = $categories key = k item = category}
-			<li class="nav-item"><a data-toggle="tab" class="nav-link{if $k == 0} active{/if}" href="#category{$category.id_category|escape:'html':'UTF-8'}">{$category.name|escape:'htmlall':'UTF-8'}</a></li>
+			<li class="nav-item">
+				<a data-toggle="tab" class="nav-link{if $k == 0} active{/if}" href="#category{$category.id_category|escape:'html':'UTF-8'}">
+					{$category.name|escape:'htmlall':'UTF-8'}
+				</a>
+			</li>
 		{/foreach}
 	</ul>
 	<div class="tab-content">
@@ -43,7 +47,7 @@
 						{/foreach}
 					</div>
 				{else}
-					<div class="categorytab-products products row">
+					<div class="categorytab-products row">
 						{foreach from=$category.products item=product}
 							<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
 								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
