@@ -1,5 +1,25 @@
 jQuery(function ($) {
     "use strict";
+
+    // Scroll Top Button - Show
+    var $scrollTop = $('#scroll-top');
+
+    $(window).on('load scroll', function() {
+        if ( $(window).scrollTop() >= 400 ) {
+            $scrollTop.addClass('show');
+        } else {
+            $scrollTop.removeClass('show');
+        }
+    });
+
+    // On click animate to top
+    $scrollTop.on('click', function (e) {
+        $('html, body').animate({
+            'scrollTop': 0
+        }, 800);
+        e.preventDefault();
+    });
+
     //header sticky
     var win = $(window),
       header = $('.header-sticky');
@@ -105,6 +125,8 @@ jQuery(document).ready(function(){
     });
     changeShopGrid();
     footerCollapse();
+
+    
 });
 jQuery(window).resize(function () {
     changeShopGrid();

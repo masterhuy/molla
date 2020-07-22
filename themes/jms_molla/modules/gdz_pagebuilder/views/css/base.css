@@ -191,23 +191,6 @@
 .pb-button-justify .btn {
     width: 100%;
 }
-/***** Service *****/
-.pb-service-box .pb-service-icon {
-    margin-bottom:15px;
-}
-.pb-service-box .pb-service-description {
-    margin-bottom:15px;
-}
-.pb-divider {
-    line-height: 0;
-    font-size: 0;
-}
-.pb-divider .pb-divider-separator {
-    display: inline-block;
-}
-.pb-tabs .tab-content {
-    padding:20px;
-}
 /***** Video *****/
 .pb-video {
     text-align: center;
@@ -456,6 +439,7 @@
 }
 .pb-heading {
     margin-bottom: 0px;
+    letter-spacing: -.03em;
 }
 /***** Flash Sale *****/
 .pb-flashsale .pb-flashsale-header {

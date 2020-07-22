@@ -30,8 +30,12 @@
 	  	<form action="{$urls.pages.index}" method="post">
 			<div class="input-group newsletter-input-group">
 	    		<input type="text" name="email" value="{$value}" required class="form-control" placeholder="{l s='Your Email Address' d='Modules.Emailsubscription.Shop'}" />
-	    		<button type="submit" class="btn newsletter-button align-items-center" name="submitNewsletter">
+	    		<button type="submit" class="btn btn-popup newsletter-button align-items-center" name="submitNewsletter">
 					{l s='Go' d='Modules.Emailsubscription.Shop'}
+				</button>
+				<button class="btn btn-primary btn-submit" type="submit" id="newsletter-btn" name="submitNewsletter">
+					<span>{l s='Subscribe' d='Modules.Emailsubscription.Shop'}</span>
+					<i class="icon-long-arrow-right"></i>
 				</button>
 			</div>
 	    	{hook h='displayGDPRConsent' id_module=$id_module}

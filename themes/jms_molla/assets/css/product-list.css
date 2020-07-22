@@ -627,11 +627,6 @@
 .productbox-1 {
 	text-align:center;
 }
-.productbox-1 .ajax-add-to-cart:hover{
-	color: #fff;
-	border-color: #cc9966;
-	background-color: #cc9966;
-}
 .productbox-1 .content_price {
 	margin-bottom:0.5rem;
 	margin-top: -1px;

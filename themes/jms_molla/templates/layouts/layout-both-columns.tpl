@@ -96,6 +96,9 @@
         {block name="footer"}
             {include file="_partials/footer.tpl"}
         {/block}
+        <button id="scroll-top" title="Back to Top" class="show">
+            <i class="icon-arrow-up"></i>
+        </button>
         </div>
 
 

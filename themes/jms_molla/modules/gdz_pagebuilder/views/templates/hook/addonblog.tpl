@@ -25,7 +25,7 @@
 *}
 <div class="pb-blog">
 	{if $posts|@count gt 0}
-		<div class="blog-carousel owl-carousel" data-items="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}" data-margin="{if isset($gutter)}{$gutter|escape:'htmlall':'UTF-8'}{else}30{/if}">
+		<div class="blog-carousel owl-carousel carousel-with-shadow" data-items="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}" data-margin="{if isset($gutter)}{$gutter|escape:'htmlall':'UTF-8'}{else}30{/if}">
 			{foreach from = $posts item = posts_slide}
 				<div class="item">
 					{foreach from = $posts_slide item = post}
@@ -38,36 +38,40 @@
 								</div>
 							{elseif $post.image && ($show_media == '1')}
 								<div class="post-thumb">
-									<a href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+									<a href="#">
 										<img src="{$image_url nofilter}thumb_{$post.image nofilter}" alt="{$post.title nofilter}" class="img-responsive" />
 									</a>
 								</div>
 							{/if}
-							<ul class="post-meta">
-								{if $show_category == '1'}
-									<li class="post-category">
-										<a href="{$post.catlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.category_name nofilter}</a>
-									</li>
+							<div class="entry-body">
+								<ul class="post-meta">
+									{if $show_category == '1'}
+										<li class="post-category">
+											<a href="{$post.catlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.category_name nofilter}</a>
+										</li>
+									{/if}
+									{if $show_time == '1'}
+										<li class="post-created">
+											{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
+										</li>
+									{/if}
+									{if $show_nviews == '1'}
+										<li class="post-views">{$post.views nofilter} View{if $post.views > 1}s{/if}</li>
+									{/if}
+									{if $show_ncomments == '1'}
+										<li class="post-comments">{$post.comment_count nofilter} Comment{if $post.comment_count > 1}s{/if}</li>
+									{/if}
+								</ul>
+								<a class="post-title" href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.title nofilter}</a>
+								{if $show_introtext == '1'}
+									<div class="post-intro">{$post.introtext nofilter}</div>
 								{/if}
-								{if $show_time == '1'}
-									<li class="post-created">
-										{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
-									</li>
+								{if $show_readmore == '1'}
+									<a class="post-readmore" href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+										<span>{$readmore_text nofilter}</span>
+									</a>
 								{/if}
-								{if $show_nviews == '1'}
-									<li class="post-views">{$post.views nofilter}</li>
-								{/if}
-								{if $show_ncomments == '1'}
-									<li class="post-comments">{$post.comment_count nofilter}</li>
-								{/if}
-							</ul>
-							<a class="post-title" href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$post.title nofilter}</a>
-							{if $show_introtext == '1'}
-								<div class="post-intro">{$post.introtext nofilter}</div>
-							{/if}
-							{if $show_readmore == '1'}
-								<a class="post-readmore" href="{$post.postlink|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{$readmore_text nofilter}</a>
-							{/if}
+							</div>
 						</div>
 					{/foreach}
 				</div>

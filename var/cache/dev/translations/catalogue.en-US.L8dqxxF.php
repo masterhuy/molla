@@ -124,6 +124,11 @@ $catalogue = new MessageCatalogue('en-US', array (
   array (
     404 => '404',
   ),
+  'ModulesSpecialsShop' => 
+  array (
+    'On sale' => 'On Sale',
+    'All sale products' => 'All sale products',
+  ),
   'AdminAdvparametersFeature' => 
   array (
     'Menu' => 'Menu',
@@ -6820,11 +6825,6 @@ Thanks for your patience.',
     'Displays your products that are currently on sale in a dedicated block.' => 'Provides information on special offers in a specific block',
     'Products to display' => 'Products to display',
     'Define the number of products to be displayed in this block on home page.' => 'Define the number of products to be displayed in this block on home page.',
-  ),
-  'ModulesSpecialsShop' => 
-  array (
-    'On sale' => 'On sale',
-    'All sale products' => 'All sale products',
   ),
   'ModulesStatsbestcategoriesAdmin' => 
   array (

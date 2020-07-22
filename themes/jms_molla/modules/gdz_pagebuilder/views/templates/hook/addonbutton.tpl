@@ -22,9 +22,9 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="pb-button{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}{if $button_align} pb-button-{$button_align}{/if}">
+<div class="pb-button{if $button_align} pb-button-{$button_align}{/if}">
 	{if $button_text}
-		<a class="btn{if $button_size} btn-{$button_size}{/if}{if $button_style} btn-{$button_style}{/if}{if $button_align} btn-{$button_align}{/if}" href="{if $button_link}{$button_link nofilter}{else}#{/if}" target="{$target nofilter}">
+		<a class="{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if} btn{if $button_size} btn-{$button_size}{/if}{if $button_style} btn-{$button_style}{/if}{if $button_align} btn-{$button_align}{/if}" href="{if $button_link}{$button_link nofilter}{else}#{/if}" target="{$target nofilter}">
 			<span>{$button_text}</span>
 			<i class="icon-long-arrow-right"></i>
 		</a>
