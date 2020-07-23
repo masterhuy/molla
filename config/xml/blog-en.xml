@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Influencer Marketing, what it is and why it can be extremely useful to you</title>
+    <link>https://www.prestashop.com/en/blog/influencer-marketing-ecommerce</link>
+    <description>There are people with hundreds of thousands of followers, those who have less than ten thousa</description>
+     <pubDate>Tue, 21 Jul 2020 14:34:43 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/influencer-marketing-ecommerce</guid>
+  </item>
+  <item>
+    <title>The importance of giving the utmost attention to the consumer journey of your e-commerce</title>
+    <link>https://www.prestashop.com/en/blog/importance-customer-journey</link>
+    <description>When managing an e-commerce it is essential to know the process that the consumer goes throug</description>
+     <pubDate>Tue, 21 Jul 2020 14:22:13 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/importance-customer-journey</guid>
+  </item>
+  <item>
     <title>How to quickly create your first online store</title>
     <link>https://www.prestashop.com/en/blog/quickly-create-first-online-store</link>
     <description>Do you want to start selling online, as quickly as possible?
@@ -69,22 +85,6 @@ There are many great options available, so you can choose one that best fits you
      <pubDate>Mon, 11 May 2020 14:59:33 +0200</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/cart-conversion-2020</guid>
-  </item>
-  <item>
-    <title>Be vigilant: phishing attempt posing as a PrestaShop email</title>
-    <link>https://www.prestashop.com/en/blog/phishing-attempt-prestashop</link>
-    <description>An phishing operation is currently ongoing and posing as a PrestaShop email.</description>
-     <pubDate>Thu, 07 May 2020 17:50:37 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/phishing-attempt-prestashop</guid>
-  </item>
-  <item>
-    <title>PrestaShop Order Fulfillment Automation with Fulfillment Bridge</title>
-    <link>https://www.prestashop.com/en/blog/fulfillment-cloud-automation</link>
-    <description>Is Fulfillment Automation what I think it is?</description>
-     <pubDate>Mon, 04 May 2020 17:23:59 +0200</pubDate>
- <dc:creator>Kais Khadhraoui</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/fulfillment-cloud-automation</guid>
   </item>
   </channel>
 </rss>

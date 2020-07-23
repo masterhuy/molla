@@ -6,7 +6,6 @@
   padding:0px;
 }
 .gdz-megamenu li {
-  padding: 0px 30px 0 12px;
   margin: 0px;
 }
 .gdz-megamenu a {
@@ -24,6 +23,9 @@
     letter-spacing: -.01em;
     color: #333;
     font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding: 1px 30px 0 12px;
 }
 .gdz-megamenu .nav > li.open > a,
 .gdz-megamenu .nav > li > a:hover {
@@ -76,7 +78,7 @@
     display: block;
     font-size: 1rem;
     line-height: 1;
-    margin-top: -.5rem;
+    margin-top: -.4rem;
 }
 .gdz-megamenu .mega-col-nav {
     padding: 0;
@@ -102,7 +104,6 @@
     margin: auto;
     transform: translateX(-50%);
     padding: 50px 0 40px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 .gdz-megamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
     left: 100%;
@@ -156,7 +157,6 @@
     text-transform: uppercase;
     margin-bottom: 1px;
 }
-
 #hor-menu .gdz-megamenu .nav.level0 > li > a{
-    line-height: 54px;
+    line-height: 53px;
 }

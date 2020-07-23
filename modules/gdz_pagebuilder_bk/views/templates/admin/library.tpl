@@ -64,7 +64,7 @@
                   </div>
                 </form>
                 <form id="pagebuilder-save-template-form" class="pagebuilder-template-form">
-                    <div class="form-desc">{l s='Enter template name to save this page as template to Library' mod='gdz_pagebuilder'}.</div>
+                    <div class="form-desc">{l s='Enter template name to save this page (row) as template to Library' mod='gdz_pagebuilder'}.</div>
                     <div class="form-content">
                         <input id="library-template-name" name="title" class="pagebuilder-dialog-input" placeholder="{l s='Enter Template Name' mod='gdz_pagebuilder'}" required="">
                         <button id="library-save-template" class="pagebuilder-dialog-btn"><span class="elementor-state-icon"></span>{l s='Save' mod='gdz_pagebuilder'}</button>

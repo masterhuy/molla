@@ -23,9 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="pb-button{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}{if $button_align} pb-button-{$button_align}{/if}">
-{if $button_text}
-<a class="btn{if $button_size} btn-{$button_size}{/if}{if $button_style} btn-{$button_style}{/if}{if $button_align} btn-{$button_align}{/if}" href="{if $button_link}{$button_link nofilter}{else}#{/if}" target="{$target nofilter}">
-	{$button_text}
-</a>
-{/if}
+	{if $button_text}
+		<a class="btn{if $button_size} btn-{$button_size}{/if}{if $button_style} btn-{$button_style}{/if}{if $button_align} btn-{$button_align}{/if}" href="{if $button_link}{$button_link nofilter}{else}#{/if}" target="{$target nofilter}">
+			<span>{$button_text}</span>
+			<i class="icon-long-arrow-right"></i>
+		</a>
+	{/if}
 </div>

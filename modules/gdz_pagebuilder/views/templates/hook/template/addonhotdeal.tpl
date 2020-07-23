@@ -30,7 +30,7 @@
     console.log(component);
     $.ajax({
         type: 'POST',
-        url: PagebuilderConfig.ajax_link + '?action=getDeals&secure_key=' + PagebuilderConfig.secure_key,
+        url: PagebuilderConfig.ajax_link + 'action=getDeals&secure_key=' + PagebuilderConfig.secure_key,
         data: {
             'setting' : setting,
         },

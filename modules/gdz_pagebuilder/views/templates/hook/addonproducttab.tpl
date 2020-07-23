@@ -34,16 +34,16 @@
 				<li class="nav-item"><a data-toggle="tab" href="#latest" class="nav-link{if $cf eq 0} active{/if}">{$producttabs.new_text}</a></li>
 				{$cf = $cf + 1}
 			{/if}
-			{if $producttabs.show_onsale == '1'}
-				<li class="nav-item"><a data-toggle="tab" href="#onsale" class="nav-link{if $cf eq 0} active{/if}">{$producttabs.onsale_text}</a></li>
-				{$cf = $cf + 1}
-			{/if}
 			{if $producttabs.show_topseller == '1'}
 				<li class="nav-item"><a data-toggle="tab" href="#topseller" class="nav-link{if $cf eq 0} active{/if}">{$producttabs.topseller_text}</a></li>
 				{$cf = $cf + 1}
 			{/if}
 			{if $producttabs.show_special == '1'}
 				<li class="nav-item"><a data-toggle="tab" href="#special" class="nav-link{if $cf eq 0} active{/if}">{$producttabs.special_text}</a></li>
+				{$cf = $cf + 1}
+			{/if}
+			{if $producttabs.show_onsale == '1'}
+				<li class="nav-item"><a data-toggle="tab" href="#onsale" class="nav-link{if $cf eq 0} active{/if}">{$producttabs.onsale_text}</a></li>
 				{$cf = $cf + 1}
 			{/if}
 		</ul>

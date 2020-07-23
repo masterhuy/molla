@@ -22,6 +22,12 @@ class gdz_pagebuilderPageModuleFrontController extends ModuleFrontController
         parent::initContent();
         $id_page    = (int)Tools::getValue('id_page');
         $_page = gdzPageBuilderHelper::getPage($id_page);
+        if ($_page['css_file']) {
+            $this->registerStylesheet('gdzpb-home-css', '/assets/css/'.$_page['css_file'], ['media' => 'all', 'priority' => 1000]);
+        }
+        if ($_page['js_file']) {
+            $this->context->controller->registerJavascript('gdzpb-home-js', '/assets/js/'.$_page['js_file'], ['position' => 'bottom', 'priority' => 200]);
+        }
         $params = $_page['params'];
         $page_result = gdzPageBuilderHelper::genRows($params);
         $this->root_url = gdzPageBuilderHelper::getRootUrl();

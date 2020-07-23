@@ -5,7 +5,7 @@ jQuery(function ($) {
     $.each( $('.owl-carousel'), function( key, value ) {
         carousel = $(this);
         carousel.owlCarousel({
-            loop:true,
+            loop:false,
             margin:carousel.data("margin"),
             nav:carousel.data("nav"),
             dots:carousel.data("dots"),

@@ -840,7 +840,7 @@ footer .row, header .row{
 	}
 }
 
-.menu .megamenu.demo {
+.menu.megamenu.demo {
 	
 	height: 65vh;
 	overflow-x: hidden;
@@ -868,13 +868,14 @@ footer .row, header .row{
 		padding-bottom: 0;
 		overflow: hidden;
 		transform: translateY(50px);
-		transition: all .5s ;
 	}
-	.demo-item.show {
+	.demo-item {
+		display: block !important;
 		opacity: 1;
 		max-height: 100%;
 		padding-bottom: 3rem;
 		transform: translateY(0);
+		transition: all .5s ;
 	}
 
 }
@@ -1377,27 +1378,30 @@ footer .row, header .row{
 		display: none !important;
 	}
 }
+#hor-menu .gdz-megamenu .nav.level0 > li > a{
+    &:hover::before{
+        transform-origin: left center;
+        transform: scale(1, 1);
+    }
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .1rem;
+        background-color: #c96;
+        transform-origin: right center;
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+        background-color: $primary-color;
+    }
+}
 
 .header-1{
-	#hor-menu .gdz-megamenu .nav.level0 > li{
-		&:hover::before{
-			transform-origin: left center;
-			transform: scale(1, 1);
-		}
-		&::before{
-		    content: '';
-		    display: block;
-		    position: absolute;
-		    left: 0;
-		    top: 0;
-		    width: 100%;
-		    height: .1rem;
-		    background-color: #c96;
-		    transform-origin: right center;
-		    transform: scale(0, 1);
-		    transition: transform .3s ease;
-		    background-color: $primary-color;
-		}
+	.gdz-megamenu{
+		position: static;
 	}
 	.header-middle {
 	    border-bottom: none;
@@ -1406,7 +1410,7 @@ footer .row, header .row{
 	    	&::after {
 			    position: absolute;
 			    content: '';
-			    bottom: -18px;
+			    bottom: -1.8rem;
 			    left: 1rem;
 			    right: 1rem;
 			    height: .1rem;
@@ -1420,6 +1424,7 @@ footer .row, header .row{
 		}
 		.text{
 			p{
+				padding-top: .1rem;
 				padding-right: .5rem;
 				font-size: 1.4rem;
 				font-weight: 500;
@@ -1446,6 +1451,20 @@ footer .row, header .row{
 		.mega-nav li > a:hover{
 			color: $primary-color;
 		}
+		&.sub-home{
+			position: static;
+			> .dropdown-menu{
+				padding: 0;
+			}
+			.mega-nav li{
+				padding: 0;
+			}
+			.view-all-demos{
+				text-transform: uppercase;
+				min-width: 210px;
+			}
+		}
+
 	}
 	.sub-shop{
 		.dropdown-menu{

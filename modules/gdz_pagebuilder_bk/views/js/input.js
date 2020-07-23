@@ -195,6 +195,7 @@ $(document).ready(function() {
     }
     $(document).on('click', '.dialog-open', function(event){
         var _dialog = $('#pagebuilder-' + $(this).attr('data-dialog'));
+        _dialog.data('row-id', '');
         var _left = ($(window).width() - _dialog.find('.pagebuilder-dialog-content').width())/2;
         _dialog.find('.pagebuilder-dialog-content').css('left', _left + 'px');
         _dialog.show();

@@ -49,7 +49,7 @@
             </div>
         </div>
     {/if}
-    <div id="header-middle" class="header-middle{if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
+    <div id="header-middle" class="header-middle">
         <div class="container">
             <div class="row align-items-center">
                 <div class="layout-column col-auto header-left">
@@ -83,7 +83,7 @@
             </div>
         </div>
     </div>
-    <div class="sticky-wrapper header-bottom">
+    <div class="sticky-wrapper header-bottom {if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
         <div class="container">
             <div class="row align-items-center">
                 <div class="layout-column col-auto">
@@ -96,15 +96,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="layout-column col">
+                <div class="layout-column position-static col">
                     <div id="hor-menu" class="{if $gdzSetting.hormenu_class} {$gdzSetting.hormenu_class}{/if} {if $gdzSetting.hormenu_align} align-{$gdzSetting.hormenu_align}{/if}">
                         {widget name="gdz_megamenu" hook='HorMenu'}
                     </div>
                 </div>
                 <div class="layout-column col-auto">
-                    <div class="text d-flex align-items-center">
-                        <i class="la la-lightbulb-o"></i><p>Clearance<span class="highlight">&nbsp;Up to 30% Off</span></p>
-                    </div>
+                    {$gdzSetting.header_html nofilter}
                 </div>
             </div>
         </div>

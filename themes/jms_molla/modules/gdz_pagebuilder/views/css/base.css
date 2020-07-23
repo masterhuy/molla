@@ -24,6 +24,9 @@
         display:none;
     }
 }
+.position-static{
+  position: static;
+}
 .middle-align .row,
 .top-align .row,
 .bottom-align .row {

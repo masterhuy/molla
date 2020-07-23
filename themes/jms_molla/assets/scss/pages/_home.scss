@@ -27,7 +27,18 @@
 		}
 	}
 }
+
 .owl-carousel{
+	&.brand-carousel{
+		.owl-nav button{
+			&.owl-prev {
+			    left: 20px;
+			}
+			&.owl-next {
+			    right: 20px;
+			}
+		}
+	}
 	.owl-nav{
 		button{
 			width: 42px;
@@ -156,6 +167,7 @@
 		padding-top: 5.6rem;
 		padding-left: 5rem;
 		.btn{
+			font-weight: 500;
 			padding-top: 1.15rem;
 			padding-bottom: 1.15rem;
 		}
@@ -375,6 +387,18 @@
 	}
 	.text-2{
 		letter-spacing: -.025em;
+	}
+}
+.fraction-slider .text-primary{
+	letter-spacing: -.025em;
+	sup{
+		top: -2rem;
+		font-size: 2rem;
+		line-height: 1;
+		letter-spacing: 0;
+		+ sup{
+			margin-left: .8rem;
+		}
 	}
 }
 .h1-producttab{
@@ -1244,6 +1268,13 @@ button:focus {
 	&:hover{
 		color: #fff;
 		background-color: $primary-color;
+	}
+}
+
+.fraction-slider .prev, .fraction-slider .next{
+	&:hover{
+		background-color: $primary-color;
+		border-color: $primary-color;
 	}
 }
 

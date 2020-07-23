@@ -39,7 +39,7 @@
 												</button>
 										</div>
 										<div class="modal-body">
-												<iframe width="320" height="320" src="{$video_source nofilter}&{$video_setting nofilter}" frameborder="0" allowfullscreen=""></iframe>
+												<iframe width="320" height="320" src="{$video_source nofilter}?{$video_setting nofilter}" frameborder="0" allowfullscreen=""></iframe>
 										</div>
 								</div>
 						</div>
@@ -48,7 +48,7 @@
 {else}
 		<div class="pb-video-wrapper video-screen-{$aspect_ratio}">
 		{if $video_source}
-		<iframe width="320" height="320" src="{$video_source nofilter}&{$video_setting nofilter}" frameborder="0" allowfullscreen=""></iframe>
+		<iframe width="320" height="320" src="{$video_source nofilter}?{$video_setting nofilter}" frameborder="0" allowfullscreen=""></iframe>
 		{/if}
 		</div>
 {/if}

@@ -1247,39 +1247,40 @@ footer .row, header .row {
   margin-bottom: .55rem;
   margin-left: -.4rem; }
 
-.menu .megamenu.demo {
+.menu.megamenu.demo {
   height: 65vh;
   overflow-x: hidden;
   overflow-y: scroll; }
-  .menu .megamenu.demo::-webkit-scrollbar {
+  .menu.megamenu.demo::-webkit-scrollbar {
     height: 10px;
     width: 7px; }
-  .menu .megamenu.demo::-webkit-scrollbar-thumb {
+  .menu.megamenu.demo::-webkit-scrollbar-thumb {
     background: #ebebeb;
     border-radius: 10px; }
-  .menu .megamenu.demo::-webkit-scrollbar-track {
+  .menu.megamenu.demo::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 10px;
     margin: 8px;
     width: 100%; }
-  .menu .megamenu.demo .demo-item.hidden {
+  .menu.megamenu.demo .demo-item.hidden {
     opacity: 0;
     max-height: 0;
     padding-bottom: 0;
     overflow: hidden;
     -webkit-transform: translateY(50px);
     -ms-transform: translateY(50px);
-    transform: translateY(50px);
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s; }
-  .menu .megamenu.demo .demo-item.show {
+    transform: translateY(50px); }
+  .menu.megamenu.demo .demo-item {
+    display: block !important;
     opacity: 1;
     max-height: 100%;
     padding-bottom: 3rem;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
-    transform: translateY(0); }
+    transform: translateY(0);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
 
 .disabled-hidden {
   opacity: 0;
@@ -1685,7 +1686,7 @@ footer .row, header .row {
   .wishlist-link {
     display: none !important; } }
 
-.header-1 #hor-menu .gdz-megamenu .nav.level0 > li:hover::before {
+#hor-menu .gdz-megamenu .nav.level0 > li > a:hover::before {
   -webkit-transform-origin: left center;
   -ms-transform-origin: left center;
   transform-origin: left center;
@@ -1693,7 +1694,7 @@ footer .row, header .row {
   -ms-transform: scale(1, 1);
   transform: scale(1, 1); }
 
-.header-1 #hor-menu .gdz-megamenu .nav.level0 > li::before {
+#hor-menu .gdz-megamenu .nav.level0 > li > a::before {
   content: '';
   display: block;
   position: absolute;
@@ -1715,6 +1716,9 @@ footer .row, header .row {
   transition: transform .3s ease, -webkit-transform .3s ease;
   background-color: #a6c76c; }
 
+.header-1 .gdz-megamenu {
+  position: static; }
+
 .header-1 .header-middle {
   border-bottom: none; }
   .header-1 .header-middle .container {
@@ -1722,7 +1726,7 @@ footer .row, header .row {
     .header-1 .header-middle .container::after {
       position: absolute;
       content: '';
-      bottom: -18px;
+      bottom: -1.8rem;
       left: 1rem;
       right: 1rem;
       height: .1rem;
@@ -1732,6 +1736,7 @@ footer .row, header .row {
   position: relative; }
 
 .header-1 .sticky-wrapper .text p {
+  padding-top: .1rem;
   padding-right: .5rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1751,6 +1756,16 @@ footer .row, header .row {
 
 .gdz-megamenu .nav > .menu-item .mega-nav li > a:hover {
   color: #a6c76c; }
+
+.gdz-megamenu .nav > .menu-item.sub-home {
+  position: static; }
+  .gdz-megamenu .nav > .menu-item.sub-home > .dropdown-menu {
+    padding: 0; }
+  .gdz-megamenu .nav > .menu-item.sub-home .mega-nav li {
+    padding: 0; }
+  .gdz-megamenu .nav > .menu-item.sub-home .view-all-demos {
+    text-transform: uppercase;
+    min-width: 210px; }
 
 .gdz-megamenu .sub-shop .dropdown-menu {
   padding: 0; }
@@ -2483,7 +2498,7 @@ footer .row, header .row {
   .vermenu .vermenu-btn {
     color: #333;
     font-weight: 500;
-    padding: 15.5px 15px;
+    padding: 16.5px 15px 14.5px;
     width: 100%;
     letter-spacing: -.01em;
     line-height: 1.5;
@@ -9099,6 +9114,12 @@ small.form-text {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
+.owl-carousel.brand-carousel .owl-nav button.owl-prev {
+  left: 20px; }
+
+.owl-carousel.brand-carousel .owl-nav button.owl-next {
+  right: 20px; }
+
 .owl-carousel .owl-nav button {
   width: 42px;
   height: 42px;
@@ -9219,6 +9240,7 @@ small.form-text {
   padding-top: 5.6rem;
   padding-left: 5rem; }
   .h1-countdown .deal-content .btn {
+    font-weight: 500;
     padding-top: 1.15rem;
     padding-bottom: 1.15rem; }
   .h1-countdown .deal-content h4 {
@@ -9404,6 +9426,16 @@ small.form-text {
 
 .h1-slider .text-2 {
   letter-spacing: -.025em; }
+
+.fraction-slider .text-primary {
+  letter-spacing: -.025em; }
+  .fraction-slider .text-primary sup {
+    top: -2rem;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0; }
+    .fraction-slider .text-primary sup + sup {
+      margin-left: .8rem; }
 
 .h1-producttab .owl-drag .owl-item .item {
   height: 100%; }
@@ -10166,6 +10198,10 @@ button:focus {
   #newsletter-btn:hover {
     color: #fff;
     background-color: #a6c76c; }
+
+.fraction-slider .prev:hover, .fraction-slider .next:hover {
+  background-color: #a6c76c;
+  border-color: #a6c76c; }
 
 @media screen and (min-width: 1200px) {
   .quickView-content > .row .product-fullscreen {

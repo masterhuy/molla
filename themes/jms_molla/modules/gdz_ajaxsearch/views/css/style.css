@@ -1,9 +1,10 @@
-#search-form .gdz-search-input{
+#search-form .gdz-search-input {
   height: 38px;
   background-color: transparent;
   border: none;
-  padding: 0 20px;
+  padding: 1.3rem 2.4rem 1rem 2rem;
   text-transform: initial;
+  letter-spacing: -.01em;
 }
 .search-form .button-search {
   border: 0;
@@ -11,7 +12,7 @@
   background: transparent;
   display: flex;
   align-items: center;
-  padding: 0 19px;
+  padding: 2px 19px 0;
 }
 .search-form i {
   font-size: 2rem;

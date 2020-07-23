@@ -36,49 +36,49 @@
       }
       var video_source = '//www.youtube.com/embed/' + video_id;
       if (autoplay == '1')
-          video_setting += 'autoplay=1';
+          video_setting += 'autoplay=1&mute=1';
       else
           video_setting += 'autoplay=0';
       if (loop == '1')
-          video_setting += 'loop=1';
+          video_setting += '&loop=1';
       else
-          video_setting += 'loop=0';
+          video_setting += '&loop=0';
       if(playercontrol == '1')
-          video_setting += 'controls=1';
+          video_setting += '&controls=1';
       else
-          video_setting += 'controls=0';
+          video_setting += '&controls=0';
       if(playertitleactions == '1')
-          video_setting += 'showinfos=1';
+          video_setting += '&showinfos=1';
       else
-          video_setting += 'showinfos=0';
+          video_setting += '&showinfos=0';
   } else {
       var parser = new URL(vimeo_link);
       var video_id = parser.pathname.replace("/", '');
       var video_source = '//player.vimeo.com/video/' + video_id;
       if (autoplay == '1')
-          video_setting += 'autoplay=1';
+          video_setting += 'autoplay=1&muted=1';
       else
           video_setting += 'autoplay=0';
       if (loop == '1')
-          video_setting += 'loop=1';
+          video_setting += '&loop=1';
       else
-          video_setting += 'loop=0';
+          video_setting += '&loop=0';
       if(introtitle == '1')
-          video_setting += 'title=1';
+          video_setting += '&title=1';
       else
-          video_setting += 'controls=0';
+          video_setting += '&controls=0';
       if(introportrait == '1')
-          video_setting += 'portrait=1';
+          video_setting += '&portrait=1';
       else
-          video_setting += 'portrait=0';
+          video_setting += '&portrait=0';
       if(introbyline == '1')
-          video_setting += 'byline=1';
+          video_setting += '&byline=1';
       else
-          video_setting += 'byline=0';
+          video_setting += '&byline=0';
       if(controlscolor == '1')
-          video_setting += 'color=1';
+          video_setting += '&color=1';
       else
-          video_setting += 'color=0';
+          video_setting += '&color=0';
   }
 %>
 <div class="pb-video">
@@ -97,7 +97,7 @@
 												</button>
 										</div>
 										<div class="modal-body">
-												<iframe width="320" height="320" src="<%= video_source %>&<%= video_setting %>" frameborder="0" allowfullscreen=""></iframe>
+												<iframe width="320" height="320" src="<%= video_source %>?<%= video_setting %>" frameborder="0" allowfullscreen=""></iframe>
 										</div>
 								</div>
 						</div>
@@ -106,7 +106,7 @@
 <% } else { %>
 		<div class="pb-video-wrapper video-screen-<%= aspect_ratio %>">
 		<% if (video_source) { %>
-		<iframe width="320" height="320" src="<%= video_source %>&<%= video_setting %>" frameborder="0" allowfullscreen=""></iframe>
+		<iframe width="320" height="320" src="<%= video_source %>?<%= video_setting %>" frameborder="0" allowfullscreen=""></iframe>
 		<% } %>
 		</div>
 <% } %>

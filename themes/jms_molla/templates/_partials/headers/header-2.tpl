@@ -72,7 +72,7 @@
  		</div>
  </div>
 {if $gdzSetting.search && $gdzSetting.search_box_type != 'dropdown'}
-     {widget_block name="gdz_ajaxsearch"}
+    {widget_block name="gdz_ajaxsearch"}
          {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-fullscreen.tpl'}
-     {/widget_block}
+    {/widget_block}
 {/if}

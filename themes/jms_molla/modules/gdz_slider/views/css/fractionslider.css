@@ -33,7 +33,8 @@
 }
 
 .fs_loader{
-	width:100%; height:400px;
+	width:100%; 
+	height:400px;
 	box-shadow: 0 1px 1px #b5b5b5;
 	background:url(../img/fraction/fs.spinner.gif) center center no-repeat transparent;
 }
@@ -43,38 +44,22 @@
 .fraction-slider .next{
 	top: 50%;
 	transform: translateY(-50%);
-	opacity: 0;
-	visibility: hidden;
 	position:absolute;
-	transition: all 400ms;
-	-webkit-transition: all 400ms;
-	-moz-transition: all 400ms;
-	-ms-transition: all 400ms;
-	-o-transition: all 400ms;
+	transition: all 300ms;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
 	z-index:9999;
 }
 .fraction-slider .prev{
-	left:50px; 
-	background:url(../img/fraction/fs.prevnext.png) 0px 0px no-repeat transparent;
-	
-}
-.fraction-slider .prev:hover{
-	background:url(../img/fraction/fs.prevnext.png) 0px -45px no-repeat transparent;
+	left:10rem; 
 }
 
 .fraction-slider .next{
-	right:50px; 
-	background:url(../img/fraction/fs.prevnext.png) -45px 0px no-repeat transparent;
-}
-.fraction-slider .next:hover{
-	background:url(../img/fraction/fs.prevnext.png) -45px -45px no-repeat transparent;
+	right:10rem; 
 }
 
-.fraction-slider:hover .prev,
-.fraction-slider:hover .next{
-	opacity: 1;
-	visibility: visible;
-}
 
 /** PAGER **/
 .fs-pager-wrapper{
@@ -84,35 +69,37 @@
 }
 .fraction-slider .prev,
 .fraction-slider .next {
-    background-image: none!important;
+	width: 4rem;
+	height: 4rem;
+    color: #fff;
+	border: .1rem solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .fraction-slider .prev:before {
-    font-family: 'icomoon' !important;
-    content: "\e92f";
-    font-size:30px;
-    color:#fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 10px;
+    font-family: "molla" !important;
+    content: '\f111';
+    font-size:2.2rem;
 }
 .fraction-slider .next:before {
-    font-family: 'icomoon' !important;
-    content: "\e96e";
-    font-size:30px;
-    color:#fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 10px;
+    font-family: "molla" !important;
+    content: '\f112';
+    font-size:2.2rem;
 }
 .fs-pager-wrapper {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 21px;
-    z-index: 9999;
+    bottom: 2.1rem;
+    z-index: 999;
 }
 .fs-pager-wrapper a,
 .fs-custom-pager-wrapper a {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
     background: transparent;
     border: 1px solid #d7d7d7;
     border-radius:30px;
