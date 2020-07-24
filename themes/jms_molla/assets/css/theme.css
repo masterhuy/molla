@@ -186,11 +186,12 @@ header .row .col-auto {
     color: #777;
 }
 .header-sticky.sticky {
+  background-color: #fff;
   position: fixed!important;
   top: 0px;
   right: 0px;
   left: 0px;
-  z-index: 999;
+  z-index: 1000;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   padding:0px!important;
 }
@@ -200,10 +201,25 @@ header .row .col-auto {
 .header-sticky.sticky .container .row {
   height:100%;
 }
+.header-sticky.sticky{
+  -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
 .header-sticky.sticky.sticky-slide {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-name: slideDown;
     animation-name: slideDown;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
 }
+@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
 @-webkit-keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -306,7 +322,6 @@ header .row .col-auto {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  line-height: 30px;
 }
 .collapse.in {
     display: block;
@@ -564,9 +579,6 @@ header .row .col-auto {
 .cart-prices-line .value {
   float:right;
 }
-.remove-from-cart i {
-  font-size:26px!important;
-}
 .cart-title {
   display:none;
   font-size:20px;
@@ -576,18 +588,6 @@ header .row .col-auto {
 }
 .shoppingcart-sidebar .cart-title {
   display:block;
-}
-.billing-info {
-  border-top:1px solid rgba(0,0,0,0.1);
-  margin-bottom:20px;
-  padding-top:20px;
-}
-.billing-info .cart-prices-line {
-  line-height: 30px;
-}
-.cart-button .btn {
-    width: 100%;
-    margin: 10px 0px;
 }
 #blockcart-modal .modal-header {
     background: #ebebeb;

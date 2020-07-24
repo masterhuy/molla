@@ -8,46 +8,49 @@
 			<span class="ajax_cart_quantity">{$cart.products_count}</span>
 		{/if}
 	</a>
-	<div class="dropdown-menu shoppingcart-box{if $gdzSetting.cart_type =='sidebar'} shoppingcart-sidebar{/if}">
-					<div class="cart-title">{l s='Shopping Cart' d='Shop.Theme.Actions'} ({$cart.products_count})</div>
-					{if $cart.products_count == 0}
-					<span class="ajax_cart_no_product">{l s='There is no product' d='Shop.Theme.Actions'}</span>
-					{else}
-						<ul class="list products cart_block_list">
-							{foreach from=$cart.products item=product}
-								<li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
-							{/foreach}
-						</ul>
-					{/if}
-					{if $cart.products_count != 0}
-					<div class="billing-info">
-						{if $gdzSetting.cart_subtotal == 1}
-							{foreach from=$cart.subtotals item="subtotal"}
-							{if $subtotal.label}
-							<div class="{$subtotal.type} cart-prices-line">
-									<span class="label">{$subtotal.label}</span>
-									<span class="value">{$subtotal.value}</span>
-							</div>
-							{/if}
-							{/foreach}
+	<div class="dropdown-menu cart-dropdown shoppingcart-box{if $gdzSetting.cart_type =='sidebar'} shoppingcart-sidebar{/if}">
+		<div class="cart-title">{l s='Shopping Cart' d='Shop.Theme.Actions'} ({$cart.products_count})</div>
+		{if $cart.products_count == 0}
+			<span class="ajax_cart_no_product">{l s='There is no product' d='Shop.Theme.Actions'}</span>
+		{else}
+			<ul class="list products cart_block_list">
+				{foreach from=$cart.products item=product}
+					<li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
+				{/foreach}
+			</ul>
+		{/if}
+		{if $cart.products_count != 0}
+			<div class="billing-info">
+				{if $gdzSetting.cart_subtotal == 1}
+					{foreach from=$cart.subtotals item="subtotal"}
+						{if $subtotal.label}
+						<div class="{$subtotal.type} cart-prices-line">
+							<span class="label">{$subtotal.label}</span>
+							<span class="value">{$subtotal.value}</span>
+						</div>
 						{/if}
-						{if $gdzSetting.cart_total == 1}
-							<div class="cart-total cart-prices-line">
-								<span class="label">{$cart.totals.total.label}</span>
-								<span class="value">{$cart.totals.total.value}</span>
-							</div>
-						{/if}
+					{/foreach}
+				{/if}
+				{if $gdzSetting.cart_total == 1}
+					<div class="cart-total cart-prices-line">
+						<span class="label">{$cart.totals.total.label}</span>
+						<span class="value">{$cart.totals.total.value}</span>
 					</div>
-					<div class="cart-button">
-									{if $gdzSetting.cart_links && 'checkout'|in_array:$gdzSetting.cart_links}
-									<a href="{url entity=order}" class="btn btn-primary checkout-btn">{l s='Checkout' d='Shop.Theme.Actions'}</a>
-									{/if}
-									{if $gdzSetting.cart_links && 'cart'|in_array:$gdzSetting.cart_links}
-									<a class="btn cart-btn" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
-										{l s='Cart' d='Shop.Theme.Actions'}
-									</a>
-									{/if}
-					</div>
-					{/if}
-		</div>
+				{/if}
+			</div>
+			<div class="cart-button">
+				{if $gdzSetting.cart_links && 'cart'|in_array:$gdzSetting.cart_links}
+					<a class="btn btn-primary" href="{$cart_url}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+						{l s='View Cart' d='Shop.Theme.Actions'}
+					</a>
+				{/if}
+				{if $gdzSetting.cart_links && 'checkout'|in_array:$gdzSetting.cart_links}
+					<a href="{url entity=order}" class="btn btn-outline-primary-2">
+						{l s='Checkout' d='Shop.Theme.Actions'}
+						<i class="icon-long-arrow-right"></i>
+					</a>
+				{/if}
+			</div>
+		{/if}
+	</div>
 </div>

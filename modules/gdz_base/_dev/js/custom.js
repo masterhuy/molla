@@ -47,7 +47,7 @@ jQuery(function ($) {
       var c_lazyload = true;
     $.each( $(".owl-carousel"), function( key, value ) {
           $(this).owlCarousel({
-              loop:true,
+              loop:false,
               margin:30,
               nav:$(this).data('nav'),
               dots:$(this).data('dots'),

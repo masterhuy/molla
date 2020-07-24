@@ -1,3 +1,6 @@
+#search-form{
+  position: relative;
+}
 #search-form .gdz-search-input {
   height: 38px;
   background-color: transparent;
@@ -101,7 +104,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     position: absolute;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     overflow-y: auto;
     z-index:2001;
 }
@@ -127,6 +130,9 @@
         width: 100%;
     }
 }
+.search_product_list a{
+  color: inherit;
+}
 .search_product_list .layout-column {
     padding-left: 0px;
     padding-right: 0px;
@@ -136,6 +142,9 @@
 }
 .search_product_list .layout-column.product-info {
     padding-left: 15px;
+}
+.search-product-image {
+  margin-right: 10px;
 }
 #search-form-full .search_product_list .layout-column.product-info {
     padding-left: 0px;

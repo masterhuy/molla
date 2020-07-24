@@ -1,7 +1,7 @@
 jQuery(function ($) {
     var carousel = $(document).find('.owl-carousel');
     carousel.owlCarousel({
-        loop:true,
+        loop:false,
         margin:30,
         nav:carousel.data("nav"),
         dots:carousel.data("dots"),

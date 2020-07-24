@@ -35,12 +35,8 @@ jQuery(function ($) {
         var offset = (header.offset().top);
         win.scroll(function() {
             if (offset < win.scrollTop()) {
-                if(header.hasClass('sticky-slide'))
-                    header.slideDown();
                 header.addClass("sticky");
             } else {
-                if(header.hasClass('sticky-slide'))
-                    //header.slideUp();
                 header.removeClass("sticky");
             }
         });
