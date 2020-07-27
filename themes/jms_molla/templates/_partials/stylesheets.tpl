@@ -48,7 +48,6 @@
 </style>
 {/foreach}
 
-<link rel="stylesheet" href="{$urls.theme_assets}css/style.css">
 {if $gdzSetting.custom_css}
 <style>
 {$gdzSetting.custom_css nofilter}

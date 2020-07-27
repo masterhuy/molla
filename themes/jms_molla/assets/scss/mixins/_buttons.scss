@@ -7,13 +7,11 @@
   $active-border: darken($border, 10%),
   $box-shadow: none,
   $box-shadow-hover: none
-  ) {
-  
+  ) {  
   color: $color;
   background-color: $background;
   border-color:  $border;
   box-shadow: $box-shadow;
-  
   &:hover,
   &:focus,
   &.focus,
@@ -25,7 +23,6 @@
     border-color:  $hover-border;
     box-shadow: $box-shadow-hover;
   }
-
   &.disabled,
   &:disabled {
     color: $color;
@@ -35,7 +32,8 @@
 }
 
 @mixin button-outline-variant(
-  $color, $color-hover: $color, 
+  $color, 
+  $color-hover: $color, 
   $active-background: $color, 
   $border-color:$color, 
   $active-border: $color,
@@ -47,7 +45,6 @@
   background-image: none;
   border-color: $border-color;
   box-shadow: $box-shadow;
-
   &:hover,
   &:focus,
   &.focus,
@@ -59,7 +56,6 @@
     border-color: $active-border;
     box-shadow: $box-shadow-hover;
   }
-
   &.disabled,
   &:disabled {
     color: $color;
