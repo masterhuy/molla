@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:54
+/* Smarty version 3.1.33, created on 2020-07-28 08:46:59
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\templates\_partials\headers\header-mobile-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b2b5e5d0_13691351',
+  'unifunc' => 'content_5f1f83933ec266_23633058',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -27,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-fullscreen.tpl' => 1,
   ),
 ),false)) {
-function content_5f0c36b2b5e5d0_13691351 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83933ec266_23633058 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div id="header-mobile-top" class="header-mobile-top<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_mobile_sticky'] == 1) {?> header-sticky<?php }
 if (($_smarty_tpl->tpl_vars['gdzSetting']->value['header_mobile_sticky'] == 1) && ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
 }?>">

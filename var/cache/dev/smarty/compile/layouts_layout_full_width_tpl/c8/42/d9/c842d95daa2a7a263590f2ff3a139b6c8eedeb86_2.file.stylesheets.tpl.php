@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:54
+/* Smarty version 3.1.33, created on 2020-07-28 08:46:58
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b24326c6_51285193',
+  'unifunc' => 'content_5f1f8392a7bd52_19680956',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c842d95daa2a7a263590f2ff3a139b6c8eedeb86' => 
     array (
       0 => 'D:\\xampp\\htdocs\\jms_molla\\themes\\jms_molla\\templates\\_partials\\stylesheets.tpl',
-      1 => 1594625241,
+      1 => 1595837203,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b24326c6_51285193 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8392a7bd52_19680956 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/bootstrap.min.css" />
 <link rel="stylesheet" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
@@ -76,8 +76,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['stylesheet']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
-<link rel="stylesheet" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
-css/style.css">
 <?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['custom_css']) {?>
 <style>
 <?php echo $_smarty_tpl->tpl_vars['gdzSetting']->value['custom_css'];?>

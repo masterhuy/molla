@@ -94,14 +94,14 @@ class gdzAddonHeading extends gdzAddonBase
     public function returnValue($addon, $id_lang = null)
     {
         if($id_lang == null)
-          $id_lang = $this->context->language->id;
+        $id_lang = $this->context->language->id;
         $heading = empty($addon->fields[0]->value->$id_lang) ? '' : gdzPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang);
         if($heading == '') return;
         $this->context->smarty->assign(
             array(
                 'heading'  => $heading,
                 'heading_tag'  => $addon->fields[1]->value,
-                'box_class' => $addon->fields[4]->value
+                'box_class' => $addon->fields[5]->value
             )
         );
         $this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;

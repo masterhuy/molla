@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 09:06:28
+/* Smarty version 3.1.33, created on 2020-07-28 08:47:38
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonbrand.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d13248169e9_60249817',
+  'unifunc' => 'content_5f1f83baaa12e1_82971759',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d13248169e9_60249817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83baaa12e1_82971759 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['brands']->value) > 0) {?>
 <div class="pb-brand">
 <div class="brand-carousel owl-carousel" data-items="<?php if ($_smarty_tpl->tpl_vars['items_show_md']->value) {

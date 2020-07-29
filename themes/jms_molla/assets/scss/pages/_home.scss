@@ -1,159 +1,4 @@
 /*  Index.html - Home page */
-#index #wrapper > .row{
-	margin: 0;
-}
-.pb-divider-separator{
-	display: block;
-}
-.banner-overlay-light{
-	.pb-banner > a{
-		&:hover::after{
-			opacity: 1;
-			visibility: visible;
-		}
-		&::after{
-			content: '';
-			display: block;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			background-color: rgba(255, 255, 255, 0.3);
-			z-index: 1;
-			opacity: 0;
-			visibility: hidden;
-			transition: all 0.4s ease;
-		}
-	}
-}
-
-.owl-carousel{
-	&.brand-carousel{
-		.owl-nav button{
-			&.owl-prev {
-			    left: 20px;
-			}
-			&.owl-next {
-			    right: 20px;
-			}
-		}
-	}
-	.owl-nav{
-		button{
-			width: 42px;
-			height: 42px;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			&::before{
-				font-size: 30px;
-				color: #ccc;
-				font-family: "molla";
-				font-style: normal;
-				font-weight: normal;
-				speak: none;
-				display: inline-block;
-				text-decoration: inherit;
-				text-align: center;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-			}
-			&.disabled{
-				cursor: default;
-			}
-			span{
-				display: none;
-			}
-			&.owl-prev{
-				left: -40px;
-				&::before{
-					content: '\f111';
-				}
-			}
-			&.owl-next{
-				right: -40px;
-				&::before{
-					content: '\f112';
-				}
-			}
-		}
-	}
-	&.customs{
-		.owl-stage-outer{
-			margin: 0 -20px;
-			padding: 20px;
-			.owl-stage{
-				display: flex;
-			}
-		}
-	}
-}
-.gdz-row.no-padding{
-	.container-fluid{
-		padding: 0;
-	}
-}
-.brand-carousel{
-	&.owl-carousel .owl-item img{
-		width: auto;
-	}
-}
-.fraction-slider .text-primary{
-	letter-spacing: -.025em;
-	sup{
-		top: -2rem;
-		font-size: 2rem;
-		line-height: 1;
-		letter-spacing: 0;
-		+ sup{
-			margin-left: .8rem;
-		}
-	}
-}
-.pb-categorytab{
-	.product-miniature{
-		margin-bottom: 1.5rem;
-	}
-	.nav.nav-tabs{
-		margin-bottom: 3rem;
-		.nav-item{
-			margin: 0;
-			.nav-link{
-				font-size: 1.6rem;
-				text-transform: uppercase;
-				font-weight: 400;
-				padding: .45rem 1.2rem;
-				letter-spacing: -.01em;
-				position: relative;
-				&::before{
-					content: '';
-					display: block;
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					width: 100%;
-					height: .1rem;
-					background-color: #333;
-					transform-origin: right center;
-					transform: scale(0, 1);
-					transition: transform .3s ease;
-				}
-				&.active{
-					color: #333;
-					&::before{
-						transform-origin: left center;
-						transform: scale(1, 1);
-					}
-				}
-			}
-		}
-	}
-}
-
 .intro-section {
 	margin-top: -1px;
 }
@@ -338,11 +183,6 @@ button:focus {
 
 .more-container {
 	margin-bottom: 7rem;
-}
-
-.icon-box-card {
-	background-color: transparent;
-    padding: 2rem;
 }
 
 .icon-box-icon {
@@ -905,8 +745,6 @@ button:focus {
 
 .ajax-add-to-cart:hover{
 	color: #fff;
-	border-color: $primary-color;
-	background-color: $primary-color;
 }
 
 /*** newsletter ***/
@@ -934,14 +772,6 @@ button:focus {
 	line-height: 1;
 	&:hover{
 		color: #fff;
-		background-color: $primary-color;
-	}
-}
-
-.fraction-slider .prev, .fraction-slider .next{
-	&:hover{
-		background-color: $primary-color;
-		border-color: $primary-color;
 	}
 }
 

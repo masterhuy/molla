@@ -23,56 +23,88 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if ($gdzSetting.header_topbar == 1)}
- <div id="header-topbar" class="{if $gdzSetting.topbar_class} {$gdzSetting.topbar_class}{/if}">
-   <div class="container text-center">
-      {$gdzSetting.topbar_content nofilter}
-   </div>
-</div>
-{/if}
- <div id="header-top" class="header-top{if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
- 		<div class="container">
- 				<div class="row align-items-center">
- 						<div class="layout-column col-auto header-left">
-              {include file='_partials/headers/logo.tpl'}
- 						</div>
- 						<div class="layout-column">
-              <div id="hor-menu" class="{if $gdzSetting.hormenu_class} {$gdzSetting.hormenu_class}{/if} {if $gdzSetting.hormenu_align} align-{$gdzSetting.hormenu_align}{/if}">
- 							{widget name="gdz_megamenu" hook='HorMenu'}
-              </div>
- 						</div>
- 						<div class="layout-column col-auto header-right s-padding">
-              <div class="row">
-                  {if $gdzSetting.search}
-                      {if $gdzSetting.search_box_type != 'dropdown'}
-                      {widget_block name="gdz_ajaxsearch"}
-                          {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-button.tpl'}
-                      {/widget_block}
-                      {else}
-                      {widget_block name="gdz_ajaxsearch"}
-                          {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-dropdown.tpl'}
-                      {/widget_block}
-                       {/if}
-                  {/if}
-                  {if ($gdzSetting.customersignin == 1)}
-                  {widget_block name="ps_customersignin"}
-                      {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-                  {/widget_block}
-                  {/if}
-                  {if ($gdzSetting.wishlist == 1)}
-                  {include file='_partials/headers/wishlist.tpl'}
-                  {/if}
-                  {if ($gdzSetting.cart == 1)}
-                  {widget_block name="ps_shoppingcart"}
-                      {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
-                  {/widget_block}
-                  {/if}
+    <div id="header-top" class="header-top {if $gdzSetting.topbar_class} {$gdzSetting.topbar_class}{/if}">
+        <div class="container text-center">
+            <div class="row align-items-center no-margin">
+                <div class="layout-column col-auto">
+                    <div class="row">
+                        {widget_block name="ps_currencyselector"}
+                            {include 'module:ps_currencyselector/ps_currencyselector-dropdown.tpl'}
+                        {/widget_block}
+                        {widget_block name="ps_languageselector"}
+                            {include 'module:ps_languageselector/ps_languageselector-dropdown2.tpl'}
+                        {/widget_block}
+                    </div>
                 </div>
- 						</div>
- 				</div>
- 		</div>
- </div>
+                <div class="layout-column col">
+                    <ul class="d-flex align-items-center justify-content-end mb-0">
+                        <li>
+                            <a href="tel:0123 456 789"><i class="icon-phone"></i>Call: +0123 456 789</a>
+                        </li>
+                        <li>
+                            <a href="index.php?fc=module&module=gdz_wishlist&controller=mywishlist">
+                                <i class="icon-heart-o"></i>My Wishlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.php?id_cms=4&controller=cms">About Us</a>
+                        </li>
+                        <li>
+                            <a href="index.php?controller=contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="index.php?controller=my-account"><i class="icon-user"></i>Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{/if}
+<div id="header-middle" class="header-middle{if $gdzSetting.header_sticky == 1} header-sticky{/if}{if ($gdzSetting.header_sticky == 1) && ($gdzSetting.header_sticky_effect != '')} {$gdzSetting.header_sticky_effect}{/if}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="layout-column col-auto header-left">
+                {include file='_partials/headers/logo.tpl'}
+            </div>
+            <div class="layout-column">
+                <div id="hor-menu" class="{if $gdzSetting.hormenu_class} {$gdzSetting.hormenu_class}{/if} {if $gdzSetting.hormenu_align} align-{$gdzSetting.hormenu_align}{/if}">
+                    {widget name="gdz_megamenu" hook='HorMenu'}
+                </div>
+            </div>
+            <div class="layout-column col-auto header-right">
+                <div class="row">
+                    {if $gdzSetting.search}
+                        {if $gdzSetting.search_box_type != 'dropdown'}
+                            {widget_block name="gdz_ajaxsearch"}
+                                {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-button.tpl'}
+                            {/widget_block}
+                        {else}
+                            {widget_block name="gdz_ajaxsearch"}
+                                {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-dropdown.tpl'}
+                            {/widget_block}
+                        {/if}
+                    {/if}
+                    {if ($gdzSetting.customersignin == 1)}
+                        {widget_block name="ps_customersignin"}
+                            {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
+                        {/widget_block}
+                    {/if}
+                    {if ($gdzSetting.wishlist == 1)}
+                        {include file='_partials/headers/wishlist.tpl'}
+                    {/if}
+                    {if ($gdzSetting.cart == 1)}
+                        {widget_block name="ps_shoppingcart"}
+                            {include 'module:ps_shoppingcart/ps_shoppingcart.tpl'}
+                        {/widget_block}
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {if $gdzSetting.search && $gdzSetting.search_box_type != 'dropdown'}
     {widget_block name="gdz_ajaxsearch"}
-         {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-fullscreen.tpl'}
+        {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-fullscreen.tpl'}
     {/widget_block}
 {/if}

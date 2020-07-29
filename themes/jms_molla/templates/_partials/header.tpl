@@ -22,27 +22,31 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-<div id="desktop-header" class="header-{$gdzSetting.header_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">
-    {if $gdzSetting.header_layout == 1}
+{if isset($smarty.get.header_layout) && $smarty.get.header_layout !=''}
+    {assign var='header_layout' value=$smarty.get.header_layout}
+{else}
+    {assign var='header_layout' value=$gdzSetting.header_layout}
+{/if}
+<div id="desktop-header" class="header-{$header_layout} {if $gdzSetting.header_class} {$gdzSetting.header_class}{/if}">
+    {if $header_layout == 1}
         {include file='_partials/headers/header-1.tpl'}
-    {elseif $gdzSetting.header_layout == 2}
+    {elseif $header_layout == 2}
         {include file='_partials/headers/header-2.tpl'}
-    {elseif $gdzSetting.header_layout == 3}
+    {elseif $header_layout == 3}
         {include file='_partials/headers/header-3.tpl'}
-    {elseif $gdzSetting.header_layout == 4}
+    {elseif $header_layout == 4}
         {include file='_partials/headers/header-4.tpl'}
-    {elseif $gdzSetting.header_layout == 5}
+    {elseif $header_layout == 5}
         {include file='_partials/headers/header-5.tpl'}
-    {elseif $gdzSetting.header_layout == 6}
+    {elseif $header_layout == 6}
         {include file='_partials/headers/header-6.tpl'}
-    {elseif $gdzSetting.header_layout == 7}
+    {elseif $header_layout == 7}
         {include file='_partials/headers/header-7.tpl'}
-    {elseif $gdzSetting.header_layout == 8}
+    {elseif $header_layout == 8}
         {include file='_partials/headers/header-8.tpl'}
-    {elseif $gdzSetting.header_layout == 9}
+    {elseif $header_layout == 9}
         {include file='_partials/headers/header-9.tpl'}    
-    {elseif $gdzSetting.header_layout == 10}
+    {elseif $header_layout == 10}
         {include file='_partials/headers/header-10.tpl'}
     {/if}
 </div>

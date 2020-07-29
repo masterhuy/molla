@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:54
+/* Smarty version 3.1.33, created on 2020-07-28 08:46:59
   from 'module:gdzajaxsearchviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b2c48bd7_59976364',
+  'unifunc' => 'content_5f1f83934fd968_43161578',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b2c48bd7_59976364 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83934fd968_43161578 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-dropdown.tpl --><div class="btn-group gdz_ajax_search col-auto<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['search_box_type']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['search_box_type'], ENT_QUOTES, 'UTF-8');
 }?>" id="gdz_ajax_search">
 	<a href="#" class="btn-search" data-toggle="dropdown" data-display="static"><i class="ptw-icon <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['search_icon'], ENT_QUOTES, 'UTF-8');?>

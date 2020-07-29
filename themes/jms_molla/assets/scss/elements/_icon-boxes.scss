@@ -15,9 +15,23 @@
 		}
 		.pb-service-description{
 			line-height: 1.5;
-			p{
-				font-weight: 400;
-				letter-spacing: -.01em;
+		}
+	}
+}
+.icon-box-side p {
+	font-weight: 400;
+	letter-spacing: -.01em;
+}
+.icon-box-card{
+	.pb-service-box{
+		display: block;
+		.pb-service-icon{
+			margin-bottom: 1.3rem;
+		}
+		.pb-service-content{
+			.pb-service-title{
+				font-size: 1.8rem;
+				margin-bottom: .9rem;
 			}
 		}
 	}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:57:43
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:00
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\admin\gdz_pagebuilder_pages\listpage.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d1117459db0_60040186',
+  'unifunc' => 'content_5f1f8574de4dc4_89565274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d1117459db0_60040186 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8574de4dc4_89565274 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel">
 	<div id="rows">
 		<div id="page_list" class="page">

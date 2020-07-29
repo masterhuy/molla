@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:36
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addonbutton.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112e39b340_40078767',
+  'unifunc' => 'content_5f1f8598c345c0_15990224',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112e39b340_40078767 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8598c345c0_15990224 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pb-button<?php echo '<%';?> if(box_class) { <?php echo '%>';?> <?php echo '<%';?>= box_class <?php echo '%>';
 echo '<%';?> } <?php echo '%>';
 echo '<%';?> if(button_align) { <?php echo '%>';?> pb-button-<?php echo '<%';?>= button_align <?php echo '%>';

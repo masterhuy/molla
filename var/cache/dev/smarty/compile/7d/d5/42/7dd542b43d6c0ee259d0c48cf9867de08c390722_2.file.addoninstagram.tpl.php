@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:37
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addoninstagram.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112e919740_09695469',
+  'unifunc' => 'content_5f1f85992705c6_55798293',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112e919740_09695469 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f85992705c6_55798293 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style type="text/css">
 #<?php echo '<%';?>= addonid <?php echo '%>';?> .pb-instagram-grid .il-item {
     padding: <?php echo '<%';?>= gutter/2 <?php echo '%>';?>px;

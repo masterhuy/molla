@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:04
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:35
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\admin\editor.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112ce39ee0_25027828',
+  'unifunc' => 'content_5f1f85973c0431_40240769',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:gdz_pagebuilder/views/templates/admin/library.tpl' => 1,
   ),
 ),false)) {
-function content_5f0d112ce39ee0_25027828 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f85973c0431_40240769 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php echo $_smarty_tpl->tpl_vars['full_cldr_language_code']->value;?>

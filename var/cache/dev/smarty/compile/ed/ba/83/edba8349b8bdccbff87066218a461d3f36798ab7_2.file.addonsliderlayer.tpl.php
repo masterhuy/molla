@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:53
+/* Smarty version 3.1.33, created on 2020-07-28 08:47:38
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b13bd3b8_70991877',
+  'unifunc' => 'content_5f1f83ba91a8e0_82873599',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'edba8349b8bdccbff87066218a461d3f36798ab7' => 
     array (
       0 => 'D:\\xampp\\htdocs\\jms_molla\\modules\\gdz_pagebuilder\\views\\templates\\hook\\addonsliderlayer.tpl',
-      1 => 1594631801,
+      1 => 1594026290,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b13bd3b8_70991877 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83ba91a8e0_82873599 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="gdz-slider-wrapper">
 	<div class="responisve-container">
 		<div

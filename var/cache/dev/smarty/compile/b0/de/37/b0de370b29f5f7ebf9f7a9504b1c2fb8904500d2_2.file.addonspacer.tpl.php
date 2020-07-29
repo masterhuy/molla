@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:53
+/* Smarty version 3.1.33, created on 2020-07-28 08:47:38
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonspacer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b14a79b4_91710212',
+  'unifunc' => 'content_5f1f83baa2bfe1_20944196',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b14a79b4_91710212 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83baa2bfe1_20944196 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="pb-spacer<?php if (isset($_smarty_tpl->tpl_vars['box_class']->value) && $_smarty_tpl->tpl_vars['box_class']->value) {?> <?php echo $_smarty_tpl->tpl_vars['box_class']->value;
 }?>">

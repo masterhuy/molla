@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:36
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addonaccordion.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112e0dc134_42722461',
+  'unifunc' => 'content_5f1f85989753c6_05534705',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112e0dc134_42722461 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f85989753c6_05534705 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<%';?> if(accordions.length == 0) { return } <?php echo '%>';?>
 <div class="pb-accordion">
     <?php echo '<%';?> var accordion_id = _.random(1000, 9999); <?php echo '%>';?>

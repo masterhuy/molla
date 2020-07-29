@@ -1,5 +1,4 @@
 /* Skin structure */
-
 @import '../config/variables';
 @import '../mixins/buttons';
 @import '../mixins/breakpoints';
@@ -895,6 +894,26 @@ a:focus {
     }
 }
 
+/* Header */
+.header-intro-clearance{
+    .account, .wishlist, {
+        a:hover {
+            color: $primary-color;
+        }
+    }
+    #cart_block > a{
+        &:hover{
+            color: $primary-color;
+        }
+        .ajax_cart_quantity{
+            background-color: $primary-color;
+        }
+    }
+}
+.vermenu:hover .vermenu-btn {
+    background-color: $primary-color;
+}
+
 /* Header 4 */
 .header-4 {
     .header-search {
@@ -1038,11 +1057,8 @@ a:focus {
     }
 }
 
-.read-more {
-    &:hover,
-    &:focus {
-        box-shadow: 0 1px 0 0 $primary-color;
-    }
+.post-readmore:hover span {
+    box-shadow: 0 1px 0 0 $primary-color;
 }
 
 .menu-cat {
@@ -1681,4 +1697,56 @@ a:focus {
     .banner-title span {
         color: $primary-color;
     }
+}
+
+#newsletter-btn:hover {
+    background-color: $primary-color;
+}
+
+.fraction-slider .prev, .fraction-slider .next{
+    &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+.fs-pager-wrapper a:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.ajax-add-to-cart:hover{
+    border-color: $primary-color;
+    background-color: $primary-color;
+}
+
+.vermenu .gdz-megamenu{
+    li a:hover{
+        color: $primary-color;
+    }
+    .nav{
+        > li.item-lead > a:hover {
+            color: $primary-color;
+        }
+        .menu-item{
+            &.open > a{
+                color: $primary-color;
+            }
+            li > a:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+.gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {
+    color: $primary-color;
+}
+.gdz-megamenu .nav > .menu-item .mega-nav li > a:hover{
+    color: $primary-color;
+}
+#hor-menu .gdz-megamenu .nav.level0 > li > a::before{
+    background-color: $primary-color;
+}
+
+#footer.footer-1 .html-1 .widget-about-info a {
+    color: $primary-color;
 }

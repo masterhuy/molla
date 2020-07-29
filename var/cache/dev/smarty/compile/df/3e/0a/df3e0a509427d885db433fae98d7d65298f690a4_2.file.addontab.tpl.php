@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:37
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addontab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112ee22856_56199258',
+  'unifunc' => 'content_5f1f85997796d1_75063502',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112ee22856_56199258 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f85997796d1_75063502 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<%';?> if(tabs.length == 0) { return } <?php echo '%>';
 echo '<%';?> var tab_id = _.random(1000, 9999); <?php echo '%>';?>
 <div class="pb-tabs">

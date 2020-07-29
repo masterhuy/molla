@@ -744,12 +744,6 @@ header .row .col-auto {
 #footer input {
   border-radius: 0px;
 }
-.languages-info a {
-  line-height: 1;
-}
-.languages-info a img {
-  margin-right: 5px;
-}
 #footer-top .newsletter-desc {
   display:none;
 }

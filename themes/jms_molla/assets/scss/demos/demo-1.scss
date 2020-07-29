@@ -1,14 +1,14 @@
 /* Demo 2 Homepage 2 */
+$primary-color: #a6c76c;
+$secondary-color: #92b25a;
+
+@import '../skins/skin';
 @import '../mixins/clearfix';
 @import '../mixins/breakpoints';
 @import '../mixins/lazy';
 @import '../mixins/buttons';
-
 @import '../config/fonts';
 @import '../config/variables';
-
-$primary-color: #a6c76c;
-$secondary-color: #cc9966;
 
 
 .h1-countdown{
@@ -263,10 +263,6 @@ $secondary-color: #cc9966;
 		&.active:hover{
 			background-color: #f8f8f8;
 			border-color: #f8f8f8;
-		}
-		&:hover{
-			background-color: $primary-color;
-			border-color: $primary-color;
 		}
 	}
 	.intro-slide {

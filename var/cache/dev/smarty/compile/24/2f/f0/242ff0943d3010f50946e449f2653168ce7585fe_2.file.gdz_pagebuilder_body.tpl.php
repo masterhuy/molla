@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:53
+/* Smarty version 3.1.33, created on 2020-07-28 08:47:39
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\gdz_pagebuilder_body.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b1c21ac7_87376432',
+  'unifunc' => 'content_5f1f83bb4d4cf2_53809401',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '242ff0943d3010f50946e449f2653168ce7585fe' => 
     array (
       0 => 'D:\\xampp\\htdocs\\jms_molla\\modules\\gdz_pagebuilder\\views\\templates\\hook\\gdz_pagebuilder_body.tpl',
-      1 => 1594616361,
+      1 => 1594026290,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b1c21ac7_87376432 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f83bb4d4cf2_53809401 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style id="pagebuilder-frontend-stylesheet" type="text/css">
 <?php echo $_smarty_tpl->tpl_vars['pagebuilder_css']->value;?>
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:53
+/* Smarty version 3.1.33, created on 2020-07-28 08:49:37
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonpopup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b1bac7c4_59409693',
+  'unifunc' => 'content_5f1f8431359841_11500442',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0c36b1bac7c4_59409693 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8431359841_11500442 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pb-popup gdz-popup-overlay" style="display: none;">
 	<div class="gdz-popup newsletter-popup-container animated fadeIn hidden">
 		<div class="row no-gutters bg-white newsletter-popup-content">

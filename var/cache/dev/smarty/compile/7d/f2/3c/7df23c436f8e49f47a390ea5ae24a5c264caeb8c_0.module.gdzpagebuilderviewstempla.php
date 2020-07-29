@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:05
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:35
   from 'module:gdzpagebuilderviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112d0cc6e0_74233082',
+  'unifunc' => 'content_5f1f8597595045_63908612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112d0cc6e0_74233082 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8597595045_63908612 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xampp\htdocs\jms_molla/modules/gdz_pagebuilder/views/templates/admin/settings.tpl -->    <div id="<?php echo $_smarty_tpl->tpl_vars['stype']->value;?>
 -<?php echo $_smarty_tpl->tpl_vars['setting']->value['id'];?>
 " aria-labelledby="<?php echo $_smarty_tpl->tpl_vars['stype']->value;?>

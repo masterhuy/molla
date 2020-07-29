@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:36
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addondivider.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112e56ff40_99641317',
+  'unifunc' => 'content_5f1f8598e091c7_41117047',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112e56ff40_99641317 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8598e091c7_41117047 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style type="text/css">
 #<?php echo '<%';?>= addonid <?php echo '%>';?> .pb-divider {
     padding-top:<?php echo '<%';?>= divider_gap <?php echo '%>';?>px;

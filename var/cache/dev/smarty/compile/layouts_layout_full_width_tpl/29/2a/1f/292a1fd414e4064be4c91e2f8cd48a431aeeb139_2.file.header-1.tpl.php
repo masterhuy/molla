@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-13 17:25:54
+/* Smarty version 3.1.33, created on 2020-07-28 08:46:58
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\templates\_partials\headers\header-1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0c36b26072d0_58010586',
+  'unifunc' => 'content_5f1f8392c77a52_28296706',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '292a1fd414e4064be4c91e2f8cd48a431aeeb139' => 
     array (
       0 => 'D:\\xampp\\htdocs\\jms_molla\\themes\\jms_molla\\templates\\_partials\\headers\\header-1.tpl',
-      1 => 1594369849,
+      1 => 1595499964,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart.tpl' => 1,
   ),
 ),false)) {
-function content_5f0c36b26072d0_58010586 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f8392c77a52_28296706 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="header-intro-clearance">
     <?php if (($_smarty_tpl->tpl_vars['gdzSetting']->value['header_topbar'] == 1)) {?>
         <div id="header-top" class="<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['topbar_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['topbar_class'], ENT_QUOTES, 'UTF-8');
@@ -93,9 +93,7 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
             </div>
         </div>
     <?php }?>
-    <div id="header-middle" class="header-middle<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
-if (($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
-}?>">
+    <div id="header-middle" class="header-middle">
         <div class="container">
             <div class="row align-items-center">
                 <div class="layout-column col-auto header-left">
@@ -158,7 +156,9 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
             </div>
         </div>
     </div>
-    <div class="sticky-wrapper header-bottom">
+    <div class="sticky-wrapper header-bottom <?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky'] == 1) {?> header-sticky<?php }
+if (($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky'] == 1) && ($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'] != '')) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['header_sticky_effect'], ENT_QUOTES, 'UTF-8');
+}?>">
         <div class="container">
             <div class="row align-items-center">
                 <div class="layout-column col-auto">
@@ -174,7 +174,7 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                         </div>
                     </div>
                 </div>
-                <div class="layout-column col">
+                <div class="layout-column position-static col">
                     <div id="hor-menu" class="<?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['hormenu_class']) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['hormenu_class'], ENT_QUOTES, 'UTF-8');
 }?> <?php if ($_smarty_tpl->tpl_vars['gdzSetting']->value['hormenu_align']) {?> align-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gdzSetting']->value['hormenu_align'], ENT_QUOTES, 'UTF-8');
 }?>">
@@ -183,9 +183,8 @@ array_pop($_smarty_tpl->smarty->_cache['_tag_stack']);?>
                     </div>
                 </div>
                 <div class="layout-column col-auto">
-                    <div class="text d-flex align-items-center">
-                        <i class="la la-lightbulb-o"></i><p>Clearance<span class="highlight">&nbsp;Up to 30% Off</span></p>
-                    </div>
+                    <?php echo $_smarty_tpl->tpl_vars['gdzSetting']->value['header_html'];?>
+
                 </div>
             </div>
         </div>

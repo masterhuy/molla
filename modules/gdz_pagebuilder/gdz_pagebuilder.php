@@ -285,8 +285,6 @@ class gdz_pagebuilder extends Module
         ));
         $this->context->controller->addJqueryPlugin('fancybox');
 
-        $this->context->controller->registerStylesheet('gdzpb-style-css', '/assets/css/style.css', ['media' => 'all', 'priority' => 999]);
-
         if ($page['css_file']) {
             $this->context->controller->registerStylesheet('gdzpb-home-css', '/assets/css/'.$page['css_file'], ['media' => 'all', 'priority' => 1000]);
         }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-14 08:58:06
+/* Smarty version 3.1.33, created on 2020-07-28 08:55:37
   from 'D:\xampp\htdocs\jms_molla\modules\gdz_pagebuilder\views\templates\hook\template\addonhotdeal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f0d112e6cf847_48249863',
+  'unifunc' => 'content_5f1f85990266c5_43600129',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7745a5ff4d68d3d1bc9bd56369aab090d40cb7c7' => 
     array (
       0 => 'D:\\xampp\\htdocs\\jms_molla\\modules\\gdz_pagebuilder\\views\\templates\\hook\\template\\addonhotdeal.tpl',
-      1 => 1594026290,
+      1 => 1595493741,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f0d112e6cf847_48249863 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f1f85990266c5_43600129 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<%';?>
   component = $('#gdz-configuration').data('component');
   if(component) {
@@ -28,7 +28,7 @@ echo '<%';?>
     console.log(component);
     $.ajax({
         type: 'POST',
-        url: PagebuilderConfig.ajax_link + '?action=getDeals&secure_key=' + PagebuilderConfig.secure_key,
+        url: PagebuilderConfig.ajax_link + 'action=getDeals&secure_key=' + PagebuilderConfig.secure_key,
         data: {
             'setting' : setting,
         },
