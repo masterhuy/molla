@@ -25,13 +25,57 @@
 		height: auto;
 		border: none;
 	}
+	.html-2{
+		display: none;
+	}
+}
+#footer.footer-2{
+	background-color: #333;
+	#footer-main{
+		padding: 6rem 0 3.7rem;
+		.block .block-title{
+			color: #fff;
+		}
+	}
+	.html-1{
+		display: none;
+		margin-bottom: 3.3rem;
+	}
+	.social-label{
+		display: none;
+	}
+	.social-links li{
+		margin-left: 0;
+		margin-right: .6rem;
+		a{
+			&:hover i{
+				color: #fff;
+			}
+			i{
+				font-size: 1.6rem;
+				color: #777;
+				transition: all .35s ease;
+			}
+		}
+	}
+	#footer-copyright{
+		.container{
+			padding-top: 2.1rem;
+			padding-bottom: 2.9rem;
+			&::before{
+				background-color: #525455;
+			}
+		}
+		.cms-page-link{
+			display: none;
+		}
+	}
 }
 #footer {
 	width: 100%;
 	font-weight: 300;
 	font-size: 1.4rem;
 	color: #777;
-	background-color: #fff;
 
 	a:hover,
 	a:focus {

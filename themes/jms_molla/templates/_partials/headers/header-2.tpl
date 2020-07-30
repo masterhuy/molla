@@ -36,25 +36,29 @@
                         {/widget_block}
                     </div>
                 </div>
-                <div class="layout-column col">
-                    <ul class="d-flex align-items-center justify-content-end mb-0">
+                <div class="layout-column col header-right justify-content-end">
+                    <ul class="top-menu d-flex align-items-center mb-0">
                         <li>
                             <a href="tel:0123 456 789"><i class="icon-phone"></i>Call: +0123 456 789</a>
                         </li>
+                        {if ($gdzSetting.wishlist == 1)}
                         <li>
                             <a href="index.php?fc=module&module=gdz_wishlist&controller=mywishlist">
                                 <i class="icon-heart-o"></i>My Wishlist
                             </a>
                         </li>
+                        {/if}
                         <li>
                             <a href="index.php?id_cms=4&controller=cms">About Us</a>
                         </li>
                         <li>
                             <a href="index.php?controller=contact">Contact Us</a>
                         </li>
+                        {if ($gdzSetting.customersignin == 1)}
                         <li>
                             <a href="index.php?controller=my-account"><i class="icon-user"></i>Login</a>
                         </li>
+                        {/if}
                     </ul>
                 </div>
             </div>
@@ -84,14 +88,6 @@
                                 {include 'module:gdz_ajaxsearch/views/templates/hook/gdz_ajaxsearch-dropdown.tpl'}
                             {/widget_block}
                         {/if}
-                    {/if}
-                    {if ($gdzSetting.customersignin == 1)}
-                        {widget_block name="ps_customersignin"}
-                            {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
-                        {/widget_block}
-                    {/if}
-                    {if ($gdzSetting.wishlist == 1)}
-                        {include file='_partials/headers/wishlist.tpl'}
                     {/if}
                     {if ($gdzSetting.cart == 1)}
                         {widget_block name="ps_shoppingcart"}

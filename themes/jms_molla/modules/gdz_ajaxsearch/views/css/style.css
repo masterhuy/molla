@@ -99,6 +99,7 @@
   }
 }
 .search-result-content {
+  font-size: 1.3rem;
     background-color: #fff;
     background-clip: padding-box;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -132,6 +133,9 @@
 }
 .search_product_list a{
   color: inherit;
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: .5rem;
 }
 .search_product_list .layout-column {
     padding-left: 0px;

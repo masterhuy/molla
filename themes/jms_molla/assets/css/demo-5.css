@@ -724,7 +724,7 @@ a:focus {
 .header-intro-clearance #cart_block > a:hover {
   color: #a6c76c; }
 
-.header-intro-clearance #cart_block > a .ajax_cart_quantity {
+#cart_block .ajax_cart_quantity {
   background-color: #a6c76c; }
 
 .vermenu:hover .vermenu-btn {
@@ -1108,6 +1108,9 @@ a:focus {
   color: #a6c76c; }
 
 .vermenu .gdz-megamenu .nav .menu-item li > a:hover {
+  color: #a6c76c; }
+
+#gdz_ajax_search.show .btn-search {
   color: #a6c76c; }
 
 .gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {

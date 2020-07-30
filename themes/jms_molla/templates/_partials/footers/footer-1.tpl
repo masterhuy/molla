@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="logo-footer">
-                    {include file='_partials/headers/logo.tpl'}
+                    {include file='_partials/footers/logo.tpl'}
                 </div>
                 {$gdzSetting.footer_html nofilter}
             </div>

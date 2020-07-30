@@ -905,10 +905,10 @@ a:focus {
         &:hover{
             color: $primary-color;
         }
-        .ajax_cart_quantity{
-            background-color: $primary-color;
-        }
     }
+}
+#cart_block .ajax_cart_quantity{
+    background-color: $primary-color;
 }
 .vermenu:hover .vermenu-btn {
     background-color: $primary-color;
@@ -1736,6 +1736,9 @@ a:focus {
             }
         }
     }
+}
+#gdz_ajax_search.show .btn-search{
+    color: $primary-color;
 }
 .gdz-megamenu .nav > li.open > a, .gdz-megamenu .nav > li > a:hover {
     color: $primary-color;
