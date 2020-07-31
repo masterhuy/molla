@@ -782,8 +782,6 @@ footer .row, header .row {
   .header-top .container,
   .header-top .container-fluid {
     position: relative; }
-  .header-top .top-menu li + li {
-    margin-left: 2.6rem; }
   @media screen and (min-width: 1200px) {
     .header-top .container-fluid:after {
       left: 30px;
@@ -799,15 +797,6 @@ footer .row, header .row {
   margin: 0; }
   .top-menu > li {
     position: relative; }
-  .top-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .top-menu li + li {
-    margin-left: 3rem; }
   .top-menu a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -3180,11 +3169,23 @@ p {
     align-items: center; }
   .header-2 .header-top .header-right {
     padding: 0; }
-    .header-2 .header-top .header-right li + li {
+    .header-2 .header-top .header-right .dropdown-menu {
+      color: #777; }
+    .header-2 .header-top .header-right .user-info {
+      line-height: 39.5px; }
+      .header-2 .header-top .header-right .user-info:hover #login {
+        display: block; }
+    .header-2 .header-top .header-right #login {
+      top: calc(100% - 1px);
+      min-width: 120px;
+      left: 0; }
+    .header-2 .header-top .header-right .top-menu > li + li {
       margin-left: 2.6rem; }
-    .header-2 .header-top .header-right li > a {
+    .header-2 .header-top .header-right .top-menu > li .login {
       text-transform: uppercase; }
-      .header-2 .header-top .header-right li > a > i {
+    .header-2 .header-top .header-right .top-menu > li > a {
+      text-transform: uppercase; }
+      .header-2 .header-top .header-right .top-menu > li > a > i {
         font-size: 1.5rem;
         margin-right: .8rem;
         line-height: 1; }
@@ -9949,6 +9950,8 @@ button:focus {
   position: relative; }
   .newsletter-popup-container .btn-submit {
     display: none; }
+  .newsletter-popup-container .email_subscription input {
+    background-color: #f5f5f5; }
   .newsletter-popup-container .newsletter-button.btn-popup {
     display: block; }
   .newsletter-popup-container .newsletter-img {

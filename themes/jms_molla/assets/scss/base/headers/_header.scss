@@ -115,10 +115,6 @@ footer .row, header .row{
 		position: relative;
 	}
 
-	.top-menu li + li {
-		margin-left: 2.6rem;
-	}
-
 	@include mq('xl') {
 		.container-fluid {
 
@@ -148,16 +144,6 @@ footer .row, header .row{
 	> li {
 		position: relative;
 	}
-
-	ul {
-		display: flex;
-		align-items: center;
-	}
-
-	li + li {
-		margin-left: 3rem;
-	}
-
 	a {
 		display: inline-flex;
 		align-items: center;

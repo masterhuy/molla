@@ -56,7 +56,9 @@
                         </li>
                         {if ($gdzSetting.customersignin == 1)}
                         <li>
-                            <a href="index.php?controller=my-account"><i class="icon-user"></i>Login</a>
+                            {widget_block name="ps_customersignin"}
+                                {include 'module:ps_customersignin/ps_customersignin-dropdown.tpl'}
+                            {/widget_block}
                         </li>
                         {/if}
                     </ul>

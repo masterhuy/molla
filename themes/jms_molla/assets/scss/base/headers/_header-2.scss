@@ -69,9 +69,26 @@ p{
 		}
 		.header-right{
 			padding: 0;
-			li{
+			.dropdown-menu{
+				color: #777;
+			}
+			.user-info{
+				line-height: 39.5px;
+				&:hover #login{
+					display: block;
+				}
+			}
+			#login{
+				top: calc(100% - 1px);
+				min-width: 120px;
+				left: 0;
+			}
+			.top-menu > li{
 				+ li{
 					margin-left: 2.6rem;
+				}
+				.login{
+					text-transform: uppercase;
 				}
 				> a{
 					text-transform: uppercase;
