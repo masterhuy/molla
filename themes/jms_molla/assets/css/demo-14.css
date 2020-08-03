@@ -558,29 +558,18 @@ a:focus {
 .btn-expandable span {
   background-color: #a6c76c; }
 
-.product.product-4 .btn-product:hover, .product.product-4 .btn-product:focus {
-  background-color: #a6c76c; }
-
-.product.product-5 .btn-product {
+.productbox-2 .product-action .product-cart > a:hover {
   color: #a6c76c; }
-  .product.product-5 .btn-product:hover, .product.product-5 .btn-product:focus {
-    background-color: #a6c76c; }
+  .productbox-2 .product-action .product-cart > a:hover span {
+    -webkit-box-shadow: 0 1px 0 0 #a6c76c;
+    box-shadow: 0 1px 0 0 #a6c76c; }
 
-.product.product-7 .btn-product {
-  color: #a6c76c; }
-  .product.product-7 .btn-product span {
-    color: #a6c76c; }
-  .product.product-7 .btn-product:hover, .product.product-7 .btn-product:focus {
-    background-color: #a6c76c;
-    border-bottom-color: #a6c76c; }
+.product-buttons .btn-icon:hover {
+  background: #a6c76c; }
+  .product-buttons .btn-icon:hover::before {
+    border-color: #a6c76c; }
 
-.product.product-8 .new-price {
-  color: #a6c76c; }
-
-.product.product-8 .btn-product:before {
-  color: #a6c76c; }
-
-.product.product-8 .btn-product:hover, .product.product-8 .btn-product:focus {
+.product-buttons .btn-icon span {
   background-color: #a6c76c; }
 
 .product.product-list .btn-product:hover, .product.product-list .btn-product:focus {

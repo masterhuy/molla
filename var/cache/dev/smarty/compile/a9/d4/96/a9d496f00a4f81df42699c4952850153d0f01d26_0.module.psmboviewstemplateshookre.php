@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-28 08:46:42
+/* Smarty version 3.1.33, created on 2020-08-03 16:41:40
   from 'module:psmboviewstemplateshookre' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f1f8382564c76_28084348',
+  'unifunc' => 'content_5f27dbd4e505a7_50987895',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1f8382564c76_28084348 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f27dbd4e505a7_50987895 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xampp\htdocs\jms_molla/modules/ps_mbo/views/templates/hook/recommended-modules.tpl -->
 <?php echo '<script'; ?>
 >

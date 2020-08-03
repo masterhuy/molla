@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-28 08:49:37
+/* Smarty version 3.1.33, created on 2020-08-03 16:50:23
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f1f84312e4547_81491852',
+  'unifunc' => 'content_5f27dddff204a1_34626444',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1f84312e4547_81491852 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f27dddff204a1_34626444 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xampp\htdocs\jms_molla/themes/jms_molla/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl --><div class="email_subscription block">
 	<div class="block-content">
 	  	<?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>

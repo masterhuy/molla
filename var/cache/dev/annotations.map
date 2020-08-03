@@ -160,4 +160,9 @@
   160 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleRecommendedController',
   161 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleSelectionController',
   162 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ThemeCatalogController',
+  163 => 'PrestaShop\\Module\\ProductComment\\Entity\\ProductComment',
+  164 => 'PrestaShop\\Module\\ProductComment\\Entity\\ProductCommentCriterion',
+  165 => 'PrestaShop\\Module\\ProductComment\\Entity\\ProductCommentGrade',
+  166 => 'PrestaShop\\Module\\ProductComment\\Entity\\ProductCommentReport',
+  167 => 'PrestaShop\\Module\\ProductComment\\Entity\\ProductCommentUsefulness',
 );

@@ -516,60 +516,26 @@ a:focus {
         background-color: $primary-color;
     }
 }
-
-.product.product-4 {
-    .btn-product {
-
-        &:hover,
-        &:focus {
-            background-color: $secondary-color;
-        }
+.productbox-2 .product-action .product-cart > a:hover {
+    color: $primary-color;
+    span{
+        box-shadow: 0 1px 0 0 $primary-color;
     }
 }
 
-.product.product-5 {
-    .btn-product {
-        color: $primary-color;
-
-        &:hover,
-        &:focus {
+.product-buttons{
+    .btn-icon{
+        &:hover {
+            background: $primary-color;
+            &::before{
+                border-color: $primary-color;
+            }
+        }
+        span{
             background-color: $primary-color;
         }
     }
-}
-
-.product.product-7 {
-    .btn-product {
-        color: $primary-color;
-
-        span {
-            color: $primary-color;
-        }
-
-        &:hover,
-        &:focus {
-            background-color: $primary-color;
-            border-bottom-color: $primary-color;
-        }
-    }
-}
-
-.product.product-8 {
-    .new-price {
-        color: $primary-color;
-    }
-
-    .btn-product {
-        &:before {
-            color: $primary-color;
-        }
-
-        &:hover,
-        &:focus {
-            background-color: $primary-color;
-        }
-    }
-}
+} 
 
 .product.product-list {
     .btn-product {

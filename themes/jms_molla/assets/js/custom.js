@@ -74,6 +74,11 @@ jQuery(function ($) {
         zoomWindowFadeIn: 500,
         zoomWindowFadeOut: 750
     });
+
+    //remove short desc
+    if($('body').hasClass('page-index')){
+        $('.product-miniature .product-short-desc').remove();
+    }
 });
 
 $(document).mouseup(function(e){

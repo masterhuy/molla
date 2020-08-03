@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Five essential modules to prepare for the back-to-school season</title>
+    <link>https://www.prestashop.com/en/blog/modules-back-to-school</link>
+    <description>While summer, sales, and holidays will remain topical for a few more weeks, the September 2020 back-to-school season is </description>
+     <pubDate>Fri, 31 Jul 2020 15:50:12 +0200</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/modules-back-to-school</guid>
+  </item>
+  <item>
     <title>Crisis logistics: the importance of ensuring business continuity</title>
     <link>https://www.prestashop.com/en/blog/crisis-logistics-continuity</link>
     <description>We have already told you about the impact of the coronavirus on the world of e-commerce and t</description>
@@ -77,14 +85,6 @@ There are many great options available, so you can choose one that best fits you
      <pubDate>Thu, 04 Jun 2020 15:45:53 +0200</pubDate>
  <dc:creator>Pol Rué</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/maximizing-estimated-delivery-module</guid>
-  </item>
-  <item>
-    <title>Shipping During COVID-19</title>
-    <link>https://www.prestashop.com/en/blog/shipping-during-coronavirus</link>
-    <description>COVID-19 has caused both shipping volume and delivery times to increase dramatically.</description>
-     <pubDate>Wed, 27 May 2020 18:03:27 +0200</pubDate>
- <dc:creator>James Messer</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/shipping-during-coronavirus</guid>
   </item>
   </channel>
 </rss>

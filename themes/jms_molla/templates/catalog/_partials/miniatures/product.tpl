@@ -22,11 +22,9 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
- {if $gdzSetting.productbox_type == 'product-1'}
-    {include file='catalog/_partials/miniatures/product-1.tpl' product=$product}
- {elseif $gdzSetting.productbox_type == 'product-2'}
-    {include file='catalog/_partials/miniatures/product-2.tpl' product=$product}
- {elseif $gdzSetting.productbox_type == 'product-3'}
-    {include file='catalog/_partials/miniatures/product-3.tpl' product=$product}
- {/if}
+{if isset($smarty.get.productbox_type) && $smarty.get.productbox_type != ''}
+    {assign var='productbox' value="catalog/_partials/miniatures/`$smarty.get.productbox_type`.tpl"}
+{else}
+    {assign var='productbox' value="catalog/_partials/miniatures/`$gdzSetting.productbox_type`.tpl"}
+{/if}
+{include file=$productbox product=$product}

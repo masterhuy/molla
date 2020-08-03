@@ -557,29 +557,18 @@ a:focus {
 .btn-expandable span {
   background-color: #fcb941; }
 
-.product.product-4 .btn-product:hover, .product.product-4 .btn-product:focus {
-  background-color: #bf913d; }
-
-.product.product-5 .btn-product {
+.productbox-2 .product-action .product-cart > a:hover {
   color: #fcb941; }
-  .product.product-5 .btn-product:hover, .product.product-5 .btn-product:focus {
-    background-color: #fcb941; }
+  .productbox-2 .product-action .product-cart > a:hover span {
+    -webkit-box-shadow: 0 1px 0 0 #fcb941;
+    box-shadow: 0 1px 0 0 #fcb941; }
 
-.product.product-7 .btn-product {
-  color: #fcb941; }
-  .product.product-7 .btn-product span {
-    color: #fcb941; }
-  .product.product-7 .btn-product:hover, .product.product-7 .btn-product:focus {
-    background-color: #fcb941;
-    border-bottom-color: #fcb941; }
+.product-buttons .btn-icon:hover {
+  background: #fcb941; }
+  .product-buttons .btn-icon:hover::before {
+    border-color: #fcb941; }
 
-.product.product-8 .new-price {
-  color: #fcb941; }
-
-.product.product-8 .btn-product:before {
-  color: #fcb941; }
-
-.product.product-8 .btn-product:hover, .product.product-8 .btn-product:focus {
+.product-buttons .btn-icon span {
   background-color: #fcb941; }
 
 .product.product-list .btn-product:hover, .product.product-list .btn-product:focus {
@@ -1127,6 +1116,60 @@ a:focus {
 
 /* Fonts */
 /* font-family: 'Poppins', sans-serif; */
+.h3-product-carousel .product-miniature {
+  border: .1rem solid #ebebeb; }
+
+.h3-product-carousel .item {
+  height: 100%; }
+
+.h3-product-carousel .owl-carousel.customs .owl-stage-outer {
+  margin: 0;
+  padding: 2rem 0; }
+
+.h3-producttab .nav.nav-tabs .nav-item {
+  margin: 0 1rem; }
+
+.h3-producttab .nav.nav-tabs .nav-link {
+  position: relative;
+  padding: .8rem 1rem;
+  color: #ccc;
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: -.025em;
+  text-transform: capitalize; }
+  .h3-producttab .nav.nav-tabs .nav-link:hover {
+    color: #fcb941; }
+  .h3-producttab .nav.nav-tabs .nav-link.active {
+    color: #333;
+    border-bottom-color: #333; }
+    .h3-producttab .nav.nav-tabs .nav-link.active::before {
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center;
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
+  .h3-producttab .nav.nav-tabs .nav-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .1rem;
+    background-color: #333;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease; }
+
 .intro-banners .pb-banner-text {
   display: block;
   left: 3rem;
@@ -1184,14 +1227,16 @@ a:focus {
   border: 0;
   right: .6rem; }
   .fraction-slider .next:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #fcb941; }
 
 .fraction-slider .prev {
   color: #666;
   border: 0;
   left: .6rem; }
   .fraction-slider .prev:hover {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #fcb941; }
 
 .fraction-slider .text-2 {
   letter-spacing: -.025em; }

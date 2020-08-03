@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-28 08:46:58
+/* Smarty version 3.1.33, created on 2020-08-03 16:50:24
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\templates\_partials\headers\logo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f1f8392e4c652_32330598',
+  'unifunc' => 'content_5f27dde0930e57_51850538',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f1f8392e4c652_32330598 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f27dde0930e57_51850538 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_GET['header_layout']) && $_GET['header_layout'] != '') {?>
     <?php $_smarty_tpl->_assignInScope('header_layout', $_GET['header_layout']);
 } else { ?>

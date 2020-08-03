@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-07-28 08:49:37
+/* Smarty version 3.1.33, created on 2020-08-03 16:50:24
   from 'D:\xampp\htdocs\jms_molla\themes\jms_molla\modules\gdz_pagebuilder\views\templates\hook\addonproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5f1f8431891775_64768109',
+  'unifunc' => 'content_5f27dde051dde3_44578671',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 10,
   ),
 ),false)) {
-function content_5f1f8431891775_64768109 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f27dde051dde3_44578671 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pb-producttab addon-tab">
 		<ul class="nav nav-tabs tab-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['tab_align']->value, ENT_QUOTES, 'UTF-8');?>
 ">
