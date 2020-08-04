@@ -243,7 +243,10 @@
 	display: block;
 	width: 100%;
 	font-size: 1.3rem;
-	margin-top: .2rem;
+	margin-top: 0;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: .8rem;
 }
 
 .product-label {
@@ -756,16 +759,32 @@
 
 /* Product box 2 */
 .productbox-2{
+	.product-preview{
+		overflow: hidden;
+	}
+	.product-info{
+		padding-bottom: 1.9rem;
+	}
+	.wrapp-buttons{
+		top: 3rem;
+	}
+	.category-name{
+		color: #ccc;
+		&:hover{
+			color: #666;
+		}
+	}
+	.content_price .price.new.has-discount{
+		color: #ef837b;
+	}
 	.product-action{
 		padding: 0;
-		position: static;
-		opacity: 1;
-		visibility: visible;
-		transform: none;
+		bottom: 0;
 		.product-cart{
 			display: flex;
 			background-color: #333;
-			> a{
+			width: 100%;
+			> button{
 				color: #fff;
 				width: 50%;
 				border: 0;
@@ -777,6 +796,9 @@
 				position: relative;
 				height: 4rem;
 				background-color: transparent;
+				&.disabled{
+					cursor: not-allowed;
+				}
 				&:first-child::after{
 					content: "";
 					width: .1rem;
@@ -800,6 +822,14 @@
 					transition: all .35s ease;
 				}
 			}
+		}
+	}
+	.variant-links{
+		margin-top: .5rem;
+		justify-content: flex-start;
+		a{
+			margin: 0;
+			margin-right: .5rem;
 		}
 	}
 }

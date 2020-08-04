@@ -6626,7 +6626,10 @@ p {
   display: block;
   width: 100%;
   font-size: 1.3rem;
-  margin-top: .2rem; }
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: .8rem; }
 
 .product-label {
   position: absolute;
@@ -7099,20 +7102,33 @@ p {
     margin-top: -1px; }
 
 /* Product box 2 */
+.productbox-2 .product-preview {
+  overflow: hidden; }
+
+.productbox-2 .product-info {
+  padding-bottom: 1.9rem; }
+
+.productbox-2 .wrapp-buttons {
+  top: 3rem; }
+
+.productbox-2 .category-name {
+  color: #ccc; }
+  .productbox-2 .category-name:hover {
+    color: #666; }
+
+.productbox-2 .content_price .price.new.has-discount {
+  color: #ef837b; }
+
 .productbox-2 .product-action {
   padding: 0;
-  position: static;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none; }
+  bottom: 0; }
   .productbox-2 .product-action .product-cart {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #333; }
-    .productbox-2 .product-action .product-cart > a {
+    background-color: #333;
+    width: 100%; }
+    .productbox-2 .product-action .product-cart > button {
       color: #fff;
       width: 50%;
       border: 0;
@@ -7130,7 +7146,9 @@ p {
       position: relative;
       height: 4rem;
       background-color: transparent; }
-      .productbox-2 .product-action .product-cart > a:first-child::after {
+      .productbox-2 .product-action .product-cart > button.disabled {
+        cursor: not-allowed; }
+      .productbox-2 .product-action .product-cart > button:first-child::after {
         content: "";
         width: .1rem;
         height: 2rem;
@@ -7141,11 +7159,11 @@ p {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
-      .productbox-2 .product-action .product-cart > a::before {
+      .productbox-2 .product-action .product-cart > button::before {
         margin-right: .9rem;
         font-size: 1.8rem;
         line-height: 1; }
-      .productbox-2 .product-action .product-cart > a span {
+      .productbox-2 .product-action .product-cart > button span {
         line-height: 1.3rem;
         font-weight: 400;
         font-size: 1.3rem;
@@ -7153,6 +7171,15 @@ p {
         -webkit-transition: all .35s ease;
         -o-transition: all .35s ease;
         transition: all .35s ease; }
+
+.productbox-2 .variant-links {
+  margin-top: .5rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .productbox-2 .variant-links a {
+    margin: 0;
+    margin-right: .5rem; }
 
 /* Product box 3 */
 /* Product box 4 */

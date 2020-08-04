@@ -239,13 +239,13 @@
 .small-stars .star-content div.star-on,
 .small-stars .star-content div.star-hover {
   background: url(../img/small_stars.png) no-repeat 0 0 transparent;
-  width: 14px;
+  width: 15.5px;
   height: 14px;
 }
 
 .small-stars .star-content div.star-on,
 .small-stars .star-content div.star-hover {
-  background-position: -14px 0;
+  background-position: -13px 0;
 }
 
 .star-content div.star-hover {
@@ -255,33 +255,29 @@
 .product-list-reviews .grade-stars {
   position: relative;
   height: 20px;
-  min-width: 70px;
+  min-width: 77px;
   display: inline-block;
 }
 
 .product-list-reviews .grade-stars.small-stars {
-  min-width: 70px;
+  min-width: 77px;
   overflow: hidden;
 }
 
 .product-list-reviews.empty .grade-stars.small-stars {
   background: url(../img/star-empty-full.png) no-repeat 0 0 transparent;
-  background-position: center;
-}
-
-.product-list-reviews.empty .grade-stars.small-stars *{
-  display: none;
-}
-
-.grade-stars .star-content.star-empty {
-  
+  padding-left: 77px;
+  height: 23px;
+  background-position: center left;
 }
 
 .criterion-rating .grade-stars .star-content {
   top: 6px;
   left: 0 !important;
 }
-
+#post-product-comment-modal .modal-dialog{
+  background-color: #fff;
+}
 #post-product-comment-modal .star-content div.star a {
   display: block;
   position: absolute;
@@ -471,7 +467,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: calc(100% - 32px);
+  width: 100%;
   padding: 4px 0;
   position: absolute;
   top: 0;
@@ -482,19 +478,13 @@
 .grade-stars .star-content {
   position: absolute;
   left: 0;
-  top: 4px;
-}
-
-.product-list-reviews .comments-nb {
-  margin-left: 4px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #f63622;
+  top: 3px;
 }
 
 #review{
   position: relative;
   height: 28px;
+  margin-top: 4px;
 }
 
 @media (min-width: 768px) {

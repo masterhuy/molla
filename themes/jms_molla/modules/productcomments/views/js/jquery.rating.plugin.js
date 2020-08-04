@@ -135,6 +135,7 @@ jQuery.fn.rating = function(generalOptions) {
           // - one visible partial empty star (remaining part)
           // - one visible partial full star
           var fullWidth = (grade - i + 1) * componentOptions.starWidth;
+          var fullWidthNew = fullWidth - 2;
           var emptyWidth = componentOptions.starWidth - fullWidth;
           newStar = emptyStar.clone();
           newStar.css('visibility', 'hidden');
@@ -144,7 +145,7 @@ jQuery.fn.rating = function(generalOptions) {
           newStar = emptyStar.clone();
           newStar.css('width', emptyWidth);
           newStar.css('background-position', '0px -'+fullWidth+'px');
-          newStar.css('background-position', '-'+fullWidth+'px 0px');
+          newStar.css('background-position', '-'+fullWidthNew+'px 0px');
           newStar.css('marginLeft', 0);
           emptyStars.append(newStar);
 

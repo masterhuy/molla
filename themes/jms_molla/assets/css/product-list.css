@@ -487,6 +487,7 @@
 /***** PRODUCT BOX *****/
 .js-product-miniature{
 	position: relative;
+	background-color: #fff;
 }
 .js-product-miniature:hover{
 	box-shadow: 0 5px 20px rgba(0,0,0,0.05);

@@ -558,11 +558,20 @@ a:focus {
 .btn-expandable span {
   background-color: #a6c76c; }
 
-.productbox-2 .product-action .product-cart > a:hover {
+.productbox-2 .product-action .product-cart > button:hover {
   color: #a6c76c; }
-  .productbox-2 .product-action .product-cart > a:hover span {
+  .productbox-2 .product-action .product-cart > button:hover span {
     -webkit-box-shadow: 0 1px 0 0 #a6c76c;
     box-shadow: 0 1px 0 0 #a6c76c; }
+
+.productbox-2 .content_price .price.new {
+  color: #a6c76c; }
+
+.productbox-2 .out-text {
+  color: #a6c76c; }
+
+.h3-product-carousel .owl-carousel .owl-nav button::before {
+  color: #a6c76c; }
 
 .product-buttons .btn-icon:hover {
   background: #a6c76c; }

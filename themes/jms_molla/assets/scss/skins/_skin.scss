@@ -516,11 +516,22 @@ a:focus {
         background-color: $primary-color;
     }
 }
-.productbox-2 .product-action .product-cart > a:hover {
-    color: $primary-color;
-    span{
-        box-shadow: 0 1px 0 0 $primary-color;
+.productbox-2{
+    .product-action .product-cart > button:hover {
+        color: $primary-color;
+        span{
+            box-shadow: 0 1px 0 0 $primary-color;
+        }
     }
+    .content_price .price.new{
+        color: $primary-color;
+    }
+    .out-text{
+        color: $primary-color;
+    }
+}
+.h3-product-carousel .owl-carousel .owl-nav button::before{
+    color: $primary-color;
 }
 
 .product-buttons{

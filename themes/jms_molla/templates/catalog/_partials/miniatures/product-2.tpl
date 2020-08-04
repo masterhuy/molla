@@ -66,28 +66,27 @@
 				{/if}
 			</div>
 		</div>
-	</div>
-    <div class="product-action">     
-        <div class="product-cart">
-            {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
-                {if $product.quantity >= 1}
-                    <a href="#" class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                        <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
-                    </a>
-                {else}
-                    <a href="#" class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
-                        <span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
-                    </a>
+        <div class="product-action">     
+            <div class="product-cart">
+                {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
+                    {if $product.quantity >= 1}
+                        <button class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+                            <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+                        </button>
+                    {else}
+                        <button class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
+                            <span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
+                        </button>
+                    {/if}
                 {/if}
-            {/if}
-            {if $gdzSetting.productbox_quickview}
-                <a href="#" data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
-                    <span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
-                </a>
-            {/if}
+                {if $gdzSetting.productbox_quickview}
+                    <button data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">
+                        <span>{l s='Quick View' d='Shop.Theme.Actions'}</span>
+                    </button>
+                {/if}
+            </div>
         </div>
-    </div>
-
+	</div>
 	<div class="product-info">
         {if $gdzSetting.productbox_category}
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
@@ -105,17 +104,20 @@
             {block name='product_price_and_shipping'}
                 {if $product.show_price}
                     <div class="content_price">
-                        {hook h='displayProductPriceBlock' product=$product type="before_price"}
-                        {if $product.has_discount}
-                            {hook h='displayProductPriceBlock' product=$product type="old_price"}
-                            <span class="old price">{$product.regular_price}</span>
-                        {/if}
-                        <span class="price new">{$product.price}</span>
-                        {hook h='displayProductPriceBlock' product=$product type='unit_price'}
-                        {hook h='displayProductPriceBlock' product=$product type='weight'}
-                    </div>
+						{hook h='displayProductPriceBlock' product=$product type="before_price"}
+						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
+						{if $product.has_discount}
+							{hook h='displayProductPriceBlock' product=$product type="old_price"}
+							<span class="old price">{l s='Was' d='Shop.Theme.Actions'} {$product.regular_price}</span>
+						{/if}
+						{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+						{hook h='displayProductPriceBlock' product=$product type='weight'}
+					</div>
                 {/if}
             {/block}
+        {/if}
+        {if $product.quantity < 1}
+            <span class="out-text">{l s='Out of Stock' d='Shop.Theme.Actions'}</span>
         {/if}
         {block name='product_reviews'}
             {hook h='displayProductListReviews' product=$product}
@@ -131,3 +133,4 @@
 	</div>
 </div>
 {/block}
+
