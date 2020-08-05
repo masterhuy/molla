@@ -69,15 +69,9 @@
         <div class="product-action">     
             <div class="product-cart">
                 {if !$configuration.is_catalog && $gdzSetting.productbox_addtocart}
-                    {if $product.quantity >= 1}
-                        <button class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-                            <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
-                        </button>
-                    {else}
-                        <button class="product-btn btn-icon disabled" disabled title="{l s='Sold Out' d='Shop.Theme.Actions'}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}">
-                            <span>{l s='Sold Out' d='Shop.Theme.Actions'}</span>
-                        </button>
-                    {/if}
+                    <button class="ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button btn-icon" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+                        <span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+                    </button>
                 {/if}
                 {if $gdzSetting.productbox_quickview}
                     <button data-link-action="quickview" title="{l s='Quick View' d='Shop.Theme.Actions'}" class="btn-icon quick-view">

@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_currency_selector" class="header-dropdown currency-info">
+<div class="header-dropdown currency-info">
    	<a href="#">
 		{$current_currency.iso_code}
 	</a>

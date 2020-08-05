@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info">
+<div class="btn-group compact-hidden currency-info">
 	<ul>
       {foreach from=$currencies item=currency}
 	    <li {if $currency.current}class="current"{/if}>

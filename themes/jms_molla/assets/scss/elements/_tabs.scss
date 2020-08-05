@@ -1,4 +1,21 @@
 /* Tabs */
+.tab-content{
+	> .fade.active{
+		opacity: 1;
+	}
+	> .tab-pane {
+	    display: block;
+	    height: 0;
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: none;
+	    &.active{
+	    	height: initial;
+			opacity: 1;
+			visibility: visible;
+	    }
+	}
+}
 .nav-link {
 	&:focus {
 		outline: none !important;

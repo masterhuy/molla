@@ -35,7 +35,7 @@
 	</ul>
 	<div class="tab-content">
 		{foreach from = $categories key = k item = category}
-			<div role="tabpanel" class="tab-pane{if $k == 0} active{/if}" id="category{$category.id_category|escape:'html':'UTF-8'}">
+			<div role="tabpanel" class="tab-pane fade{if $k == 0} active{/if}" id="category{$category.id_category|escape:'html':'UTF-8'}">
 				{if $view_type == 'carousel'}
 					<div class="categorytab-products owl-carousel customs" data-items="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-lg="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}4{/if}" data-md="{if $cols_md}{$cols_md|escape:'htmlall':'UTF-8'}{else}3{/if}" data-sm="{if $cols_sm}{$cols_sm|escape:'htmlall':'UTF-8'}{else}2{/if}" data-xs="{if $cols_xs}{$cols_xs|escape:'htmlall':'UTF-8'}{else}1{/if}" data-nav="{if $navigation == '0'}false{else}true{/if}" data-dots="{if $pagination == '1'}true{else}false{/if}" data-auto="{if $autoplay == '1'}true{else}false{/if}" data-rewind="{if $rewind == '1'}true{else}false{/if}" data-slidebypage="{if $slidebypage == '1'}page{else}1{/if}" data-margin="{if isset($gutter)}{$gutter|escape:'htmlall':'UTF-8'}{else}30{/if}">
 						{foreach from = $category.products item = products_slide}

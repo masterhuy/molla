@@ -1136,6 +1136,11 @@ a:focus {
       border-color: #fcb941;
       background-color: #fcb941; }
 
+.title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: -.03em; }
+
 .product-buttons .btn-icon:hover {
   color: #333; }
 
@@ -1240,10 +1245,149 @@ a:focus {
   margin-right: 0; }
 
 .h3-deals .h3-hotdeal {
-  padding: 0; }
+  padding: 0;
+  margin-left: auto;
+  max-width: calc((100% - 20px)/2); }
+  .h3-deals .h3-hotdeal .owl-carousel.customs .owl-stage-outer {
+    margin: 0;
+    padding: 0; }
+
+.h3-deals .pb-text-content {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: -.01em; }
+
+.h3-deals .deal {
+  margin-right: auto;
+  max-width: calc((100% - 20px)/2); }
+  .h3-deals .deal .pb-heading {
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    margin-bottom: .2rem;
+    max-width: 240px; }
+  .h3-deals .deal .pb-text-content {
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: 0;
+    margin-bottom: .5rem;
+    max-width: 240px; }
+  .h3-deals .deal .product-title {
+    max-width: 240px;
+    margin-bottom: .7rem; }
+    .h3-deals .deal .product-title a {
+      text-transform: initial; }
+  .h3-deals .deal .product-price {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: .4rem; }
+  .h3-deals .deal .btn-link {
+    padding: 0; }
 
 .h3-hotdeal .countdown {
   display: none; }
+
+.pb-countdown-time {
+  margin-bottom: 0;
+  margin-left: -.8rem; }
+  .pb-countdown-time .countdown-row .countdown-section {
+    display: block;
+    text-align: center;
+    float: left; }
+  .pb-countdown-time .countdown-section {
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .9rem .5rem .3rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
+    background-color: #fcb941;
+    border-radius: .3rem;
+    border: none;
+    margin-bottom: 2rem;
+    min-width: 4rem; }
+    .pb-countdown-time .countdown-section:not(:last-child):after {
+      color: #333333;
+      content: ':';
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+      position: absolute;
+      left: 100%;
+      margin-left: 6px;
+      margin-top: -1px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -ms-transform: translateY(-50%); }
+  .pb-countdown-time .countdown-period {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -2rem;
+    display: block;
+    font-weight: 400;
+    color: #333333;
+    text-transform: lowercase;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .pb-countdown-time .countdown-amount {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: -.03em;
+    margin-bottom: .4rem; }
+
+.brand-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px; }
+
+.pb-categorytab .product-miniature {
+  margin-bottom: 0; }
+
+.pb-categorytab .nav.nav-tabs {
+  margin-bottom: .8rem; }
+  .pb-categorytab .nav.nav-tabs .nav-item + .nav-item {
+    margin-left: .2rem; }
+  .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: .45rem 1rem;
+    letter-spacing: -.01em;
+    position: relative; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
+      color: #fcb941; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before {
+      background-color: #fcb941; }
+
+.icon-box-side .pb-service-box .pb-service-content .pb-service-title {
+  font-size: 1.6rem;
+  letter-spacing: -.01em;
+  margin-bottom: .5rem; }
+
+.icon-box-side p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: -.01em; }
 
 .cta-border-image {
   background-size: cover;
@@ -1382,5 +1526,9 @@ a:focus {
     -ms-flex: 0 0 26.5%;
     flex: 0 0 26.5%;
     max-width: 26.5%; } }
+
+@media (min-width: 1200px) {
+  .h3-deals .btn-more {
+    min-width: 270px; } }
 
 /*# sourceMappingURL=demo-3.css.map */

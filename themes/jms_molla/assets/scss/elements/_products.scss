@@ -763,7 +763,7 @@
 		overflow: hidden;
 	}
 	.product-info{
-		padding-bottom: 1.9rem;
+		padding-bottom: 1.1rem;
 	}
 	.wrapp-buttons{
 		top: 3rem;
@@ -796,6 +796,7 @@
 				position: relative;
 				height: 4rem;
 				background-color: transparent;
+				transition: .3s all;
 				&.disabled{
 					cursor: not-allowed;
 				}
@@ -826,6 +827,7 @@
 	}
 	.variant-links{
 		margin-top: .5rem;
+		margin-bottom: .8rem;
 		justify-content: flex-start;
 		a{
 			margin: 0;
@@ -1046,13 +1048,11 @@
 
 @include mq('480px') {
 	.just-action-icons-sm {
-		.btn-product {
-			span {
-				display: none;
-			}
-
-			&:before {
-				margin-right: 0;
+		.product-cart{
+			.btn-icon{
+				span{
+					display: none;
+				}
 			}
 		}
 	}

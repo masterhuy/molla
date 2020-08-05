@@ -51,9 +51,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
-#content-wrapper {
-    overflow-x: hidden;
-}
 .layout-full-width #content-wrapper {
     width:100%;
 }
@@ -78,20 +75,6 @@ a:hover {
 .no-margin {
     margin-left:0px!important;
     margin-right:0px!important;
-}
-.btn,
-.btn-default {
-    font-style: normal;
-    text-transform: capitalize;
-    padding:0.25rem 1.2rem;
-    border-radius: 0px;
-    background:#333;
-    color:#fff;
-}
-.btn:hover,
-.btn-default:hover {
-    background: #333;
-    color:#fff;
 }
 .btn-default.disabled {
   opacity: 0.5;
