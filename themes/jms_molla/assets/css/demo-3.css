@@ -597,6 +597,13 @@ a:focus {
 .footer-dark.footer-2 .widget-about-title {
   color: #fcb941; }
 
+#footer.footer-3 .widget-call i {
+  color: #fcb941; }
+
+#footer.footer-3 .widget-call a:hover,
+#footer.footer-3 .widget-call a:focus {
+  color: #fcb941; }
+
 /* Headers */
 .header-top a:hover, .header-top a:focus {
   color: #fcb941; }
@@ -1286,6 +1293,57 @@ a:focus {
 
 .h3-hotdeal .countdown {
   display: none; }
+
+.h3-box-bg {
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto; }
+  .h3-box-bg > .container {
+    max-width: 100%; }
+    .h3-box-bg > .container > .row {
+      padding: 1rem; }
+  .h3-box-bg .pb-heading {
+    font-weight: 400;
+    letter-spacing: -.025em;
+    margin-bottom: .1rem; }
+  .h3-box-bg .pb-text-content {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    line-height: 1.5; }
+  .h3-box-bg .socials::before {
+    content: "";
+    width: .1rem;
+    display: block;
+    height: 75%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #ebebeb; }
+  .h3-box-bg .email_subscription {
+    max-width: 370px; }
+    .h3-box-bg .email_subscription input {
+      border: 1px solid #dadada;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-right: 0; }
+    .h3-box-bg .email_subscription #newsletter-btn {
+      padding: 0;
+      color: #fff;
+      min-width: 70px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: #fcb941; }
+      .h3-box-bg .email_subscription #newsletter-btn:hover {
+        background-color: #bf913d; }
+      .h3-box-bg .email_subscription #newsletter-btn span {
+        display: none; }
+      .h3-box-bg .email_subscription #newsletter-btn i {
+        margin-left: 0; }
 
 .pb-countdown-time {
   margin-bottom: 0;

@@ -597,6 +597,13 @@ a:focus {
 .footer-dark.footer-2 .widget-about-title {
   color: #a6c76c; }
 
+#footer.footer-3 .widget-call i {
+  color: #a6c76c; }
+
+#footer.footer-3 .widget-call a:hover,
+#footer.footer-3 .widget-call a:focus {
+  color: #a6c76c; }
+
 /* Headers */
 .header-top a:hover, .header-top a:focus {
   color: #a6c76c; }
@@ -1129,7 +1136,7 @@ a:focus {
   margin: 0; }
 
 .h1-countdown .pb-countdown {
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
   .h1-countdown .pb-countdown .countdown-section {
     position: relative;
     display: -webkit-inline-box;
@@ -1147,7 +1154,7 @@ a:focus {
     align-items: center;
     background-color: #a6c76c;
     color: #fff;
-    border-radius: 3px;
+    border-radius: .3rem;
     min-width: 70px;
     line-height: 1;
     padding-top: 2.1rem;
@@ -1174,18 +1181,18 @@ a:focus {
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis; }
     .h1-countdown .pb-countdown .countdown-section:not(:last-child) {
-      margin-right: 20px; }
+      margin-right: 2rem; }
       .h1-countdown .pb-countdown .countdown-section:not(:last-child)::after {
         color: #333333;
         content: ':';
         display: inline-block;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 2rem;
         line-height: 1;
         position: absolute;
         left: 100%;
-        margin-left: 9px;
-        margin-top: -1px;
+        margin-left: .9rem;
+        margin-top: -.1rem;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -1226,7 +1233,7 @@ a:focus {
   padding-left: 0; }
 
 .h1-countdown .col-banner .pb-banner-text {
-  top: 37px;
+  top: 3.7rem;
   bottom: auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1238,7 +1245,7 @@ a:focus {
   .h1-countdown .col-banner .pb-banner-text .btn {
     min-width: auto;
     background: transparent;
-    border: 1px solid #959595;
+    border: .1rem solid #959595;
     color: #333;
     white-space: nowrap;
     line-height: 1; }
@@ -1278,28 +1285,28 @@ a:focus {
   color: #fff; }
 
 .h1-banner .banner-1 .pb-banner-text {
-  left: 70px; }
+  left: 7rem; }
 
 .h1-banner .banner-2.pb-banner > a::after {
   background-color: rgba(51, 51, 51, 0.25); }
 
 .h1-banner .banner-2 .pb-banner-text {
-  left: 40px;
-  bottom: 40px;
+  left: 4rem;
+  bottom: 4rem;
   top: auto; }
 
 .h1-banner .banner-3 {
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
   .h1-banner .banner-3.pb-banner > a::after {
     background-color: rgba(51, 51, 51, 0.25); }
   .h1-banner .banner-3 .pb-banner-text .pb-banner-button {
-    margin-top: 14px; }
+    margin-top: 1.4rem; }
 
 .h1-banner .pb-banner-text {
   display: block;
-  top: 41px;
+  top: 4.1rem;
   bottom: auto;
-  left: 40px;
+  left: 4rem;
   right: auto;
   text-align: left; }
   .h1-banner .pb-banner-text .pb-banner-subtitle {
@@ -1308,7 +1315,7 @@ a:focus {
     font-weight: 300;
     font-size: 1.4rem;
     letter-spacing: -.01em;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
     line-height: 1.2; }
   .h1-banner .pb-banner-text .pb-banner-title {
     color: #333;
@@ -1323,13 +1330,13 @@ a:focus {
     font-size: 2.4rem;
     line-height: 1.25;
     letter-spacing: -.01em;
-    margin-bottom: 13px; }
+    margin-bottom: 1.3rem; }
   .h1-banner .pb-banner-text .pb-banner-button {
     background: transparent;
-    border: 1px solid #959595;
+    border: .1rem solid #959595;
     color: #333;
     min-width: auto;
-    padding: 5px 15px; }
+    padding: .5rem 1.5rem; }
     .h1-banner .pb-banner-text .pb-banner-button:hover {
       color: #fff;
       border-color: #a6c76c;
@@ -1342,7 +1349,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 10rem;
   border: .1rem solid #ebebeb;
   border-left-width: 0; }
   .h1-brand .brand-item a img {
@@ -1365,15 +1372,15 @@ a:focus {
     color: #fff;
     background-color: transparent;
     border-color: #fff;
-    border: 1px solid;
+    border: .1rem solid;
     min-width: 170px;
-    padding: 14.5px 20px;
+    padding: 1.45rem 2rem;
     line-height: 1; }
     .h1-slider .intro-slide .btn-primary:hover, .h1-slider .intro-slide .btn-primary:focus {
       background-color: #a6c76c;
       border-color: #a6c76c; }
     .h1-slider .intro-slide .btn-primary i {
-      margin-left: 5px; }
+      margin-left: .5rem; }
 
 .h1-slider .text-2 {
   letter-spacing: -.025em; }
@@ -1382,7 +1389,7 @@ a:focus {
   height: 100%; }
 
 .h1-producttab .nav.nav-tabs .nav-item {
-  margin: 0 10px; }
+  margin: 0 1rem; }
 
 .h1-producttab .nav.nav-tabs .nav-link {
   position: relative;

@@ -584,6 +584,13 @@ a:focus {
         }
     }
 }
+#footer.footer-3 .widget-call i{
+    color: $primary-color;
+}
+#footer.footer-3 .widget-call a:hover, 
+#footer.footer-3 .widget-call a:focus{
+    color: $primary-color;
+}
 
 /* Headers */
 .header-top {

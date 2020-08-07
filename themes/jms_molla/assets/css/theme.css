@@ -365,10 +365,6 @@ header .row .col-auto {
 .vermenu-btn {
   display:flex;
 }
-.vermenu-btn i {
-  margin-right:10px;
-  font-size:24px!important;
-}
 #header-bottom .container {
   padding-left:0px;
   padding-right:0px;

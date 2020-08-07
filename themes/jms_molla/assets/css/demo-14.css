@@ -598,6 +598,13 @@ a:focus {
 .footer-dark.footer-2 .widget-about-title {
   color: #a6c76c; }
 
+#footer.footer-3 .widget-call i {
+  color: #a6c76c; }
+
+#footer.footer-3 .widget-call a:hover,
+#footer.footer-3 .widget-call a:focus {
+  color: #a6c76c; }
+
 /* Headers */
 .header-top a:hover, .header-top a:focus {
   color: #a6c76c; }

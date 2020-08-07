@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="user-info">
+<div class="header-dropdown user-info">
 	{if $logged}
 		<div class="header-dropdown">
 			<a href="#" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}">
