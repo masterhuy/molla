@@ -286,21 +286,21 @@ img {
     .fraction-slider .text-primary sup + sup {
       margin-left: .8rem; }
 
-.pb-categorytab .product-miniature {
+.pb-categorytab .product-miniature, .pb-producttab .product-miniature {
   margin-bottom: 1.5rem; }
 
-.pb-categorytab .nav.nav-tabs {
+.pb-categorytab .nav.nav-tabs, .pb-producttab .nav.nav-tabs {
   margin-bottom: 3rem; }
-  .pb-categorytab .nav.nav-tabs .nav-item {
+  .pb-categorytab .nav.nav-tabs .nav-item, .pb-producttab .nav.nav-tabs .nav-item {
     margin: 0; }
-    .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link, .pb-producttab .nav.nav-tabs .nav-item .nav-link {
       font-size: 1.6rem;
       text-transform: uppercase;
       font-weight: 400;
       padding: .45rem 1.2rem;
       letter-spacing: -.01em;
       position: relative; }
-      .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before {
+      .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
         content: '';
         display: block;
         position: absolute;
@@ -320,9 +320,9 @@ img {
         -o-transition: transform .3s ease;
         transition: transform .3s ease;
         transition: transform .3s ease, -webkit-transform .3s ease; }
-      .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
+      .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
         color: #333; }
-        .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active::before {
+        .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active::before {
           -webkit-transform-origin: left center;
           -ms-transform-origin: left center;
           transform-origin: left center;
@@ -5588,7 +5588,7 @@ p {
   .text-white .title-separator {
     color: #777; }
 
-.title-desc {
+.pb-text-content {
   color: #777;
   font-weight: 300;
   font-size: 1.4rem;
@@ -5788,6 +5788,9 @@ p {
 
 /*--------------------- 4.6.Tabs -------------------- */
 /* Tabs */
+.addon-tab .nav-tabs .nav-link.active {
+  background-color: transparent; }
+
 .tab-content > .fade.active {
   opacity: 1; }
 
@@ -6012,6 +6015,7 @@ p {
   min-width: 170px;
   border-radius: 0;
   white-space: normal;
+  border: 1px solid #ebebeb;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }

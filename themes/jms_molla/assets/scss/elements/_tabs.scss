@@ -1,4 +1,9 @@
 /* Tabs */
+.addon-tab{
+	.nav-tabs .nav-link.active{
+		background-color: transparent;
+	}
+}
 .tab-content{
 	> .fade.active{
 		opacity: 1;
