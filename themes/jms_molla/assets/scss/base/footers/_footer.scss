@@ -77,7 +77,7 @@
 			}
 		}
 	}
-	&.footer-3{
+	&.footer-3, &.footer-4{
 		background-color: #fff;
 		#footer-main{
 			padding-bottom: 4.5rem;
@@ -126,6 +126,24 @@
 					box-shadow: none;
 				}
 			}
+		}
+	}
+	&.footer-4{
+		background-color: #f5f6f9;
+		.widget-call{
+			border-color: #e1e1e1;
+		}
+		.html-2{
+			margin-bottom: 1.1rem;
+		}
+		#footer-main{
+			padding-bottom: .5rem;
+		}
+		.footer-main {
+			padding: 4.4rem 0 2rem;
+		}
+		#footer-copyright .cms-page-link {
+			display: none;
 		}
 	}
 }

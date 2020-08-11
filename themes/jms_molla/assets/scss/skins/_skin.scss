@@ -575,6 +575,13 @@ a:focus {
     a:focus {
         color: $primary-color;
     }
+    &.footer-4{
+        .widget-call{
+            a{
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 .footer-dark {
@@ -584,12 +591,15 @@ a:focus {
         }
     }
 }
-#footer.footer-3 .widget-call i{
-    color: $primary-color;
-}
-#footer.footer-3 .widget-call a:hover, 
-#footer.footer-3 .widget-call a:focus{
-    color: $primary-color;
+#footer .widget-call{
+    i{
+        color: $primary-color;
+    }
+    a{
+        &:hover, &:focus{
+            color: $primary-color;
+        }
+    }
 }
 
 /* Headers */
@@ -1733,7 +1743,6 @@ a:focus {
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before{
     background-color: $primary-color;
 }
-
 #footer.footer-1 .html-1 .widget-about-info a {
     color: $primary-color;
 }

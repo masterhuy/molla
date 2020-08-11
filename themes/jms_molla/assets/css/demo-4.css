@@ -594,14 +594,16 @@ a:focus {
 #footer a:focus {
   color: #3399ff; }
 
+#footer.footer-4 .widget-call a {
+  color: #3399ff; }
+
 .footer-dark.footer-2 .widget-about-title {
   color: #3399ff; }
 
-#footer.footer-3 .widget-call i {
+#footer .widget-call i {
   color: #3399ff; }
 
-#footer.footer-3 .widget-call a:hover,
-#footer.footer-3 .widget-call a:focus {
+#footer .widget-call a:hover, #footer .widget-call a:focus {
   color: #3399ff; }
 
 /* Headers */
@@ -1146,7 +1148,12 @@ a:focus {
 .title {
   font-weight: 600;
   font-size: 2.4rem;
-  letter-spacing: -.03em; }
+  letter-spacing: -.025em; }
+
+.title-absolute {
+  position: absolute;
+  top: 1px;
+  z-index: 9; }
 
 .productbox-2 .content_price .price.new {
   color: #fcb941; }
@@ -1263,7 +1270,8 @@ a:focus {
     letter-spacing: -.01em;
     margin-left: -1rem;
     text-align: center;
-    min-width: 110px; }
+    min-width: 110px;
+    border: 0; }
     .banner-1 .pb-banner-text .btn:hover {
       color: #fff;
       background-color: #3399ff; }
@@ -1493,7 +1501,7 @@ a:focus {
 .pb-categorytab .nav.nav-tabs, .pb-producttab .nav.nav-tabs {
   margin-bottom: 1rem; }
   .pb-categorytab .nav.nav-tabs .nav-item + .nav-item, .pb-producttab .nav.nav-tabs .nav-item + .nav-item {
-    margin-left: .5rem; }
+    margin-left: .1rem; }
   .pb-categorytab .nav.nav-tabs .nav-item .nav-link, .pb-producttab .nav.nav-tabs .nav-item .nav-link {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -1505,6 +1513,50 @@ a:focus {
       color: #3399ff; }
     .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
       background-color: #3399ff; }
+
+.btn-rcm {
+  padding: 0;
+  font-weight: 500; }
+  .btn-rcm i {
+    font-size: 1.5rem; }
+
+.category-products.products .product-miniature {
+  margin-bottom: 2rem; }
+
+.pb-service-box .pb-service-title {
+  margin-bottom: .1rem; }
+
+.pb-service-box .pb-service-description {
+  font-size: 1.6rem; }
+  .pb-service-box .pb-service-description p {
+    font-weight: 300; }
+
+.h4-newsletter .pb-text-content {
+  margin-top: .5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0; }
+
+.h4-newsletter .email_subscription input {
+  color: #777;
+  border-radius: 30px 0 0 30px; }
+  .h4-newsletter .email_subscription input::-webkit-input-placeholder {
+    color: #777; }
+  .h4-newsletter .email_subscription input:-ms-input-placeholder {
+    color: #777; }
+  .h4-newsletter .email_subscription input::-ms-input-placeholder {
+    color: #777; }
+  .h4-newsletter .email_subscription input::placeholder {
+    color: #777; }
+
+.h4-newsletter #newsletter-btn {
+  padding: .85rem 1.5rem;
+  font-weight: 400;
+  border-radius: 0 30px 30px 0;
+  background-color: #3399ff;
+  color: #fff;
+  min-width: 178px; }
+  .h4-newsletter #newsletter-btn:hover {
+    background-color: #1d84ea; }
 
 @media (min-width: 1200px) {
   .btn-more {

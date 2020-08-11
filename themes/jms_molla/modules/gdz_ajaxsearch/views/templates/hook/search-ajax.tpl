@@ -19,30 +19,31 @@
 *
 *  @author PrestaShop SA <contact@prestashop.com>
 *  @copyright  2007-2019 PrestaShop SA
+*  @version  Release: $Revision$
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="result_div">
+<div class="search-result-content">
     {if $products}
-        <div class="results">
+        <div class="search_product_list">
             {foreach from=$products item=product name=i}
                 <div class="row align-items-center clearfix">
 					{if $show_image == 1}
-                        <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="search-product-image layout-column">
-    				        <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
-    				    </a>
-					{/if}
+                    <a href="{$product.link nofilter}" title="{$product.name nofilter}" class="search-product-image col-auto layout-column">
+    				            <img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'medium_default') nofilter}" alt="{$product.name nofilter}" />
+    				        </a>
+					          {/if}
                     <div class="product-info layout-column">
                         <a class="product-link" href="{$product.link nofilter}" title="{$product.name nofilter}">
-                            {$product.name|truncate:50:'...' nofilter}
+                            {$product.name|truncate:35:'...' nofilter}
                         </a>
                         {if $show_desc == 1}
-                            <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
+                        <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
                         {/if}
                         {if $show_price == 1}
-                            <div class="content_price">
-                                <span class="price new">{$product.price nofilter}</span>
-                            </div>
+                        <div class="content_price">
+                            <span class="price new">{$product.price nofilter}</span>
+                        </div>
                         {/if}
                     </div>
                 </div>

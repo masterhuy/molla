@@ -594,14 +594,16 @@ a:focus {
 #footer a:focus {
   color: #c96; }
 
+#footer.footer-4 .widget-call a {
+  color: #c96; }
+
 .footer-dark.footer-2 .widget-about-title {
   color: #c96; }
 
-#footer.footer-3 .widget-call i {
+#footer .widget-call i {
   color: #c96; }
 
-#footer.footer-3 .widget-call a:hover,
-#footer.footer-3 .widget-call a:focus {
+#footer .widget-call a:hover, #footer .widget-call a:focus {
   color: #c96; }
 
 /* Headers */

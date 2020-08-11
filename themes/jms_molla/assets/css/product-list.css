@@ -364,7 +364,6 @@
 .products.row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
 }
 .products-grid .js-product-miniature {
 		float: left;
