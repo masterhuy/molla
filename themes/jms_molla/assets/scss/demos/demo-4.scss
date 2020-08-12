@@ -10,6 +10,63 @@ $secondary-color: #1d84ea;
 @import '../config/fonts';
 @import '../config/variables';
 
+.gdz-slider-wrapper{
+	.intro-title {
+		letter-spacing: -.03em;
+	}
+	.intro-old-price{
+		letter-spacing: -.03em;
+		&::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			background-color: #999;
+		}
+	}
+	.text-third{
+		letter-spacing: -.025em;
+		sup{
+			font-size: 0.4em;
+			font-weight: 300;
+			right: 0;
+			line-height: 1;
+			top: -2.2rem !important;
+			letter-spacing: -.03em;
+		}
+	}
+	.btn{
+		padding-top: 1.15rem;
+		padding-bottom: 1.15rem;
+		i{
+			margin-left: .5rem;
+		}
+	}
+}
+.fraction-slider{
+	> a{
+		border-color: rgba(255,255,255,0.7);
+		background-color: rgba(255,255,255,0.7);
+	}
+	.prev{
+		color: #ccc;
+		left: calc((100% - 1170px)/2);
+		&:hover{
+			color: #fff;
+		}
+	}
+	.next{
+		color: #ccc;
+		right: calc((100% - 1170px)/2);
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
 .owl-dots{
 	margin-top: 2.2rem;
 	button{
@@ -38,8 +95,25 @@ $secondary-color: #1d84ea;
 	top: 1px;
 	z-index: 9;
 }
-.productbox-2 .content_price .price.new{
-	color: #fcb941;
+.productbox-2{
+	.content_price .price.new{
+		color: #fcb941;
+	}
+	.product-action .product-cart{
+		background-color: #f6f7fa;
+		> button{
+			color: #333;
+			&:first-child::after{
+				background-color: #d1d1d3;
+			}
+			span{
+				color: #666;
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
 }
 .banner-category{
 	.pb-banner{
@@ -481,6 +555,8 @@ $secondary-color: #1d84ea;
 		}
 	}
 }
+
+
 
 @media (min-width: 1200px){
 	.btn-more {

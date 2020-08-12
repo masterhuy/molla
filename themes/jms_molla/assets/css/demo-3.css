@@ -1507,7 +1507,12 @@ a:focus {
     font-size: 1.8rem;
     line-height: 1.22;
     letter-spacing: -.01em;
-    margin-bottom: .6rem; }
+    margin-bottom: .6rem;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+    .intro-banners .pb-banner-text .pb-banner-title:hover {
+      color: #fcb941; }
   .intro-banners .pb-banner-text .pb-banner-desc {
     font-weight: 300;
     color: #333;
@@ -1517,6 +1522,7 @@ a:focus {
     margin-bottom: .6rem;
     margin-top: -.5rem; }
   .intro-banners .pb-banner-text .pb-banner-button {
+    border: none;
     display: inline-block;
     line-height: 1.3;
     padding: .3rem 1rem;
@@ -1563,17 +1569,18 @@ a:focus {
   padding-top: 1.15rem;
   padding-bottom: 1.15rem; }
 
+.fraction-slider .text-price {
+  letter-spacing: -.03em; }
+
 .fraction-slider .intro-price {
-  color: #333333;
-  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -.025em; }
   .fraction-slider .intro-price sup {
-    font-size: 2rem;
+    font-size: 0.4em;
     line-height: 1;
     font-weight: 400;
     letter-spacing: -.03em;
-    top: -2.3rem; }
+    top: -1.1em; }
 
 @media screen and (min-width: 1200px) {
   .intro-section .col-lg-4 {
