@@ -658,6 +658,8 @@
 }
 .product-buttons .btn-icon:hover{
 	color: #fff;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 .product-buttons .btn-icon span{
 	display: inline-flex;
@@ -676,6 +678,7 @@
 	padding-left: 18px;
 	padding-right: 4px;
 	color: #fff;
+	transform: translateX(15px);
 	-webkit-transition: all .35s ease;
 	-moz-transition: all .35s ease;
 	-ms-transition: all .35s ease;
@@ -692,6 +695,7 @@
 	z-index: 1;
 }
 .product-buttons .btn-icon:hover span{
+	transform: translateX(0);
 	visibility: visible;
 	opacity: 1;
 }
@@ -702,6 +706,7 @@
 	border-radius: 50%;
 	display: block;
 	position: relative;
+	transition: all .35s ease;
 	z-index: 10;
 }
 .item .js-product-miniature {

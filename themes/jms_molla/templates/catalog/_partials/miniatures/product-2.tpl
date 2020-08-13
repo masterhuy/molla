@@ -51,6 +51,13 @@
 				{/if}
 		  	</a>
 		{/block}
+        {block name='product_flags'}
+			<ul class="product-flags">
+				{foreach from=$product.flags item=flag}
+					<li class="product-flag {$flag.type}">{$flag.label}</li>
+				{/foreach}
+			</ul>
+		{/block}
         <div class="wrapp-buttons">
 			<div class="product-buttons">
 				{if $gdzSetting.productbox_wishlist}            

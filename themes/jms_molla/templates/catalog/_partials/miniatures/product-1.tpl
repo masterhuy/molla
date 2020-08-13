@@ -69,7 +69,7 @@
 	<div class="product-info">
         {if $gdzSetting.productbox_category}
 			<a class="category-name" href="{url entity='category' id=$product.id_category_default}">
-				{$product.category|escape:'html':'UTF-8'}
+				{$product.category_name|escape:'html':'UTF-8'}
 			</a>
 	    {/if}
 		{block name='product_name'}

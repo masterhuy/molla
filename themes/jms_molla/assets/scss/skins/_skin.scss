@@ -530,6 +530,9 @@ a:focus {
         color: $primary-color;
     }
 }
+.productbox-3 .product-buttons .btn-icon:hover::before{
+    background-color: $primary-color;
+}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }

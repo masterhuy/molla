@@ -837,7 +837,59 @@
 }
 
 /* Product box 3 */
-
+.productbox-3{
+	&:hover{
+		box-shadow: none;
+		top: auto;
+		bottom: 0;
+		.product-action{
+			bottom: 0;
+		}
+	}
+	.product-preview{
+		overflow: hidden;
+	}
+	.product-buttons .btn-icon::before{
+		background-color: #fff;
+		border-color: #fff;
+	}
+	.product-info{
+		padding: 1.6rem 0 0 0;
+	}
+	.product-action{
+		top: auto;
+		bottom: -4rem;
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		padding: 0;
+		background-color: rgba(255,255,255,0.7);
+		.product-btn{
+			border: 0;
+			padding-top: 1.2rem;
+			padding-bottom: 1rem;
+			span{
+				margin-left: -1.35rem;
+				transition: all .35s ease;
+			}
+			&:hover{
+				span{
+					margin-left: 0;
+				}
+				&::before{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			&::before{
+				color: #fff;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .1s;
+			}
+		}
+	}
+}
 
 /* Product box 4 */
 

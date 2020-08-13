@@ -570,6 +570,9 @@ a:focus {
 .productbox-2 .out-text {
   color: #a6c76c; }
 
+.productbox-3 .product-buttons .btn-icon:hover::before {
+  background-color: #a6c76c; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #a6c76c; }
 
