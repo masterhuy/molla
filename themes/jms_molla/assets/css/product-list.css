@@ -637,6 +637,7 @@
 	-moz-transition: all 400ms;
 	-ms-transition: all 400ms;
 	-o-transition: all 400ms;
+	z-index: 1;
 }
 .product-miniature:hover .wrapp-buttons {
 	right: 2rem;
@@ -644,6 +645,11 @@
     visibility: visible;
 }
 .product-buttons .btn-icon {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	background-color: #fff;
 	text-align: center;
 	position: relative;
 	display: block;
@@ -654,23 +660,21 @@
 	-moz-transition: all 400ms;
 	-ms-transition: all 400ms;
 	-o-transition: all 400ms;
-	border-radius: 0 30px 30px 0;
 }
 .product-buttons .btn-icon:hover{
 	color: #fff;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+	border-radius: 0 30px 30px 0;
 }
 .product-buttons .btn-icon span{
 	display: inline-flex;
 	position: absolute;
+	height: 30px;
 	right: 100%;
-	top: 0;
+	top: -1px;
 	bottom: 0;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	display: inline-flex;
 	font-weight: 300;
 	font-size: 11px;
 	white-space: nowrap;
@@ -689,10 +693,9 @@
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
 	width: auto;
-	height: auto;
 	clip: auto;
 	margin: 0;
-	z-index: 1;
+	z-index: -1;
 }
 .product-buttons .btn-icon:hover span{
 	transform: translateX(0);
@@ -700,10 +703,6 @@
 	opacity: 1;
 }
 .product-buttons .btn-icon::before{
-	width: 30px;
-	height: 30px;
-	border: 1px solid #ebebeb;
-	border-radius: 50%;
 	display: block;
 	position: relative;
 	transition: all .35s ease;

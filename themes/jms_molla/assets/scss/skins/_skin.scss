@@ -530,9 +530,6 @@ a:focus {
         color: $primary-color;
     }
 }
-.productbox-3 .product-buttons .btn-icon:hover::before{
-    background-color: $primary-color;
-}
 .h3-product-carousel .owl-carousel .owl-nav button::before{
     color: $primary-color;
 }
@@ -540,10 +537,8 @@ a:focus {
 .product-buttons{
     .btn-icon{
         &:hover {
-            background: $primary-color;
-            &::before{
-                border-color: $primary-color;
-            }
+            border-color: $primary-color;
+            background-color: $primary-color;
         }
         span{
             background-color: $primary-color;
@@ -1746,6 +1741,26 @@ a:focus {
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before{
     background-color: $primary-color;
 }
+.pb-categorytab, .pb-producttab {
+    .nav.nav-tabs{
+        .nav-item .nav-link{
+            &::before{
+                background-color: $primary-color;
+            }
+            &.active{
+                color: $primary-color;
+            }
+        }
+    }
+}
+.pb-video-open-modal{
+    color: $primary-color;
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+
+
 #footer.footer-1 .html-1 .widget-about-info a {
     color: $primary-color;
 }

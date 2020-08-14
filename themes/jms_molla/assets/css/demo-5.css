@@ -569,16 +569,12 @@ a:focus {
 .productbox-2 .out-text {
   color: #cc6666; }
 
-.productbox-3 .product-buttons .btn-icon:hover::before {
-  background-color: #cc6666; }
-
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #cc6666; }
 
 .product-buttons .btn-icon:hover {
-  background: #cc6666; }
-  .product-buttons .btn-icon:hover::before {
-    border-color: #cc6666; }
+  border-color: #cc6666;
+  background-color: #cc6666; }
 
 .product-buttons .btn-icon span {
   background-color: #cc6666; }
@@ -1132,6 +1128,17 @@ a:focus {
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
   background-color: #cc6666; }
 
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
+  background-color: #cc6666; }
+
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
+  color: #cc6666; }
+
+.pb-video-open-modal {
+  color: #cc6666; }
+  .pb-video-open-modal:hover {
+    background-color: #cc6666; }
+
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #cc6666; }
 
@@ -1142,6 +1149,9 @@ a:focus {
   src: url("../../fonts/flaming/flaming-webfont.woff2") format("woff2"), url("../../fonts/flaming/flaming-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.owl-dots {
+  margin-top: .9rem; }
 
 .title {
   font-weight: 600;
@@ -1269,5 +1279,37 @@ a:focus {
   margin-bottom: 1rem; }
   .pb-categorytab .nav.nav-tabs .nav-item .nav-link, .pb-producttab .nav.nav-tabs .nav-item .nav-link {
     font-size: 1.5rem; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
+      background-color: #cc6666; }
+    .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
+      color: #cc6666; }
+
+.video-banner .video-banner-title {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase; }
+
+.video-banner .video-banner-desc {
+  font-weight: 700;
+  letter-spacing: 0; }
+  .video-banner .video-banner-desc i {
+    font-weight: 200; }
+
+.pb-video .pb-video-open-modal {
+  border-radius: 50%;
+  border: none;
+  width: 7rem;
+  height: 7rem;
+  -webkit-box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease; }
+  .pb-video .pb-video-open-modal:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2); }
+  .pb-video .pb-video-open-modal i {
+    font-size: 1.8rem; }
 
 /*# sourceMappingURL=demo-5.css.map */

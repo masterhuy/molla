@@ -19,6 +19,10 @@ $secondary-color: #c15454;
     font-style: normal;
 }
 
+
+.owl-dots{
+	margin-top: .9rem;
+}
 .title {
 	font-weight: 600;
 	font-size: 3rem;
@@ -159,6 +163,44 @@ $secondary-color: #c15454;
 		margin-bottom: 1rem;
 		.nav-item .nav-link{
 			font-size: 1.5rem;
+			&::before{
+				background-color: $primary-color;
+			}
+			&.active{
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.video-banner{
+	.video-banner-title{
+		font-weight: 400;
+		letter-spacing: 0;
+		text-transform: uppercase;
+	}
+	.video-banner-desc{
+		font-weight: 700;
+		letter-spacing: 0;
+		i{
+			font-weight: 200;
+		}
+	}
+}
+.pb-video{
+	.pb-video-open-modal{
+		border-radius: 50%;
+		border: none;
+		width: 7rem;
+		height: 7rem;
+		box-shadow: 0 0 0 1.5rem rgba(255,255,255,0.2);
+		transition: all .35s ease;
+		&:hover{
+			color: #fff;
+			box-shadow: 0 0 0 1rem rgba(255,255,255,0.2);
+		}
+		i{
+			font-size: 1.8rem;
 		}
 	}
 }

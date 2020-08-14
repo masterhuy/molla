@@ -106,7 +106,7 @@ $secondary-color: #bf913d;
 	.owl-dots{
 		bottom: -4.8rem;
 	}
-	.nav.nav-tabs{
+	.pb-producttab .nav.nav-tabs{
 		.nav-item{
 			margin: 0 1rem;
 		}
@@ -335,7 +335,7 @@ $secondary-color: #bf913d;
 	justify-content: center;
 	min-height: 48px;
 }
-.pb-categorytab, .pb-producttab{
+.pb-categorytab{
 	.product-miniature{
 		margin-bottom: 0;
 	}
@@ -352,12 +352,6 @@ $secondary-color: #bf913d;
 				padding: .45rem 1rem;
 				letter-spacing: -.01em;
 				position: relative;
-				&.active{
-					color: $primary-color;
-				}
-				&::before{
-					background-color: $primary-color;
-				}
 			}
 		}
 	}

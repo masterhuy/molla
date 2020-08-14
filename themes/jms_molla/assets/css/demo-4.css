@@ -569,16 +569,12 @@ a:focus {
 .productbox-2 .out-text {
   color: #3399ff; }
 
-.productbox-3 .product-buttons .btn-icon:hover::before {
-  background-color: #3399ff; }
-
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #3399ff; }
 
 .product-buttons .btn-icon:hover {
-  background: #3399ff; }
-  .product-buttons .btn-icon:hover::before {
-    border-color: #3399ff; }
+  border-color: #3399ff;
+  background-color: #3399ff; }
 
 .product-buttons .btn-icon span {
   background-color: #3399ff; }
@@ -1132,6 +1128,17 @@ a:focus {
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
   background-color: #3399ff; }
 
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
+  background-color: #3399ff; }
+
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
+  color: #3399ff; }
+
+.pb-video-open-modal {
+  color: #3399ff; }
+  .pb-video-open-modal:hover {
+    background-color: #3399ff; }
+
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #3399ff; }
 
@@ -1386,25 +1393,6 @@ a:focus {
     .h3-product-carousel .owl-carousel .owl-nav button.owl-prev::after {
       background-image: url("./../images/nav-prev-shadow.png"); }
 
-.pb-categorytab .product-miniature {
-  margin-bottom: 0; }
-
-.pb-categorytab .nav.nav-tabs {
-  margin-bottom: .8rem; }
-  .pb-categorytab .nav.nav-tabs .nav-item + .nav-item {
-    margin-left: .1rem; }
-  .pb-categorytab .nav.nav-tabs .nav-item .nav-link {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: .45rem 1rem;
-    letter-spacing: -.01em;
-    position: relative; }
-    .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active {
-      color: #3399ff; }
-    .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before {
-      background-color: #3399ff; }
-
 .cta-border {
   position: relative;
   border: none;
@@ -1570,10 +1558,6 @@ a:focus {
     padding: .45rem 1rem;
     letter-spacing: -.01em;
     position: relative; }
-    .pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
-      color: #3399ff; }
-    .pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
-      background-color: #3399ff; }
 
 .btn-rcm {
   padding: 0;

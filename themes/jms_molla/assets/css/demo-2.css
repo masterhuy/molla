@@ -569,16 +569,12 @@ a:focus {
 .productbox-2 .out-text {
   color: #c96; }
 
-.productbox-3 .product-buttons .btn-icon:hover::before {
-  background-color: #c96; }
-
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #c96; }
 
 .product-buttons .btn-icon:hover {
-  background: #c96; }
-  .product-buttons .btn-icon:hover::before {
-    border-color: #c96; }
+  border-color: #c96;
+  background-color: #c96; }
 
 .product-buttons .btn-icon span {
   background-color: #c96; }
@@ -1131,6 +1127,17 @@ a:focus {
 
 #hor-menu .gdz-megamenu .nav.level0 > li > a::before {
   background-color: #c96; }
+
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link::before, .pb-producttab .nav.nav-tabs .nav-item .nav-link::before {
+  background-color: #c96; }
+
+.pb-categorytab .nav.nav-tabs .nav-item .nav-link.active, .pb-producttab .nav.nav-tabs .nav-item .nav-link.active {
+  color: #c96; }
+
+.pb-video-open-modal {
+  color: #c96; }
+  .pb-video-open-modal:hover {
+    background-color: #c96; }
 
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #c96; }

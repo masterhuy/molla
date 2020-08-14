@@ -7324,12 +7324,25 @@ p {
   .productbox-3:hover .product-action {
     bottom: 0; }
 
+.productbox-3 .category-name {
+  color: #ccc;
+  margin-bottom: .4rem; }
+  .productbox-3 .category-name:hover {
+    color: #666; }
+
 .productbox-3 .product-preview {
   overflow: hidden; }
 
-.productbox-3 .product-buttons .btn-icon::before {
-  background-color: #fff;
-  border-color: #fff; }
+.productbox-3 .product-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem; }
+
+.productbox-3 .content_price span.price {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: .3rem; }
 
 .productbox-3 .product-info {
   padding: 1.6rem 0 0 0; }
@@ -7733,6 +7746,47 @@ p {
 
 /*--------------------- 4.10.Banners Video -------------------- */
 /* Banners Videos */
+.pb-video .modal-dialog {
+  max-width: 900px;
+  height: 506px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important; }
+  .pb-video .modal-dialog .modal-content {
+    height: 100%; }
+  .pb-video .modal-dialog .modal-header {
+    padding: 0;
+    border: none; }
+  .pb-video .modal-dialog .mfp-close {
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font-size: 2rem; }
+
+.pb-video .pb-video-open-modal {
+  border-radius: 50%;
+  border: none;
+  width: 7rem;
+  height: 7rem;
+  -webkit-box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.2);
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease; }
+  .pb-video .pb-video-open-modal:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2); }
+  .pb-video .pb-video-open-modal i {
+    font-size: 1.8rem; }
+
 .video-banner p {
   max-width: 500px; }
   .video-banner p:last-child {
@@ -7747,8 +7801,7 @@ p {
   padding-bottom: 7.5rem; }
 
 .video-banner-title {
-  letter-spacing: -.025em;
-  margin-bottom: 3.6rem; }
+  letter-spacing: -.025em; }
   .video-banner-title > span {
     display: block;
     font-weight: 400;
@@ -8873,7 +8926,7 @@ small.form-text {
 .modal-backdrop {
   background-color: #333; }
   .modal-backdrop.show {
-    opacity: .4; }
+    opacity: .6; }
 
 .modal-body {
   padding: 0; }

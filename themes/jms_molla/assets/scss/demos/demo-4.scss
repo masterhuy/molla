@@ -283,33 +283,6 @@ $secondary-color: #1d84ea;
 		}
 	}
 }
-.pb-categorytab{
-	.product-miniature{
-		margin-bottom: 0;
-	}
-	.nav.nav-tabs{
-		margin-bottom: .8rem;
-		.nav-item{
-			+ .nav-item{
-			 	margin-left: .1rem;
-			}
-			.nav-link {
-				font-size: 1.4rem;
-				text-transform: uppercase;
-				font-weight: 400;
-				padding: .45rem 1rem;
-				letter-spacing: -.01em;
-				position: relative;
-				&.active{
-					color: $primary-color;
-				}
-				&::before{
-					background-color: $primary-color;
-				}
-			}
-		}
-	}
-}
 
 .cta-border {
 	position: relative;
@@ -497,12 +470,6 @@ $secondary-color: #1d84ea;
 				padding: .45rem 1rem;
 				letter-spacing: -.01em;
 				position: relative;
-				&.active{
-					color: $primary-color;
-				}
-				&::before{
-					background-color: $primary-color;
-				}
 			}
 		}
 	}

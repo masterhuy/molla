@@ -93,7 +93,9 @@
     			{if $product.show_price}
 					<div class="content_price">
 						{hook h='displayProductPriceBlock' product=$product type="before_price"}
-						<span class="price new {if $product.has_discount}has-discount{/if}">{$product.price}</span>
+						<span class="price new {if $product.has_discount}has-discount{/if}">
+							{if $product.has_discount}{l s='Now' d='Shop.Theme.Actions'}{/if} {$product.price}
+						</span>
 						{if $product.has_discount}
 							{hook h='displayProductPriceBlock' product=$product type="old_price"}
 							<span class="old price">{l s='Was' d='Shop.Theme.Actions'} {$product.regular_price}</span>

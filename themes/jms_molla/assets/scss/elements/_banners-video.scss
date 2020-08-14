@@ -1,4 +1,49 @@
 /* Banners Videos */ 
+
+.pb-video{
+	.modal-dialog{
+		max-width: 900px;
+		height: 506px;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) !important;
+		.modal-content{
+			height: 100%;
+		}
+		.modal-header{
+			padding: 0;
+			border: none;
+		}
+		.mfp-close{
+			top: 1rem;
+			right: 1rem;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			background: #fff;
+			color: #333;
+			font-size: 2rem;
+		}
+	}
+	.pb-video-open-modal{
+		border-radius: 50%;
+		border: none;
+		width: 7rem;
+		height: 7rem;
+		box-shadow: 0 0 0 1.5rem rgba(255,255,255,0.2);
+		transition: all .35s ease;
+		&:hover{
+			color: #fff;
+			box-shadow: 0 0 0 1rem rgba(255,255,255,0.2);
+		}
+		i{
+			font-size: 1.8rem;
+		}
+
+	}
+}
+
 .video-banner {
 	p {
 		max-width: 500px;
@@ -21,7 +66,6 @@
 
 .video-banner-title {
 	letter-spacing: -.025em;
-	margin-bottom: 3.6rem;
 
 	> span {
 		display: block;
