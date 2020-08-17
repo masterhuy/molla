@@ -42,7 +42,7 @@
 	{elseif isset($category.products) && $category.products|@count gt 0}
 		<div class="category-products products row">
 			{foreach from = $category.products item = product}
-				<div class="col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
+				<div class="col-grid col-md-{12/$cols_md} col-sm-{12/$cols_sm} col-xs-{12/$cols_xs}">
 					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
 				</div>
 			{/foreach}

@@ -1,8 +1,9 @@
 /* Footer */
 #footer{
 	//footer 1
-	&.footer-1{
+	&.footer-1, &.footer-5{
 		.html-1{
+			display: block;
 			.widget-about-info{
 				margin-top: 4rem;
 				font-weight: 400;
@@ -144,6 +145,14 @@
 		}
 		#footer-copyright .cms-page-link {
 			display: none;
+		}
+	}
+	&.footer-5{
+		.footer-main{
+			padding-top: 4.8rem;
+		}
+		.html-1 p{
+			padding-right: 3rem;
 		}
 	}
 }

@@ -22,55 +22,34 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div id="footer-main" class="footer-main">
-     <div class="container">
-         <div class="row">
-             <div class="layout-column width-25">
-                 {block name='footer-newsletter'}
-                 <div class="block block-footer block-newsletter">
-                     {widget name="ps_emailsubscription" hook='displayFooter'}
-                 </div>
-                 {/block}
-             </div>
-             {block name='hook_footer'}
-                 {hook h='displayFooter'}
-             {/block}
-             <div class="layout-column width-20">
-                 {block name='footer-contact'}
-                 <div class="block block-footer block-newsletter">
-                     {widget name="ps_contactinfo" hook='displayFooter'}
-                 </div>
-                 {/block}
-                 {include file='_partials/socials.tpl'}
-             </div>
-         </div>
-         <div class="row">
-             {block name='hook_footer_after'}
-                 {hook h='displayFooterAfter'}
-             {/block}
-         </div>
-     </div>
- </div>
- {block name='footer-copyright'}
- <div id="footer-copyright" class="footer-copyright{if $gdzSetting.footer_copyright_class} {$gdzSetting.footer_copyright_class}{/if}">
-     <div class="container">
-           <div class="row align-items-center">
-               <div class="layout-column col-auto html_links">
-                     {$gdzSetting.footer_html nofilter}
-               </div>
-               <div class="layout-column text-right">
-                   {widget_block name="ps_languageselector"}
-                       {include 'module:ps_languageselector/ps_languageselector-dropdown-full.tpl'}
-                   {/widget_block}
-               </div>
-           </div>
-           <div class="row align-items-center">
-               {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
-               <div class="layout-column col-auto">
-                     {$gdzSetting.footer_copyright_content nofilter}
-               </div>
-               {/if}
-           </div>
-     </div>
- </div>
- {/block}
+<div id="footer-main" class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="logo-footer">
+                    {include file='_partials/footers/logo.tpl'}
+                </div>
+                {$gdzSetting.footer_html nofilter}
+            </div>
+            {block name='hook_footer'}
+                {hook h='displayFooter'}
+            {/block}
+        </div>
+    </div>
+</div>
+{block name='footer-copyright'}
+    <div id="footer-copyright" class="footer-copyright{if $gdzSetting.footer_copyright_class} {$gdzSetting.footer_copyright_class}{/if}">
+        <div class="container">
+            <div class="row align-items-center">
+                {if isset($gdzSetting.footer_copyright_content) && $gdzSetting.footer_copyright_content}
+                    <div class="layout-column col-auto">
+                        {$gdzSetting.footer_copyright_content nofilter}
+                    </div>
+                {/if}
+                <div class="layout-column col text-right">
+                    {include file='_partials/socials.tpl'}
+                </div>
+            </div>
+        </div>
+    </div>
+{/block}
