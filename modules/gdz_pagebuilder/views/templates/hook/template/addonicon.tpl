@@ -23,17 +23,17 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <style type="text/css">
-#<%= addonid %> .pb-icon-box {
+#<%= addonid %> .gdz-icon-box {
     text-align: <%= text_align %>;
 }
-#<%= addonid %> .pb-icon-box i {
+#<%= addonid %> .gdz-icon-box i {
     font-size:<%= icon_fontsize %>px;
 }
-#<%= addonid %> .pb-icon-box img {
+#<%= addonid %> .gdz-icon-box img {
     width:<%= image_width %>%;
 }
 </style>
-<div class="pb-icon-box<% if(box_class) { %> <%= box_class %><% } %>">
+<div class="gdz-icon-box<% if(box_class) { %> <%= box_class %><% } %>">
 		<% if(icon_type == 'image' && image) { %>
 			<img src="<%= image %>" alt="<%= alt_text %>" />
 		<% } else if (icon_class) { %>

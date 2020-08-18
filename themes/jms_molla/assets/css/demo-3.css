@@ -1139,6 +1139,9 @@ a:focus {
   .pb-video-open-modal:hover {
     background-color: #fcb941; }
 
+.header-5 .search-form i:hover {
+  color: #fcb941; }
+
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #fcb941; }
 

@@ -64,18 +64,7 @@ class gdzAddonButton extends gdzAddonBase
                 'lang' => '0',
                 'options_name' => array('value','title'),
                 'desc' => 'Open link in same or in new window',
-                'options' => array(
-                                0 => array('value'=> 'default', 'title' => 'Default'), 
-                                1 => array('value'=> 'success', 'title' => 'Success'), 
-                                2 => array('value'=> 'info', 'title' => 'Info'), 
-                                3 => array('value'=> 'warning', 'title' => 'Warning'), 
-                                4 => array('value'=> 'danger', 'title' => 'Danger'), 
-                                5 => array('value'=> 'outline-darker', 'title' => 'Outline Darker'),
-                                6 => array('value'=> 'link', 'title' => 'Link'),
-                                7 => array('value'=> 'primary', 'title' => 'Primary'),
-                                8 => array('value'=> 'more', 'title' => 'More'),
-                                9 => array('value'=> 'round', 'title' => 'Round')
-                            ),
+                'options' => array(0 => array('value'=> 'default', 'title' => 'Default'), 1 => array('value'=> 'success', 'title' => 'Success'), 2 => array('value'=> 'info', 'title' => 'Info'), 3 => array('value'=> 'warning', 'title' => 'Warning'), 4 => array('value'=> 'danger', 'title' => 'Danger') ),
                 'default' => 'default'
             ),
             array(
@@ -85,14 +74,7 @@ class gdzAddonButton extends gdzAddonBase
                 'lang' => '0',
                 'options_name' => array('value','title'),
                 'desc' => 'Open link in same or in new window',
-                'options' => array(
-                                0 => array('value'=> 'xs', 'title' => 'Extra Small'), 
-                                1 => array('value'=> 'sm', 'title' => 'Small'), 
-                                2 => array('value'=> 'md', 'title' => 'Medium'), 
-                                3 => array('value'=> 'lg', 'title' => 'Large'), 
-                                4 => array('value'=> 'xl', 'title' => 'Extra Large'),
-                                5 => array('value'=> '', 'title' => 'None') 
-                            ),
+                'options' => array(0 => array('value'=> 'xs', 'title' => 'Extra Small'), 1 => array('value'=> 'sm', 'title' => 'Small'), 2 => array('value'=> 'md', 'title' => 'Medium'), 3 => array('value'=> 'lg', 'title' => 'Large'), 4 => array('value'=> 'xl', 'title' => 'Extra Large') ),
                 'default' => 'md'
             ),
             array(

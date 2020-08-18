@@ -39,7 +39,7 @@
     setting = component.data('setting');
     $.ajax({
         type: 'POST',
-        url: PagebuilderConfig.ajax_link + '?action=getProductTab&secure_key=' + PagebuilderConfig.secure_key,
+        url: PagebuilderConfig.ajax_link + 'action=getProductTab&secure_key=' + PagebuilderConfig.secure_key,
         data: {
             'setting' : setting,
         },

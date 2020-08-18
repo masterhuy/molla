@@ -2,7 +2,7 @@
     <div class="column-settings">
         <ul role="tablist" class="nav nav-tabs">
         {foreach from=$column_settings key=i item=column_setting}
-            <li class="{if $i==0}active{/if}"><a data-toggle="tab" href="#column-{$column_setting.id}"><i class="pb-icon-{$column_setting.id}"></i>{$column_setting.title}</a></li>
+            <li class="{if $i==0}active{/if}"><a data-toggle="tab" href="#column-{$column_setting.id}"><i class="gdz-icon-{$column_setting.id}"></i>{$column_setting.title}</a></li>
         {/foreach}
         </ul>
         <div class="tab-content">

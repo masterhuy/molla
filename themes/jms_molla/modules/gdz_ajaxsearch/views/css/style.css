@@ -107,6 +107,7 @@
     width: 100%;
     padding: 20px;
     overflow-y: auto;
+    min-width: 400px;
     z-index:2001;
 }
 #search-form-full .search-result-content {

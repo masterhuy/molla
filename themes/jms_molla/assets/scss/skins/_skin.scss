@@ -1759,7 +1759,11 @@ a:focus {
         background-color: $primary-color;
     }
 }
-
+.header-5 .search-form i{
+    &:hover{
+        color: $primary-color;
+    }
+}
 
 #footer.footer-1 .html-1 .widget-about-info a {
     color: $primary-color;

@@ -32,19 +32,19 @@
                 </div>
                 <div class="pagebuilder-dialog-header-right pull-right">
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-library" data-form="library">
-                        <i class="pb-icon-library"></i>
+                        <i class="gdz-icon-library"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-load" data-form="load">
-                        <i class="pb-icon-import"></i>
+                        <i class="gdz-icon-import"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-file" data-form="file">
-                        <i class="pb-icon-export"></i>
+                        <i class="gdz-icon-export"></i>
                     </div>
                     <div class="pagebuilder-dialog-switch-form pagebuilder-dialog-element pagebuilder-dialog-switch-save" data-form="save">
-                        <i class="pb-icon-save-to-template"></i>
+                        <i class="gdz-icon-save"></i>
                     </div>
                     <div class="pagebuilder-dialog-close pagebuilder-dialog-element">
-                        <i class="fa fa-times"></i>
+                        <i class="gdz-icon-closesimple-light"></i>
                     </div>
                 </div>
             </div>
@@ -55,9 +55,9 @@
                         <div class="template-row" data-id="{$template.id_template}">
                             <div class="template-name">{$template.name}</div>
                             <div class="template-tools pull-right">
-                                <a class="template-export"><i class="pb-icon-export"></i><span>{l s='Export' mod='gdz_pagebuilder'}</span></a>
-                                <a class="template-delete"><i class="pb-icon-delete"></i><span>{l s='Delete' mod='gdz_pagebuilder'}</span></a>
-                                <a class="template-import"><i class="pb-icon-import"></i><span>{l s='Import' mod='gdz_pagebuilder'}</span></a>
+                                <a class="template-export"><i class="gdz-icon-export"></i><span>{l s='Export' mod='gdz_pagebuilder'}</span></a>
+                                <a class="template-delete"><i class="gdz-icon-delete"></i><span>{l s='Delete' mod='gdz_pagebuilder'}</span></a>
+                                <a class="template-import"><i class="gdz-icon-import"></i><span>{l s='Import' mod='gdz_pagebuilder'}</span></a>
                             </div>
                         </div>
                       {/foreach}

@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>E-commerce: The KPIs you should monitor</title>
+    <link>https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</link>
+    <description>Data is the most valuable source of information to help you maximise your e-commerce conversions.</description>
+     <pubDate>Mon, 17 Aug 2020 17:56:28 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-kpis-monitor</guid>
+  </item>
+  <item>
+    <title>Important stages of a business: why do you have to climb to win?</title>
+    <link>https://www.prestashop.com/en/blog/important-stages-business</link>
+    <description>All businesses have a life cycle. There is the initial phase, where it&#039;s just an idea, a stroke of genius in the mind of an entrepreneur, merely imagination.</description>
+     <pubDate>Mon, 17 Aug 2020 17:50:45 +0200</pubDate>
+ <dc:creator>luca mastroianni</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/important-stages-business</guid>
+  </item>
+  <item>
     <title>Five essential modules to prepare for the back-to-school season</title>
     <link>https://www.prestashop.com/en/blog/modules-back-to-school</link>
     <description>While summer, sales, and holidays will remain topical for a few more weeks, the September 2020 back-to-school season is </description>
@@ -69,22 +85,6 @@ There are many great options available, so you can choose one that best fits you
      <pubDate>Wed, 10 Jun 2020 18:23:21 +0200</pubDate>
  <dc:creator>PrestaShop Team</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-ecommerce-week-2020</guid>
-  </item>
-  <item>
-    <title>Top 10 modules to optimize the customer experience on your online store</title>
-    <link>https://www.prestashop.com/en/blog/ux-conversion-rate</link>
-    <description>An online store is much more than just an online catalogue: it&#039;s a browsing experience for your visitors and a buying ex</description>
-     <pubDate>Mon, 08 Jun 2020 14:06:38 +0200</pubDate>
- <dc:creator>PrestaShop Team</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ux-conversion-rate</guid>
-  </item>
-  <item>
-    <title>Step-by-step guide: Maximizing the use of the ‘Estimated Delivery’ module</title>
-    <link>https://www.prestashop.com/en/blog/maximizing-estimated-delivery-module</link>
-    <description>Since the emergence of the coronavirus pandemic, many small and medium enterprises and even big companies have embraced </description>
-     <pubDate>Thu, 04 Jun 2020 15:45:53 +0200</pubDate>
- <dc:creator>Pol Rué</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/maximizing-estimated-delivery-module</guid>
   </item>
   </channel>
 </rss>

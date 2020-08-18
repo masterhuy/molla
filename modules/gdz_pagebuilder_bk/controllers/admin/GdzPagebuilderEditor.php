@@ -158,6 +158,11 @@ class gdzPagebuilderEditorController extends ModuleAdminController
 
         $editor_link = $this->context->link->getAdminLink('gdzPagebuilderEditor');
         $ajax_link = $this->context->link->getModuleLink('gdz_pagebuilder', 'ajax', array(), true);
+        if (strpos($ajax_link, '?') !== false) {
+            $ajax_link .= '&';
+        } else {
+            $ajax_link .= '?';
+        }
         require_once(_PS_MODULE_DIR_._GDZ_PB_NAME_.'/classes/settings.php');
     		$rowSettings = gdzPageBuilderHelper::getSettingsDefaultValue($row_settings);
         $colSettings = gdzPageBuilderHelper::getSettingsDefaultValue($column_settings);

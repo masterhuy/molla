@@ -719,6 +719,7 @@
     border-left: 1px solid #efefef;
     cursor: pointer;
     display: inline-block;
+    float:left;
 }
 .pagebuilder-dialog-header .pagebuilder-dialog-element.active i {
     color:#4aa1ea;

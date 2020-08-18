@@ -75,6 +75,7 @@ $(document).ready(function() {
 		setCookie("showpopup", "show", 365);
 	}
 	$('.popup-close').on('click', function() {
+		alert('aaa');
 		$('.gdz-popup-overlay').hide();
 	});
 	$('#dontshowagain').click(function (e) {

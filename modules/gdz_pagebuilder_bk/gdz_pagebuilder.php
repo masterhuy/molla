@@ -288,6 +288,7 @@ class gdz_pagebuilder extends Module
         if ($page['css_file']) {
             $this->context->controller->registerStylesheet('gdzpb-home-css', '/assets/css/'.$page['css_file'], ['media' => 'all', 'priority' => 1000]);
         }
+        
         if ($page['js_file']) {
             $this->context->controller->registerJavascript('gdzpb-home-js', '/assets/js/'.$page['js_file'], ['position' => 'bottom', 'priority' => 200]);
         }

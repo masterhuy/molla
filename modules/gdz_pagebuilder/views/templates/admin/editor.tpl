@@ -57,7 +57,7 @@
     <div class="gdz-tools" id="tool-addons">
         <div class="tool-search">
             <input type="text" id="search-addon" placeholder="{l s='Search for addon name' mod='gdz_pagebuilder'}.." />
-            <i class="pb-icon-search"></i>
+            <i class="gdz-icon-search"></i>
         </div>
         <ul class="pagebuilder-addons clearfix">
           <li class="addon-group">{l s='Addons' mod='gdz_pagebuilder'}</li>
@@ -111,12 +111,12 @@
         <a class="btn" target="_blank" href="{$link->getAdminLink('AdminGdzThemeSetting') nofilter}&configure=gdz_themesetting" title="{l s='Theme Setting' mod='gdz_pagebuilder'}">{l s='Setting' mod='gdz_pagebuilder'}</i></a>
         <a class="btn" target="_blank" href="{$page_link}" title="{l s='Page Preview' mod='gdz_pagebuilder'}">{l s='Preview' mod='gdz_pagebuilder'}</a>
         <div class="dropdown btn" id="tool-device">
-          <button class="dropbtn"><i class="pb-icon-desktop"></i></button><i class="arrow-down"></i>
+          <button class="dropbtn"><i class="gdz-icon-desktop"></i></button><i class="arrow-down"></i>
           <div class="dropdown-content">
             <ul class="drop-list device-icons">
-              <li class="active li-md" data-device="md"><a class="md-device"><span class="icon"><i class="pb-icon-desktop"></i></span><span class="drop-text device">{l s='Desktop' mod='gdz_pagebuilder'}</span></a></li>
-              <li class="li-sm" data-device="sm"><a class="sm-device"><span class="icon"><i class="pb-icon-tablet"></i></span><span class="drop-text device">{l s='Tablet' mod='gdz_pagebuilder'}</span></a></li>
-              <li class="li-xs" data-device="xs"><a class="xs-device"><span class="icon"><i class="pb-icon-mobile"></i></span><span class="drop-text device">{l s='Mobile' mod='gdz_pagebuilder'}</span></a></li>
+              <li class="active li-md" data-device="md"><a class="md-device"><span class="icon"><i class="gdz-icon-desktop"></i></span><span class="drop-text device">{l s='Desktop' mod='gdz_pagebuilder'}</span></a></li>
+              <li class="li-sm" data-device="sm"><a class="sm-device"><span class="icon"><i class="gdz-icon-tablet"></i></span><span class="drop-text device">{l s='Tablet' mod='gdz_pagebuilder'}</span></a></li>
+              <li class="li-xs" data-device="xs"><a class="xs-device"><span class="icon"><i class="gdz-icon-mobile"></i></span><span class="drop-text device">{l s='Mobile' mod='gdz_pagebuilder'}</span></a></li>
             </ul>
           </div>
         </div>

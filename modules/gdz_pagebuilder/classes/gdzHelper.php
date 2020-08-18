@@ -13,7 +13,7 @@ if (Module::isInstalled('gdz_themesetting')) {
     include_once _PS_MODULE_DIR_ . 'gdz_themesetting/classes/settings.php';
 }
 class gdzPageBuilderHelper extends Module
-{    
+{
     public function __construct()
     {
         $this->name = _GDZ_PB_NAME_;
@@ -562,13 +562,13 @@ class gdzPageBuilderHelper extends Module
             $item_css .= "width:".$item->fields[5]->value."%;";
             $item_css .= "}";
         } elseif($item->type == 'icon') {
-            $item_css = "#$item->id .pb-icon-box {";
+            $item_css = "#$item->id .gdz-icon-box {";
             $item_css .= "text-align:".$item->fields[6]->value.";";
             $item_css .= "}";
-            $item_css .= "#$item->id .pb-icon-icon i{";
+            $item_css .= "#$item->id .gdz-icon-icon i{";
             $item_css .= "font-size:".$item->fields[2]->value."px;";
             $item_css .= "}";
-            $item_css .= "#$item->id .pb-icon-icon img{";
+            $item_css .= "#$item->id .gdz-icon-icon img{";
             $item_css .= "width:".$item->fields[5]->value."%;";
             $item_css .= "}";
         } elseif($item->type == 'instagram') {
@@ -621,7 +621,11 @@ class gdzPageBuilderHelper extends Module
             foreach($item->fields as $_field) {
                 if($_field->name == 'gutter') $_padding = $_field->value/2;
             }
-            $item_css = "#$item->id .row > div {";
+            $item_css = "#$item->id .row {";
+            $item_css .= "margin-left: -".$_padding."px;";
+            $item_css .= "margin-right: -".$_padding."px;";
+            $item_css .= "}";
+            $item_css .= "#$item->id .row > div {";
             $item_css .= "padding-left: ".$_padding."px;";
             $item_css .= "padding-right: ".$_padding."px;";
             $item_css .= "}";

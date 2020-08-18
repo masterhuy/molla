@@ -210,7 +210,7 @@ jQuery(function ($) {
       $('.pagebuilder-preview-overlay').show();
       $.ajax({
           type: 'POST',
-          url: PagebuilderConfig.ajax_link + '?action=importTemplate&secure_key=' + PagebuilderConfig.secure_key,
+          url: PagebuilderConfig.ajax_link + 'action=importTemplate&secure_key=' + PagebuilderConfig.secure_key,
           data: {
               id_template: template_row.attr('data-id')
           },

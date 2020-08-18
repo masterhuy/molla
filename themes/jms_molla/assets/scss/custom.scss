@@ -79,20 +79,6 @@
 @import 'base/layout';
 /*--------------------- 2.Headers -------------------- */
 @import 'base/headers/header';
-
-/*--------------------- 2.1.Menu -------------------- */
-@import 'base/headers/menu';
-
-/*--------------------- 2.2.Vertical Menu -------------------- */
-@import 'base/headers/vertical-menu';
-
-/*--------------------- 2.3.Sticky Header -------------------- */
-@import 'base/headers/sticky-header';
-
-/*--------------------- 2.4.Mobiel Menu -------------------- */
-@import 'base/headers/mobile-menu';
-@import 'base/headers/mobile-menu-light';
-
 @import 'base/headers/header-2';
 @import 'base/headers/header-3';
 @import 'base/headers/header-4';
@@ -106,6 +92,19 @@
 @import 'base/headers/header-12';
 @import 'base/headers/header-13';
 @import 'base/headers/header-14';
+
+/*--------------------- 2.1.Menu -------------------- */
+@import 'base/headers/menu';
+
+/*--------------------- 2.2.Vertical Menu -------------------- */
+@import 'base/headers/vertical-menu';
+
+/*--------------------- 2.3.Sticky Header -------------------- */
+@import 'base/headers/sticky-header';
+
+/*--------------------- 2.4.Mobiel Menu -------------------- */
+@import 'base/headers/mobile-menu';
+@import 'base/headers/mobile-menu-light';
 
 
 /*--------------------- 3.Footer -------------------- */

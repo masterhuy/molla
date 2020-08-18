@@ -25,7 +25,7 @@
     font-weight: 500;
     display: inline-block;
     position: relative;
-    padding: 1px 30px 0 12px;
+    padding: .1rem 3rem 0 1.2rem;
 }
 .gdz-megamenu .nav > li.open > a,
 .gdz-megamenu .nav > li > a:hover {

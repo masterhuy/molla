@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="pb-icon-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}">
+<div class="gdz-icon-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}">
 		{if $icon_type == 'image' && $image}
 		<img src="{$image|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />
 		{elseif $icon_class}

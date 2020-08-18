@@ -94,7 +94,7 @@ class gdzAddonHeading extends gdzAddonBase
     public function returnValue($addon, $id_lang = null)
     {
         if($id_lang == null)
-        $id_lang = $this->context->language->id;
+          $id_lang = $this->context->language->id;
         $heading = empty($addon->fields[0]->value->$id_lang) ? '' : gdzPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang);
         if($heading == '') return;
         $this->context->smarty->assign(

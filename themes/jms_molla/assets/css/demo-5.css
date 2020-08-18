@@ -1139,6 +1139,9 @@ a:focus {
   .pb-video-open-modal:hover {
     background-color: #cc6666; }
 
+.header-5 .search-form i:hover {
+  color: #cc6666; }
+
 #footer.footer-1 .html-1 .widget-about-info a {
   color: #cc6666; }
 
@@ -1160,6 +1163,9 @@ a:focus {
 
 .nav.nav-pills .nav-link {
   font-size: 1.5rem; }
+
+.header-5 #wishlist_block a:hover, .header-5 .cart-icon:hover {
+  color: #cc6666; }
 
 .slider-text-center .gdz-slider-wrapper .gdz-slide-content {
   width: 100%; }

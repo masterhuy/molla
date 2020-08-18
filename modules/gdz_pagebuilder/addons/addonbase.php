@@ -44,12 +44,12 @@ class gdzAddonBase extends Module
         } else {
             $html = '<a class="addon-title" data-type="html">';
         }
-        $html .= '<i class="pb-icon-'.$this->addonname.'"></i>
+        $html .= '<i class="gdz-icon-'.$this->addonname.'"></i>
                     <span class="element-title">'.$this->addontitle.'</span>
                     <span class="element-description">'.$this->addondesc.'</span>
                 </a>
                 <div class="addon-box addon" data-addon="'.$this->addonname.'" data-active="1">
-                    <i class="addon-icon pb-icon-'.$this->addonname.'"></i><span class="addon-title">'.$this->addontitle.'</span>
+                    <i class="addon-icon gdz-icon-'.$this->addonname.'"></i><span class="addon-title">'.$this->addontitle.'</span>
                     <div class="addon-tools">
                         <a class="active-addon"><i class="icon-check"></i></a>
                         <a class="edit-addon"><i class="icon-edit"></i></a>
@@ -476,7 +476,7 @@ class gdzAddonBase extends Module
         } else {
             $html .= '<a class="addon-title" data-type="html">';
         }
-        $html .= '<i class="pb-icon-'.$this->addonname.'" draggable="false"></i>
+        $html .= '<i class="gdz-icon-'.$this->addonname.'" draggable="false"></i>
                     <span class="element-title">'.$this->addontitle.'</span>
                     <span class="element-description">'.$this->addondesc.'</span>
                 </a></div>';
@@ -496,7 +496,7 @@ class gdzAddonBase extends Module
         $this->plh_img = Context::getContext()->shop->physical_uri.'modules/'._GDZ_PB_NAME_.'/views/img/placeholder.png';
         $defaultFormLanguage = (int)(Configuration::get('PS_LANG_DEFAULT'));
         $html = '<div id="'.(isset($addon->id)?$addon->id:'').'" class="addon-box" data-addon="'.$addon->settings->addon.'" data-active="'.(isset($addon->settings->active) ? $addon->settings->active : '1').'">
-                    <i class="addon-icon pb-icon-'.$addon->settings->addon.'"></i>
+                    <i class="addon-icon gdz-icon-'.$addon->settings->addon.'"></i>
                     <span class="addon-title">'.$this->addontitle.'</span>
                     <div class="addon-tools">
                         <a class="active-addon"><i class="icon-'.((isset($addon->settings->active) && $addon->settings->active == '0') ? 'remove' : 'check').'"></i></a>

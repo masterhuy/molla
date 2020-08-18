@@ -23,28 +23,24 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="pb-banner-countdown{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}{if $banner} countdown-has-banner{/if}">
-	<div class="deal-content">
-		<div class="pb-banner-countdown-time countdown">
-			{$expire_time|escape:'html':'UTF-8'}
-		</div>
-	</div>
-	<div class="deal-image">
-		{if $banner_link && $banner}
-			<a href="{$banner_link nofilter}" target="{$target nofilter}">
-		{/if}
-		{if $banner}
-			<div class="pb-banner-countdown-img">
-				<img src="{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" class="img-responsive" />
-			</div>
-		{/if}
-		{if $banner_link && $banner}
-			</a>
-		{/if}
-		<div class="pb-banner-countdown-text">
-			{if $subtitle}<span class="pb-banner-countdown-subtitle">{$subtitle nofilter}</span>{/if}
-			{if $title}<{$title_tag} class="pb-banner-countdown-desc">{$title nofilter}</{$title_tag}>{/if}
-			{if $description}<div class="pb-banner-countdown-desc">{$description nofilter}</div>{/if}
-			{if $button_text}<div><div class="pb-banner-countdown-button btn"><span>{$button_text nofilter}</span></div></div>{/if}
-		</div>
-	</div>
+{if $banner_link && $banner}
+<a href="{$banner_link nofilter}" target="{$target nofilter}">
+{/if}
+{if $banner}
+<div class="pb-banner-countdown-img">
+		<img src="{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" class="img-responsive" />
+</div>
+{/if}
+{if $banner_link && $banner}
+</a>
+{/if}
+<div class="pb-banner-countdown-text">
+	{if $subtitle}<span class="pb-banner-countdown-subtitle">{$subtitle nofilter}</span>{/if}
+	{if $title}<{$title_tag} class="pb-banner-countdown-desc">{$title nofilter}</{$title_tag}>{/if}
+	{if $description}<div class="pb-banner-countdown-desc">{$description nofilter}</div>{/if}
+	{if $button_text}<div><div class="pb-banner-countdown-button btn"><span>{$button_text nofilter}</span></div></div>{/if}
+</div>
+<div class="pb-banner-countdown-time countdown">
+	{$expire_time|escape:'html':'UTF-8'}
+</div>
 </div>
