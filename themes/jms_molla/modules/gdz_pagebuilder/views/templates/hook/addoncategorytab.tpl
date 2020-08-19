@@ -25,7 +25,7 @@
 *}
 {assign var=unique_id value=1|mt_rand:1000}
 <div class="pb-categorytab addon-tab">
-	<ul class="nav nav-tabs tab-{$tab_align nofilter}">
+	<ul class="nav nav-tabs tab-{$tab_align nofilter} {if $view_type == 'carousel'}mb-1{else} mb-3{/if}">
 		{foreach from = $categories key = k item = category}
 			<li class="nav-item">
 				<a data-toggle="tab" class="nav-link{if $k == 0} active{/if}" href="#category-{$unique_id}-{$category.id_category|escape:'html':'UTF-8'}">

@@ -908,7 +908,96 @@
 }
 
 /* Product box 4 */
-
+.productbox-4{
+	&:hover{
+		top: auto;
+		bottom: 0;
+		.product-action{
+			bottom: 0;
+		}
+		.wrapp-buttons{
+			transform: translateY(0);
+		}
+	}
+	.product-flags{
+		.product-flag{
+			font-weight: 400;
+			font-size: 1.3rem;
+			line-height: 1.6rem;
+			letter-spacing: -.01em;
+			padding: .5rem .9rem;
+			min-width: 45px;
+			text-transform: uppercase;
+			width: auto;
+			height: auto;
+			border-radius: 0;
+		}
+		.on-sale{
+			background-color: #333;
+		}
+	}
+	.wrapp-buttons{
+		right: 2rem;
+		transform: translateY(-15px);
+	}
+	.category-name{
+		font-weight: 400;
+		color: #ccc;
+		margin-bottom: .2rem;
+		letter-spacing: 0;
+		&:hover{
+			color: #666;
+		}
+	}
+	.product-preview{
+		overflow: hidden;
+	}
+	.product-title{
+		font-size: 1.4rem;
+		font-weight: 500;
+		letter-spacing: 0;
+		margin-bottom: -.4rem;
+	}
+	.content_price{
+		span.price{
+			font-size: 1.4rem;
+			margin-bottom: .3rem;
+			&.new{
+				font-weight: 500;
+				&.has-discount{
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.product-info{
+		text-align: center;
+	}
+	.product-action{
+		top: auto;
+		bottom: -4rem;
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+		padding: 0;
+		background-color: #fff;
+		.product-btn{
+			border: 0;
+			padding-top: 1.2rem;
+			padding-bottom: 1rem;
+			text-transform: lowercase;
+			border-bottom: .1rem solid #ebebeb;
+			&:hover{
+				color: #fff;
+			}
+			span{
+				font-size: 1.3rem;
+				font-weight: 400;
+				letter-spacing: -.01em;
+			}
+		}
+	}
+}
 
 /* Product box 5 */
 

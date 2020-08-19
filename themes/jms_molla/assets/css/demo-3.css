@@ -569,6 +569,11 @@ a:focus {
 .productbox-2 .out-text {
   color: #fcb941; }
 
+.productbox-4 .product-action .product-btn {
+  color: #fcb941; }
+  .productbox-4 .product-action .product-btn:hover {
+    border-color: #fcb941; }
+
 .h3-product-carousel .owl-carousel .owl-nav button::before {
   color: #fcb941; }
 
